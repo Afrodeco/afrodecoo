@@ -17,13 +17,13 @@ const TABLEAUX = [
   },
   {
     id: 2,
-    titre: "Éclat d'Harmattan",
+    titre: "Horizons",
     artiste: "Afrodeco Studio",
     description: "Abstraction inspirée des vents chauds du Sahel, entre force et douceur.",
     categorie: "abstrait",
-    prix: 350,
-    dimensions: "60×80 cm",
-    image: "https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=800&q=80"
+    prix: 184,
+    dimensions: "120x80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-2.png"
   },
   {
     id: 3,
