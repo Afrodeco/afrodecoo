@@ -7,13 +7,13 @@
 const TABLEAUX = [
   {
     id: 1,
-    titre: "Reine du Sahel",
+    titre: "Abstrait",
     artiste: "Afrodeco Studio",
-    description: "Une œuvre puissante qui célèbre la dignité et la beauté de la femme africaine.",
-    categorie: "art-africain",
-    prix: 280,
-    dimensions: "40×50 cm",
-    image: "https://images.unsplash.com/photo-1578926078693-4e2c6ab62f49?w=800&q=80"
+    description: "Une œuvre abstraite qui apporte de la chaleur à votre déco.",
+    categorie: "art-contemporain",
+    prix: 120.000,
+    dimensions: "120/80 cm",
+    image: "https://github.com/Afrodeco/afrodecoo/blob/40422706c489489c116ef4a3eae1f789f109e1e6/Abstrait%20%201%20(126%20x%2086%20cm).png"
   },
   {
     id: 2,
