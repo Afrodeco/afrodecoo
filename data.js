@@ -13,7 +13,7 @@ const TABLEAUX = [
     categorie: "art-contemporain",
     prix: 184,
     dimensions: "120/80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-1%20.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-1.png"
   },
   {
     id: 2,
