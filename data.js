@@ -11,9 +11,9 @@ const TABLEAUX = [
     artiste: "Afrodeco Studio",
     description: "Une œuvre abstraite qui apporte de la chaleur à votre déco.",
     categorie: "art-contemporain",
-    prix: 120.000,
+    prix: 184,
     dimensions: "120/80 cm",
-    image: "https://github.com/Afrodeco/afrodecoo/blob/40422706c489489c116ef4a3eae1f789f109e1e6/Abstrait%20%201%20(126%20x%2086%20cm).png"
+    image: "https://github.com/Afrodeco/afrodecoo/blob/bb317b94a5eba7a1b83625cf8283354f35fbde6b/Abstrait%20%201%20(126%20x%2086%20cm).png"
   },
   {
     id: 2,
