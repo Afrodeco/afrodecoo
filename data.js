@@ -111,7 +111,16 @@ const ARTISTES = [
     nom: "Kemi Adeyemi",
     bio: "Artiste nigériane basée à Paris, Kemi mêle traditions yoruba et abstraction contemporaine.",
     photo: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&q=80"
-  }
+  } {
+  id: 5,
+  titre: "Terre & Pierres",
+  artiste: "Afrodeco Studio",
+  description: "Formes organiques abstraites aux tons terreux sur fond texturé.",
+  categorie: "abstrait",
+  prix: 120,
+  dimensions: "60×40 cm",
+  image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-4.png"
+},
 ];
 
 const CATEGORIES_TABLEAUX = [
