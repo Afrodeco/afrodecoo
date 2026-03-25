@@ -461,7 +461,7 @@ function renderArtistes() {
 const canvas = document.getElementById('previewCanvas');
 const ctx = canvas.getContext('2d');
 let roomImg = null, artImg = null, selIdx = 0;
-function getFirstImage(t){return t.image||(t.images&&t.images[0])||'';}
+function getFirstImage(t){return t.imageVis||t.image||(t.images&&t.images[0])||'';}
 
 function renderThumbs() {
   const tg = document.getElementById('thumbGrid');

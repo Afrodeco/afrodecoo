@@ -26,7 +26,8 @@ const TABLEAUX = [
       "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Boho-1.png",
       "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Boho-2.png",
       "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Boho-3.png"
-    ]
+    ],
+  imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Boho-3.png"
   },
   {
     id: 2,
