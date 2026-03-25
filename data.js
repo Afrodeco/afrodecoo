@@ -10,6 +10,9 @@
 //  SÉRIE / CARROUSEL (plusieurs images) :
 //  { ..., serie: true, images: ["lien1", "lien2", "lien3"] }
 //  Le prix affiché sera "Série — X €"
+//
+//  VISUALISEUR (image différente pour le visualiseur) :
+//  { ..., imageVis: "lien" }
 // ============================================================
 
 const TABLEAUX = [
@@ -27,7 +30,7 @@ const TABLEAUX = [
       "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Boho-2.png",
       "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Boho-3.png"
     ],
-  imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Boho-3.png"
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Boho-3.png"
   },
   {
     id: 2,
@@ -51,6 +54,16 @@ const TABLEAUX = [
   },
   {
     id: 4,
+    titre: "Terre & Pierres",
+    artiste: "Afrodeco Studio",
+    description: "Formes organiques abstraites aux tons terreux sur fond texturé.",
+    categorie: "abstrait",
+    prix: 120,
+    dimensions: "60×40 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-4.png"
+  },
+  {
+    id: 5,
     titre: "Éclat d'Harmattan",
     artiste: "Afrodeco Studio",
     description: "Abstraction inspirée des vents chauds du Sahel, entre force et douceur.",
@@ -60,7 +73,7 @@ const TABLEAUX = [
     image: "https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=800&q=80"
   },
   {
-    id: 5,
+    id: 6,
     titre: "Lumières du Kalahari",
     artiste: "Afrodeco Studio",
     description: "La savane africaine capturée dans ses teintes les plus envoûtantes.",
@@ -70,7 +83,7 @@ const TABLEAUX = [
     image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&q=80"
   },
   {
-    id: 6,
+    id: 7,
     titre: "Femme Dogon",
     artiste: "Kemi Adeyemi",
     description: "Portrait délicat issu de la tradition Dogon, revisitée en art contemporain.",
@@ -80,7 +93,7 @@ const TABLEAUX = [
     image: "https://images.unsplash.com/photo-1580130379624-3a069adbffc5?w=800&q=80"
   },
   {
-    id: 7,
+    id: 8,
     titre: "Tissu Kente",
     artiste: "Kemi Adeyemi",
     description: "Hommage aux motifs géométriques du tissu Kente, patrimoine immatériel ghanéen.",
@@ -90,7 +103,7 @@ const TABLEAUX = [
     image: "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=80"
   },
   {
-    id: 8,
+    id: 9,
     titre: "Baobab au Crépuscule",
     artiste: "Afrodeco Studio",
     description: "L'arbre sacré africain sous un ciel embrasé — majestueux et intemporel.",
@@ -111,16 +124,7 @@ const ARTISTES = [
     nom: "Kemi Adeyemi",
     bio: "Artiste nigériane basée à Paris, Kemi mêle traditions yoruba et abstraction contemporaine.",
     photo: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&q=80"
-  } {
-  id: 5,
-  titre: "Terre & Pierres",
-  artiste: "Afrodeco Studio",
-  description: "Formes organiques abstraites aux tons terreux sur fond texturé.",
-  categorie: "abstrait",
-  prix: 120,
-  dimensions: "60×40 cm",
-  image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-4.png"
-},
+  }
 ];
 
 const CATEGORIES_TABLEAUX = [
