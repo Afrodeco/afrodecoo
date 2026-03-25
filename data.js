@@ -53,6 +53,16 @@ const TABLEAUX = [
   },
   {
     id: 4,
+    titre: "Abstrait 3",
+    artiste: "Afrodeco Studio",
+    description: "Œuvre abstraite aux tonalités riches et à la texture généreuse.",
+    categorie: "abstrait",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-3.jpg"
+  },
+  {
+    id: 5,
     titre: "Terre & Pierres",
     artiste: "Afrodeco Studio",
     description: "Formes organiques abstraites aux tons terreux sur fond texturé.",
@@ -62,7 +72,7 @@ const TABLEAUX = [
     image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-4.png"
   },
   {
-    id: 5,
+    id: 6,
     titre: "Abstrait 5",
     artiste: "Afrodeco Studio",
     description: "Œuvre abstraite aux tonalités profondes et à la composition équilibrée.",
@@ -72,7 +82,7 @@ const TABLEAUX = [
     image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-5.png"
   },
   {
-    id: 6,
+    id: 7,
     titre: "Abstrait 6",
     artiste: "Afrodeco Studio",
     description: "Jeu de formes et de matières inspiré des traditions artistiques africaines.",
@@ -82,7 +92,7 @@ const TABLEAUX = [
     image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-6.png"
   },
   {
-    id: 7,
+    id: 8,
     titre: "Abstrait 7",
     artiste: "Afrodeco Studio",
     description: "Composition abstraite entre ombre et lumière, texture et profondeur.",
@@ -92,7 +102,7 @@ const TABLEAUX = [
     image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-7.png"
   },
   {
-    id: 8,
+    id: 9,
     titre: "Abstrait 8",
     artiste: "Afrodeco Studio",
     description: "Œuvre abstraite aux contrastes saisissants, entre douceur et intensité.",
@@ -102,7 +112,7 @@ const TABLEAUX = [
     image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-8.jpg"
   },
   {
-    id: 9,
+    id: 10,
     titre: "Abstrait 9",
     artiste: "Afrodeco Studio",
     description: "Palette terreuse et formes libres pour une présence apaisante sur vos murs.",
@@ -112,7 +122,7 @@ const TABLEAUX = [
     image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-9.jpg"
   },
   {
-    id: 10,
+    id: 11,
     titre: "Abstrait 10",
     artiste: "Afrodeco Studio",
     description: "Une abstraction contemporaine aux influences africaines marquées.",
@@ -122,7 +132,7 @@ const TABLEAUX = [
     image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-10.jpg"
   },
   {
-    id: 11,
+    id: 12,
     titre: "Abstrait 11",
     artiste: "Afrodeco Studio",
     description: "Lignes organiques et matières texturées pour une œuvre pleine de caractère.",
@@ -132,7 +142,7 @@ const TABLEAUX = [
     image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-11.jpg"
   },
   {
-    id: 12,
+    id: 13,
     titre: "Abstrait 12",
     artiste: "Afrodeco Studio",
     description: "Composition abstraite aux tons chauds, idéale pour sublimer un salon.",
@@ -142,7 +152,7 @@ const TABLEAUX = [
     image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-12.png"
   },
   {
-    id: 13,
+    id: 14,
     titre: "Abstrait 13",
     artiste: "Afrodeco Studio",
     description: "Équilibre subtil entre géométrie et spontanéité, signature Afrodeco.",
@@ -152,7 +162,7 @@ const TABLEAUX = [
     image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-13.jpg"
   },
   {
-    id: 14,
+    id: 15,
     titre: "Abstrait 14",
     artiste: "Afrodeco Studio",
     description: "Une œuvre puissante aux couleurs profondes, entre terre et ciel africain.",
@@ -162,17 +172,7 @@ const TABLEAUX = [
     image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-14.jpg"
   },
   {
-  id: 4,
-  titre: "Abstrait 3",
-  artiste: "Afrodeco Studio",
-  description: "Œuvre abstraite aux tonalités riches et à la texture généreuse.",
-  categorie: "abstrait",
-  prix: 184,
-  dimensions: "120×80 cm",
-  image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-3.jpg"
-},
-{
-    id: 15,
+    id: 16,
     titre: "Femme Dogon",
     artiste: "Kemi Adeyemi",
     description: "Portrait délicat issu de la tradition Dogon, revisitée en art contemporain.",
@@ -182,7 +182,7 @@ const TABLEAUX = [
     image: "https://images.unsplash.com/photo-1580130379624-3a069adbffc5?w=800&q=80"
   },
   {
-    id: 16,
+    id: 17,
     titre: "Tissu Kente",
     artiste: "Kemi Adeyemi",
     description: "Hommage aux motifs géométriques du tissu Kente, patrimoine immatériel ghanéen.",
@@ -192,7 +192,7 @@ const TABLEAUX = [
     image: "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=80"
   },
   {
-    id: 17,
+    id: 18,
     titre: "Baobab au Crépuscule",
     artiste: "Afrodeco Studio",
     description: "L'arbre sacré africain sous un ciel embrasé — majestueux et intemporel.",
