@@ -14,6 +14,8 @@
 //  { ..., imageVis: "lien" }
 // ============================================================
 
+const BASE = "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/";
+
 const TABLEAUX = [
   {
     id: 1,
@@ -25,11 +27,11 @@ const TABLEAUX = [
     dimensions: "40×50 cm — Série de 3",
     serie: true,
     images: [
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Boho-1.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Boho-2.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Boho-3.png"
+      BASE + "Boho-1.png",
+      BASE + "Boho-2.png",
+      BASE + "Boho-3.png"
     ],
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Boho-3.png"
+    imageVis: BASE + "Boho-3.png"
   },
   {
     id: 2,
@@ -39,7 +41,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-1.png"
+    image: BASE + "Abstrait-1.png"
   },
   {
     id: 3,
@@ -49,7 +51,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-2.png"
+    image: BASE + "Abstrait-2.png"
   },
   {
     id: 4,
@@ -59,7 +61,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-3.jpg"
+    image: BASE + "Abstrait-3.jpg"
   },
   {
     id: 5,
@@ -69,7 +71,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-4.png"
+    image: BASE + "Abstrait-4.png"
   },
   {
     id: 6,
@@ -79,7 +81,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-5.png"
+    image: BASE + "Abstrait-5.png"
   },
   {
     id: 7,
@@ -89,7 +91,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-6.png"
+    image: BASE + "Abstrait-6.png"
   },
   {
     id: 8,
@@ -99,7 +101,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-7.png"
+    image: BASE + "Abstrait-7.png"
   },
   {
     id: 9,
@@ -109,7 +111,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-8.jpg"
+    image: BASE + "Abstrait-8.jpg"
   },
   {
     id: 10,
@@ -119,7 +121,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-9.jpg"
+    image: BASE + "Abstrait-9.jpg"
   },
   {
     id: 11,
@@ -129,7 +131,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-10.jpg"
+    image: BASE + "Abstrait-10.jpg"
   },
   {
     id: 12,
@@ -139,7 +141,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-11.jpg"
+    image: BASE + "Abstrait-11.jpg"
   },
   {
     id: 13,
@@ -149,7 +151,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-12.png"
+    image: BASE + "Abstrait-12.png"
   },
   {
     id: 14,
@@ -159,7 +161,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-13.jpg"
+    image: BASE + "Abstrait-13.jpg"
   },
   {
     id: 15,
@@ -169,10 +171,85 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-14.jpg"
+    image: BASE + "Abstrait-14.jpg"
   },
   {
     id: 16,
+    titre: "Matisse 1 — Visage",
+    artiste: "Afrodeco Studio",
+    description: "Silhouette épurée inspirée de Matisse, entre force et sensibilité. Format portrait.",
+    categorie: "matisse",
+    prix: 184,
+    dimensions: "120×80 cm",
+    serie: true,
+    images: [
+      BASE + "Matisse 1 mockup.png",
+      BASE + "Matisse 1 design.png"
+    ],
+    imageVis: BASE + "Matisse 1 design.png"
+  },
+  {
+    id: 17,
+    titre: "Matisse 2 — Corps & Fleurs",
+    artiste: "Afrodeco Studio",
+    description: "Quatre formes graphiques bleu nuit et or, hommage aux découpages de Matisse.",
+    categorie: "matisse",
+    prix: 184,
+    dimensions: "120×80 cm",
+    serie: true,
+    images: [
+      BASE + "Matisse 2 mockup.png",
+      BASE + "Matisse 2 design.png"
+    ],
+    imageVis: BASE + "Matisse 2 design.png"
+  },
+  {
+    id: 18,
+    titre: "Matisse 3 — Lignes",
+    artiste: "Afrodeco Studio",
+    description: "Lignes organiques vert sauge et terracotta sur fond crème, mouvement et liberté.",
+    categorie: "matisse",
+    prix: 184,
+    dimensions: "120×80 cm",
+    serie: true,
+    images: [
+      BASE + "Matisse 3 mockup.png",
+      BASE + "Matisse 3 design.png"
+    ],
+    imageVis: BASE + "Matisse 3 design.png"
+  },
+  {
+    id: 19,
+    titre: "Matisse 4",
+    artiste: "Afrodeco Studio",
+    description: "Composition abstraite dans l'esprit Matisse, élégante et intemporelle.",
+    categorie: "matisse",
+    prix: 184,
+    dimensions: "120×80 cm",
+    serie: true,
+    images: [
+      BASE + "Matisse 4 mockup.png",
+      BASE + "Matisse 4 design.png"
+    ],
+    imageVis: BASE + "Matisse 4 design.png"
+  },
+  {
+    id: 20,
+    titre: "Matisse 5",
+    artiste: "Afrodeco Studio",
+    description: "Formes découpées aux couleurs vives, énergie et modernité en hommage au maître.",
+    categorie: "matisse",
+    prix: 184,
+    dimensions: "120×80 cm",
+    serie: true,
+    images: [
+      BASE + "Matisse 5 mockup.png",
+      BASE + "Matisse 5 design.png"
+    ],
+    imageVis: BASE + "Matisse 5 design.png"
+  },
+  {
+    id: 21,
     titre: "Femme Dogon",
     artiste: "Kemi Adeyemi",
     description: "Portrait délicat issu de la tradition Dogon, revisitée en art contemporain.",
@@ -182,7 +259,7 @@ const TABLEAUX = [
     image: "https://images.unsplash.com/photo-1580130379624-3a069adbffc5?w=800&q=80"
   },
   {
-    id: 17,
+    id: 22,
     titre: "Tissu Kente",
     artiste: "Kemi Adeyemi",
     description: "Hommage aux motifs géométriques du tissu Kente, patrimoine immatériel ghanéen.",
@@ -192,7 +269,7 @@ const TABLEAUX = [
     image: "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=80"
   },
   {
-    id: 18,
+    id: 23,
     titre: "Baobab au Crépuscule",
     artiste: "Afrodeco Studio",
     description: "L'arbre sacré africain sous un ciel embrasé — majestueux et intemporel.",
@@ -218,11 +295,12 @@ const ARTISTES = [
 
 const CATEGORIES_TABLEAUX = [
   { id: "tout", label: "Tout" },
-  { id: "art-africain", label: "Art Africain" },
+  { id: "matisse", label: "Matisse" },
   { id: "abstrait", label: "Abstrait" },
+  { id: "geometrique", label: "Géométrique" },
   { id: "portrait", label: "Portraits" },
   { id: "nature", label: "Nature" },
-  { id: "geometrique", label: "Géométrique" },
+  { id: "art-africain", label: "Art Africain" },
   { id: "texture", label: "Art Texturé" },
   { id: "enfants", label: "Chambre Enfants" }
 ];
