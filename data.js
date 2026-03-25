@@ -162,6 +162,16 @@ const TABLEAUX = [
     image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-14.jpg"
   },
   {
+  id: 4,
+  titre: "Abstrait 3",
+  artiste: "Afrodeco Studio",
+  description: "Œuvre abstraite aux tonalités riches et à la texture généreuse.",
+  categorie: "abstrait",
+  prix: 184,
+  dimensions: "120×80 cm",
+  image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-3.jpg"
+},
+{
     id: 15,
     titre: "Femme Dogon",
     artiste: "Kemi Adeyemi",
