@@ -9,7 +9,6 @@
 //
 //  SÉRIE / CARROUSEL (plusieurs images) :
 //  { ..., serie: true, images: ["lien1", "lien2", "lien3"] }
-//  Le prix affiché sera "Série — X €"
 //
 //  VISUALISEUR (image différente pour le visualiseur) :
 //  { ..., imageVis: "lien" }
@@ -48,8 +47,8 @@ const TABLEAUX = [
     artiste: "Afrodeco Studio",
     description: "Composition abstraite aux formes organiques et aux tons naturels.",
     categorie: "abstrait",
-    prix: 210,
-    dimensions: "80×60 cm",
+    prix: 184,
+    dimensions: "120×80 cm",
     image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-2.png"
   },
   {
@@ -58,32 +57,42 @@ const TABLEAUX = [
     artiste: "Afrodeco Studio",
     description: "Formes organiques abstraites aux tons terreux sur fond texturé.",
     categorie: "abstrait",
-    prix: 120,
-    dimensions: "60×40 cm",
+    prix: 184,
+    dimensions: "120×80 cm",
     image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-4.png"
   },
   {
     id: 5,
-    titre: "Éclat d'Harmattan",
+    titre: "Abstrait 5",
     artiste: "Afrodeco Studio",
-    description: "Abstraction inspirée des vents chauds du Sahel, entre force et douceur.",
+    description: "Œuvre abstraite aux tonalités profondes et à la composition équilibrée.",
     categorie: "abstrait",
-    prix: 350,
-    dimensions: "60×80 cm",
-    image: "https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=800&q=80"
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-5.png"
   },
   {
     id: 6,
-    titre: "Lumières du Kalahari",
+    titre: "Abstrait 6",
     artiste: "Afrodeco Studio",
-    description: "La savane africaine capturée dans ses teintes les plus envoûtantes.",
-    categorie: "nature",
-    prix: 420,
-    dimensions: "80×100 cm",
-    image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&q=80"
+    description: "Jeu de formes et de matières inspiré des traditions artistiques africaines.",
+    categorie: "abstrait",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-6.png"
   },
   {
     id: 7,
+    titre: "Abstrait 7",
+    artiste: "Afrodeco Studio",
+    description: "Composition abstraite entre ombre et lumière, texture et profondeur.",
+    categorie: "abstrait",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Abstrait-7.png"
+  },
+  {
+    id: 8,
     titre: "Femme Dogon",
     artiste: "Kemi Adeyemi",
     description: "Portrait délicat issu de la tradition Dogon, revisitée en art contemporain.",
@@ -93,7 +102,7 @@ const TABLEAUX = [
     image: "https://images.unsplash.com/photo-1580130379624-3a069adbffc5?w=800&q=80"
   },
   {
-    id: 8,
+    id: 9,
     titre: "Tissu Kente",
     artiste: "Kemi Adeyemi",
     description: "Hommage aux motifs géométriques du tissu Kente, patrimoine immatériel ghanéen.",
@@ -103,7 +112,7 @@ const TABLEAUX = [
     image: "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=80"
   },
   {
-    id: 9,
+    id: 10,
     titre: "Baobab au Crépuscule",
     artiste: "Afrodeco Studio",
     description: "L'arbre sacré africain sous un ciel embrasé — majestueux et intemporel.",
