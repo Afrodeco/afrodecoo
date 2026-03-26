@@ -234,6 +234,26 @@ const TABLEAUX = [
     imageVis: BASE + "Matisse 4 design.png"
   },
   {
+    id: 21,
+    titre: "Géométrie 1",
+    artiste: "Afrodeco Studio",
+    description: "Composition géométrique aux formes précises et aux lignes épurées.",
+    categorie: "geometrique",
+    prix: 145,
+    dimensions: "130×130 cm",
+    image: BASE + "Geometrie-1.jpg"
+  },
+  {
+    id: 22,
+    titre: "Géométrie 2",
+    artiste: "Afrodeco Studio",
+    description: "Jeu de formes géométriques et de contrastes pour une présence forte.",
+    categorie: "geometrique",
+    prix: 145,
+    dimensions: "130×130 cm",
+    image: BASE + "Geometrie-2.jpg"
+  },
+  {
     id: 20,
     titre: "Matisse 5",
     artiste: "Afrodeco Studio",
