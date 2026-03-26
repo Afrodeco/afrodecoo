@@ -1,16 +1,16 @@
 // ============================================================
 //  AFRODECO — FICHIER DE DONNÉES
 //
-//  TABLEAU SIMPLE (une seule image) :
+//  TABLEAU SIMPLE :
 //  { id, titre, artiste, description, categorie, prix, dimensions, image: "lien" }
 //
 //  TABLEAU ROND :
 //  { ..., rond: true, image: "lien" }
 //
-//  SÉRIE / CARROUSEL (plusieurs images) :
-//  { ..., serie: true, images: ["lien1", "lien2", "lien3"] }
+//  SÉRIE / CARROUSEL :
+//  { ..., serie: true, images: ["lien1", "lien2"] }
 //
-//  VISUALISEUR (image différente pour le visualiseur) :
+//  VISUALISEUR :
 //  { ..., imageVis: "lien" }
 // ============================================================
 
@@ -177,7 +177,7 @@ const TABLEAUX = [
     id: 16,
     titre: "Matisse 1 — Visage",
     artiste: "Afrodeco Studio",
-    description: "Silhouette épurée inspirée de Matisse, entre force et sensibilité. Format portrait.",
+    description: "Silhouette épurée inspirée de Matisse, entre force et sensibilité.",
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
@@ -207,7 +207,7 @@ const TABLEAUX = [
     id: 18,
     titre: "Matisse 3 — Lignes",
     artiste: "Afrodeco Studio",
-    description: "Lignes organiques vert sauge et terracotta sur fond crème, mouvement et liberté.",
+    description: "Lignes organiques vert sauge et terracotta sur fond crème.",
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
@@ -237,7 +237,7 @@ const TABLEAUX = [
     id: 20,
     titre: "Matisse 5",
     artiste: "Afrodeco Studio",
-    description: "Formes découpées aux couleurs vives, énergie et modernité en hommage au maître.",
+    description: "Formes découpées aux couleurs vives, énergie et modernité.",
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
@@ -247,36 +247,6 @@ const TABLEAUX = [
       BASE + "Matisse 5 design.png"
     ],
     imageVis: BASE + "Matisse 5 design.png"
-  },
-  {
-    id: 21,
-    titre: "Femme Dogon",
-    artiste: "Kemi Adeyemi",
-    description: "Portrait délicat issu de la tradition Dogon, revisitée en art contemporain.",
-    categorie: "portrait",
-    prix: 260,
-    dimensions: "30×40 cm",
-    image: "https://images.unsplash.com/photo-1580130379624-3a069adbffc5?w=800&q=80"
-  },
-  {
-    id: 22,
-    titre: "Tissu Kente",
-    artiste: "Kemi Adeyemi",
-    description: "Hommage aux motifs géométriques du tissu Kente, patrimoine immatériel ghanéen.",
-    categorie: "geometrique",
-    prix: 310,
-    dimensions: "50×70 cm",
-    image: "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=80"
-  },
-  {
-    id: 23,
-    titre: "Baobab au Crépuscule",
-    artiste: "Afrodeco Studio",
-    description: "L'arbre sacré africain sous un ciel embrasé — majestueux et intemporel.",
-    categorie: "nature",
-    prix: 480,
-    dimensions: "100×120 cm",
-    image: "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=800&q=80"
   }
 ];
 
@@ -285,11 +255,6 @@ const ARTISTES = [
     nom: "Afrodeco Studio",
     bio: "Le studio créatif d'Afrodeco, collectif d'artistes passionnés par l'art africain contemporain.",
     photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
-  },
-  {
-    nom: "Kemi Adeyemi",
-    bio: "Artiste nigériane basée à Paris, Kemi mêle traditions yoruba et abstraction contemporaine.",
-    photo: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&q=80"
   }
 ];
 
@@ -298,9 +263,9 @@ const CATEGORIES_TABLEAUX = [
   { id: "matisse", label: "Matisse" },
   { id: "abstrait", label: "Abstrait" },
   { id: "geometrique", label: "Géométrique" },
+  { id: "photographie", label: "Photographies" },
   { id: "portrait", label: "Portraits" },
   { id: "nature", label: "Nature" },
   { id: "art-africain", label: "Art Africain" },
-  { id: "texture", label: "Art Texturé" },
   { id: "enfants", label: "Chambre Enfants" }
 ];
