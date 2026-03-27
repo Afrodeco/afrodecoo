@@ -1,17 +1,5 @@
 // ============================================================
 //  AFRODECO — FICHIER DE DONNÉES
-//
-//  TABLEAU SIMPLE :
-//  { id, titre, artiste, description, categorie, prix, dimensions, image: "lien" }
-//
-//  TABLEAU ROND :
-//  { ..., rond: true, image: "lien" }
-//
-//  SÉRIE / CARROUSEL :
-//  { ..., serie: true, images: ["lien1", "lien2"] }
-//
-//  VISUALISEUR :
-//  { ..., imageVis: "lien" }
 // ============================================================
 
 const BASE = "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/";
@@ -234,6 +222,21 @@ const TABLEAUX = [
     imageVis: BASE + "Matisse 4 design.png"
   },
   {
+    id: 20,
+    titre: "Matisse 5",
+    artiste: "Afrodeco Studio",
+    description: "Formes découpées aux couleurs vives, énergie et modernité.",
+    categorie: "matisse",
+    prix: 184,
+    dimensions: "120×80 cm",
+    serie: true,
+    images: [
+      BASE + "Matisse 5 mockup.png",
+      BASE + "Matisse 5 design.png"
+    ],
+    imageVis: BASE + "Matisse 5 design.png"
+  },
+  {
     id: 21,
     titre: "Géométrie 1",
     artiste: "Afrodeco Studio",
@@ -254,19 +257,84 @@ const TABLEAUX = [
     image: BASE + "Geometrie-2.jpg"
   },
   {
-    id: 20,
-    titre: "Matisse 5",
-    artiste: "Afrodeco Studio",
-    description: "Formes découpées aux couleurs vives, énergie et modernité.",
-    categorie: "matisse",
-    prix: 184,
-    dimensions: "120×80 cm",
-    serie: true,
-    images: [
-      BASE + "Matisse 5 mockup.png",
-      BASE + "Matisse 5 design.png"
-    ],
-    imageVis: BASE + "Matisse 5 design.png"
+    id: 23,
+    titre: "Photo 1",
+    artiste: "Alex Maurel",
+    description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
+    categorie: "photographie",
+    prix: 150,
+    dimensions: "60×40 cm",
+    image: BASE + "Photos-1.jpg"
+  },
+  {
+    id: 24,
+    titre: "Photo 2",
+    artiste: "Alex Maurel",
+    description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
+    categorie: "photographie",
+    prix: 150,
+    dimensions: "60×40 cm",
+    image: BASE + "Photos-2.jpg"
+  },
+  {
+    id: 25,
+    titre: "Photo 3",
+    artiste: "Alex Maurel",
+    description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
+    categorie: "photographie",
+    prix: 150,
+    dimensions: "60×40 cm",
+    image: BASE + "Photos-3.jpg"
+  },
+  {
+    id: 26,
+    titre: "Photo 4",
+    artiste: "Alex Maurel",
+    description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
+    categorie: "photographie",
+    prix: 150,
+    dimensions: "60×40 cm",
+    image: BASE + "Photos-4.jpg"
+  },
+  {
+    id: 27,
+    titre: "Photo 5",
+    artiste: "Alex Maurel",
+    description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
+    categorie: "photographie",
+    prix: 150,
+    dimensions: "60×40 cm",
+    image: BASE + "Photos-5.jpg"
+  },
+  {
+    id: 28,
+    titre: "Photo 6",
+    artiste: "Alex Maurel",
+    description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
+    categorie: "photographie",
+    prix: 150,
+    dimensions: "60×40 cm",
+    image: BASE + "Photos-6.jpg"
+  },
+  {
+    id: 29,
+    titre: "Photo 7",
+    artiste: "Alex Maurel",
+    description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
+    categorie: "photographie",
+    prix: 150,
+    dimensions: "60×40 cm",
+    image: BASE + "Photos-7.jpg"
+  },
+  {
+    id: 30,
+    titre: "Photo 8",
+    artiste: "Alex Maurel",
+    description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
+    categorie: "photographie",
+    prix: 150,
+    dimensions: "60×40 cm",
+    image: BASE + "Photos-8.jpg"
   }
 ];
 
@@ -275,6 +343,11 @@ const ARTISTES = [
     nom: "Afrodeco Studio",
     bio: "Le studio créatif d'Afrodeco, collectif d'artistes passionnés par l'art africain contemporain.",
     photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
+  },
+  {
+    nom: "Alex Maurel",
+    bio: "Photographe d'art. Ses œuvres seront bientôt disponibles sur Afrodeco.",
+    photo: ""
   }
 ];
 
