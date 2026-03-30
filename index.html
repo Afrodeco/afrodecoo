@@ -699,4 +699,23 @@ document.getElementById('resetBtn').addEventListener('click', () => {
 });
 
 // Download
-document.getElementById('downloadBtn').ad
+document.getElementById('downloadBtn').addEventListener('click', () => {
+  const link = document.createElement('a');
+  link.download = 'afrodeco-visualisation.png';
+  link.href = canvas.toDataURL('image/png');
+  link.click();
+});
+
+// Burger menu
+document.getElementById('burgerBtn').addEventListener('click', () => {
+  document.getElementById('mobileNav').classList.toggle('open');
+});
+
+document.querySelectorAll('#mobileNav a').forEach(a => {
+  a.addEventListener('click', () => {
+    document.getElementById('mobileNav').classList.remove('open');
+  });
+});
+</script>
+</body>
+</html>
