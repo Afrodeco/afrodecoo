@@ -335,6 +335,21 @@ const TABLEAUX = [
     prix: 150,
     dimensions: "60×40 cm",
     image: BASE + "Photos-8.jpg"
+  },
+  {
+    id: 31,
+    titre: "Ouidah Mibiton",
+    artiste: "Alex Maurel",
+    description: "Un hommage vibrant à la Porte du Non-Retour de Ouidah. Style graphique audacieux, couleurs éclatantes et lignes épurées pour transmettre mémoire et résilience. Plus qu'un tableau : une œuvre chargée d'histoire.",
+    categorie: "art-africain",
+    prix: 0,
+    dimensions: "30×40 cm / 50×70 cm — Impression sur papier encadré bois et verre",
+    serie: true,
+    images: [
+      BASE + "Alex Maurel-1.jpg",
+      BASE + "Alex Maurel-2.jpg"
+    ],
+    imageVis: BASE + "Alex Maurel Oeuvre sans mockup.jpg"
   }
 ];
 
@@ -342,12 +357,16 @@ const ARTISTES = [
   {
     nom: "Afrodeco Studio",
     bio: "Le studio créatif d'Afrodeco, collectif d'artistes passionnés par l'art africain contemporain.",
-    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
+    photo: "",
+    specialite: "Art Africain Contemporain",
+    localisation: ""
   },
   {
     nom: "Alex Maurel",
-    bio: "Photographe d'art. Ses œuvres seront bientôt disponibles sur Afrodeco.",
-    photo: ""
+    bio: "Designer graphique talentueux et amoureux de la ville de Ouidah, Alex Maurel s'est inspiré de ses racines pour créer Ouidah Mibiton. Une œuvre empreinte d'authenticité et de passion, qui capture l'essence de la Porte du Non-Retour. Son art raconte des récits profonds à travers une illustration moderne, mêlant couleurs éclatantes et lignes épurées pour transmettre une émotion unique.",
+    photo: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Alex Maurel.JPG",
+    specialite: "Design Graphique — Illustration",
+    localisation: "Ouidah, Bénin"
   }
 ];
 
@@ -357,8 +376,8 @@ const CATEGORIES_TABLEAUX = [
   { id: "abstrait", label: "Abstrait" },
   { id: "geometrique", label: "Géométrique" },
   { id: "photographie", label: "Photographies" },
+  { id: "art-africain", label: "Art Africain" },
   { id: "portrait", label: "Portraits" },
   { id: "nature", label: "Nature" },
-  { id: "art-africain", label: "Art Africain" },
   { id: "enfants", label: "Chambre Enfants" }
 ];

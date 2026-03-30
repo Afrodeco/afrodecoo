@@ -128,12 +128,15 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 
 /* ARTISTES */
 .artists-page{padding:3rem 5vw;}
-.artist-block{margin-bottom:5rem;}
-.artist-header{display:flex;align-items:center;gap:1.5rem;margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--grey);}
-.artist-photo{width:65px;height:65px;border-radius:50%;object-fit:cover;}
-.artist-name{font-family:'Nomad',sans-serif;font-size:1.8rem;font-weight:400;letter-spacing:0.02em;}
-.artist-works-count{font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--grey-text);margin-top:0.2rem;font-weight:450;opacity:0.6;}
-.artist-bio{font-size:0.83rem;color:var(--grey-text);line-height:1.85;margin-bottom:2rem;max-width:600px;font-weight:350;}
+.artist-block{margin-bottom:3rem;}
+.artist-header{display:flex;align-items:flex-start;gap:2rem;margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--grey);}
+.artist-photo{width:90px;height:90px;border-radius:50%;object-fit:cover;flex-shrink:0;background:var(--grey);}
+.artist-info{display:flex;flex-direction:column;gap:0.3rem;}
+.artist-name{font-family:'Nomad',sans-serif;font-size:2rem;font-weight:400;letter-spacing:0.02em;line-height:1.1;}
+.artist-specialite{font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--grey-text);font-weight:600;opacity:0.7;}
+.artist-localisation{font-size:0.72rem;color:var(--grey-text);font-weight:350;opacity:0.6;}
+.artist-works-count{font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--grey-text);margin-top:0.3rem;font-weight:450;opacity:0.5;}
+.artist-bio{font-size:0.84rem;color:var(--grey-text);line-height:1.95;margin-bottom:2rem;max-width:680px;font-weight:350;}
 
 /* VISUALISEUR */
 .vis-page{padding:0;}
@@ -351,7 +354,6 @@ footer{background:var(--black);color:var(--white);padding:5rem 5vw 3rem;}
   <div class="artists-page" id="artistesContent"></div>
 </div>
 
-<!-- VISUALISEUR -->
 <div id="page-visualiseur" class="page">
   <div class="page-header"><span class="section-label">Essayez avant d'acheter</span><h1>Visualiser chez moi</h1></div>
   <div class="vis-page">
@@ -593,35 +595,46 @@ function renderTableaux(filter) {
 }
 
 function renderArtistes() {
-  const content = document.getElementById('artistesContent');
-  content.innerHTML = '';
-  ARTISTES.forEach(artiste => {
+  const el = document.getElementById('artistesContent');
+  el.innerHTML = '';
+  ARTISTES.forEach((artiste, ai) => {
     const works = TABLEAUX.filter(t => t.artiste === artiste.nom);
     const block = document.createElement('div');
     block.className = 'artist-block';
+    // Header
     const header = document.createElement('div');
     header.className = 'artist-header';
-    header.innerHTML = `<img class="artist-photo" src="${artiste.photo}" alt="${artiste.nom}">
-    <div><div class="artist-name">${artiste.nom}</div>
-    <div class="artist-works-count">${works.length} œuvre${works.length>1?'s':''}</div></div>`;
+    header.innerHTML = `
+      <img class="artist-photo" src="${artiste.photo}" alt="${artiste.nom}" onerror="this.style.background='var(--grey)'">
+      <div class="artist-info">
+        <div class="artist-name">${artiste.nom}</div>
+        ${artiste.specialite ? `<div class="artist-specialite">${artiste.specialite}</div>` : ''}
+        ${artiste.localisation ? `<div class="artist-localisation">${artiste.localisation}</div>` : ''}
+        <div class="artist-works-count">${works.length} œuvre${works.length>1?'s':''}</div>
+      </div>
+    `;
+    // Bio
     const bio = document.createElement('p');
     bio.className = 'artist-bio';
     bio.textContent = artiste.bio;
-    const masongrid = document.createElement('div');
-    masongrid.className = 'masonry-grid';
-    masongrid.style.padding = '0';
+    // Works grid
+    const grid = document.createElement('div');
+    grid.className = 'masonry-grid';
+    grid.style.padding = '0';
     works.forEach(t => {
       const card = createCard(t);
-      const desc = document.createElement('p');
-      desc.style.cssText = 'font-size:0.75rem;color:var(--grey-text);line-height:1.75;margin:0.4rem 1rem 1rem;font-weight:350;';
-      desc.textContent = t.description;
-      card.querySelector('.art-card-info').appendChild(desc);
-      masongrid.appendChild(card);
+      grid.appendChild(card);
     });
     block.appendChild(header);
     block.appendChild(bio);
-    block.appendChild(masongrid);
-    content.appendChild(block);
+    if (works.length > 0) block.appendChild(grid);
+    // Separator between artists
+    if (ai < ARTISTES.length - 1) {
+      const sep = document.createElement('hr');
+      sep.style.cssText = 'border:none;border-top:1px solid var(--grey);margin:4rem 0;';
+      block.appendChild(sep);
+    }
+    el.appendChild(block);
   });
 }
 
