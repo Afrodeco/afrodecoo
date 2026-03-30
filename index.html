@@ -130,7 +130,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 .artists-page{padding:3rem 5vw;}
 .artist-block{margin-bottom:3rem;}
 .artist-header{display:flex;align-items:flex-start;gap:2rem;margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--grey);}
-.artist-photo{width:90px;height:90px;border-radius:50%;object-fit:cover;flex-shrink:0;background:var(--grey);}
+.artist-photo{width:110px;height:110px;border-radius:50%;object-fit:cover;object-position:top;flex-shrink:0;background:var(--grey);}
 .artist-info{display:flex;flex-direction:column;gap:0.3rem;}
 .artist-name{font-family:'Nomad',sans-serif;font-size:2rem;font-weight:400;letter-spacing:0.02em;line-height:1.1;}
 .artist-specialite{font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--grey-text);font-weight:600;opacity:0.7;}
@@ -325,14 +325,14 @@ footer{background:var(--black);color:var(--white);padding:5rem 5vw 3rem;}
         <li><a href="#" onclick="showPage('apropos');return false;">Contact</a></li>
       </ul></div>
       <div class="footer-col"><h4>Contact</h4><ul>
-        <li><a href="mailto:contact@afrodeco.com">contact@afrodeco.com</a></li>
+        <li><a href="/cdn-cgi/l/email-protection#3f5c50514b5e5c4b7f5e594d505b5a5c50115c5052"><span class="__cf_email__" data-cfemail="01626e6f75606275416067736e6564626e2f626e6c">[email&#160;protected]</span></a></li>
         <li><a href="#">Instagram</a></li>
       </ul></div>
     </div>
     <div class="footer-cta-row">
-      <a href="mailto:contact@afrodeco.com?subject=Devis" class="btn-footer btn-footer-primary">Demander un devis personnalisé</a>
-      <a href="mailto:contact@afrodeco.com?subject=RDV" class="btn-footer btn-footer-outline">Prendre RDV — appel ou visite</a>
-      <a href="mailto:contact@afrodeco.com?subject=Chantier" class="btn-footer btn-footer-outline">Visite de chantier</a>
+      <a href="/cdn-cgi/l/email-protection#10737f7e64717364507176627f7475737f3e737f7d2f6365727a7573642d5475667963" class="btn-footer btn-footer-primary">Demander un devis personnalisé</a>
+      <a href="/cdn-cgi/l/email-protection#d5b6babba1b4b6a195b4b3a7bab1b0b6bafbb6bab8eaa6a0b7bfb0b6a1e8879183" class="btn-footer btn-footer-outline">Prendre RDV — appel ou visite</a>
+      <a href="/cdn-cgi/l/email-protection#4d2e2223392c2e390d2c2b3f2229282e22632e2220723e382f27282e39700e252c233924283f" class="btn-footer btn-footer-outline">Visite de chantier</a>
     </div>
     <div class="footer-bottom">
       <p>© 2025 Afrodeco. Tous droits réservés.</p>
@@ -519,15 +519,15 @@ footer{background:var(--black);color:var(--white);padding:5rem 5vw 3rem;}
     <p>Nous travaillons directement avec des artistes africains et de la diaspora. Chaque tableau est accompagné de son histoire, de ses inspirations, et de son artiste — parce qu'une œuvre d'art n'est jamais juste une image.</p>
     <h2>Nous contacter</h2>
     <div class="contact-grid">
-      <div class="contact-card"><h4>Email</h4><p>contact@afrodeco.com</p></div>
-      <div class="contact-card"><h4>Devis personnalisé</h4><p>Pour toute commande sur mesure.</p><br><a href="mailto:contact@afrodeco.com?subject=Devis" class="btn-primary">Écrire</a></div>
-      <div class="contact-card"><h4>Prise de RDV</h4><p>Appel ou visite de chantier.</p><br><a href="mailto:contact@afrodeco.com?subject=RDV" class="btn-primary">Prendre RDV</a></div>
+      <div class="contact-card"><h4>Email</h4><p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="17747879637674635776716578737274783974787a">[email&#160;protected]</a></p></div>
+      <div class="contact-card"><h4>Devis personnalisé</h4><p>Pour toute commande sur mesure.</p><br><a href="/cdn-cgi/l/email-protection#395a56574d585a4d79585f4b565d5c5a56175a5654064a4c5b535c5a4d047d5c4f504a" class="btn-primary">Écrire</a></div>
+      <div class="contact-card"><h4>Prise de RDV</h4><p>Appel ou visite de chantier.</p><br><a href="/cdn-cgi/l/email-protection#ef8c80819b8e8c9baf8e899d808b8a8c80c18c8082d09c9a8d858a8c9bd2bdabb9" class="btn-primary">Prendre RDV</a></div>
       <div class="contact-card"><h4>Réseaux sociaux</h4><p>Suivez-nous sur Instagram.</p></div>
     </div>
   </div>
 </div>
 
-<script src="data.js"></script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="data.js"></script>
 <script>
 function showPage(name) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
@@ -810,22 +810,4 @@ document.getElementById('resetBtn').addEventListener('click', () => {
 });
 
 // Download
-document.getElementById('downloadBtn').addEventListener('click', () => {
-  if (!roomImg) return alert("Uploadez d'abord une photo.");
-  const link = document.createElement('a');
-  link.download = 'afrodeco-composition.png';
-  link.href = canvas.toDataURL('image/png');
-  link.click();
-});
-
-// Init empty state
-renderSlots();
-
-// Burger menu
-const burger = document.getElementById('burgerBtn');
-const mobileNav = document.getElementById('mobileNav');
-if(burger){burger.addEventListener('click',()=>{mobileNav.classList.toggle('open');});}
-document.querySelectorAll('.nav-mobile a').forEach(a=>{a.addEventListener('click',()=>{mobileNav.classList.remove('open');});});
-</script>
-</body>
-</html>
+document.getElementById('downloadBtn').ad
