@@ -166,6 +166,32 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 .vis-empty{text-align:center;padding:2rem;font-family:'Nomad',sans-serif;font-size:1rem;color:rgba(0,0,0,0.25);font-style:italic;}
 #previewCanvas{width:100%;height:100%;object-fit:contain;display:block;}
 .vis-actions{display:flex;gap:0.6rem;margin-top:0.5rem;}
+.btn-add-art{background:none;border:1.5px solid var(--black);font-family:'Aspekta',sans-serif;font-size:0.58rem;letter-spacing:0.18em;text-transform:uppercase;padding:0.4rem 0.8rem;cursor:pointer;font-weight:600;transition:all 0.2s;white-space:nowrap;}
+.btn-add-art:hover{background:var(--black);color:var(--white);}
+.art-slot{border:1px solid var(--grey);padding:0.9rem;margin-bottom:0.7rem;background:var(--white);position:relative;}
+.art-slot-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:0.7rem;}
+.art-slot-title{font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;font-weight:600;display:flex;align-items:center;gap:0.5rem;}
+.art-slot-dot{width:8px;height:8px;border-radius:50%;display:inline-block;}
+.btn-remove-slot{background:none;border:none;cursor:pointer;font-size:0.85rem;opacity:0.4;transition:opacity 0.2s;line-height:1;}
+.btn-remove-slot:hover{opacity:1;}
+.slot-thumb-mini{display:grid;grid-template-columns:repeat(5,1fr);gap:2px;margin-bottom:0.6rem;max-height:120px;overflow-y:auto;}
+.slot-thumb-mini .thumb{aspect-ratio:1;border-width:1.5px;}
+.slot-nav{display:flex;gap:0.3rem;align-items:center;margin-bottom:0.6rem;}
+.slot-nav .arrow-btn{width:24px;height:24px;font-size:0.65rem;}
+.slot-counter{font-size:0.62rem;color:var(--grey-text);opacity:0.6;}
+.slot-sliders{display:flex;flex-direction:column;gap:0.4rem;}
+.slot-sliders .slider-row label{width:55px;font-size:0.55rem;}
+.slot-sliders .slider-row span{font-size:0.62rem;width:28px;}
+.slot-tabs{display:flex;gap:0.4rem;margin-bottom:0;}
+.slot-tab{flex:1;padding:0.5rem;font-family:'Aspekta',sans-serif;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;font-weight:450;background:var(--grey-light);border:1px solid var(--grey-mid);cursor:pointer;transition:all 0.2s;color:var(--grey-text);}
+.slot-tab.active{background:var(--black);color:var(--white);border-color:var(--black);}
+.slot-block{border:1px solid var(--grey);padding:1rem;margin-bottom:0.8rem;background:var(--white);}
+.slot-header{font-size:0.6rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:600;color:var(--black);margin-bottom:0.8rem;display:flex;align-items:center;gap:0.5rem;}
+.slot-dot{width:10px;height:10px;border-radius:50%;display:inline-block;}
+.slot-dot-1{background:#000;}
+.slot-dot-2{background:#c0392b;}
+.slot-dot-3{background:#2980b9;}
+.slot-thumb-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;margin-bottom:0.6rem;}
 @media(max-width:768px){
   .vis-layout{grid-template-columns:1fr;height:auto;overflow:visible;}
   .vis-controls{border-right:none;border-bottom:1px solid var(--grey);max-height:50vh;overflow-y:auto;}
@@ -320,6 +346,115 @@ footer{background:var(--black);color:var(--white);padding:5rem 5vw 3rem;}
 </div>
 
 <!-- ARTISTES -->
+<div id="page-artistes" class="page">
+  <div class="page-header"><span class="section-label">Nos créateurs</span><h1>Artistes</h1></div>
+  <div class="artists-page" id="artistesContent"></div>
+</div>
+
+<!-- VISUALISEUR -->
+<div id="page-visualiseur" class="page">
+  <div class="page-header"><span class="section-label">Essayez avant d'acheter</span><h1>Visualiser chez moi</h1></div>
+  <div class="vis-page">
+    <div class="vis-intro">
+      <p>Uploadez une photo de votre pièce, ajoutez autant d'œuvres que vous voulez et composez votre mur librement.</p>
+    </div>
+    <div class="vis-layout">
+
+      <!-- PANNEAU GAUCHE SCROLLABLE -->
+      <div class="vis-controls">
+        <div class="vis-controls-inner">
+
+          <!-- Upload pièce -->
+          <label class="upload-zone" for="roomUpload">
+            <div class="upload-icon">🖼️</div>
+            <p><strong>Cliquez ou glissez</strong><br>une photo de votre pièce<br><small>JPG, PNG — max 10 Mo</small></p>
+            <input type="file" id="roomUpload" accept="image/*">
+          </label>
+
+          <!-- Liste des oeuvres placées -->
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.8rem;">
+              <span class="picker-label" style="margin-bottom:0;">Œuvres sur le mur</span>
+              <button class="btn-add-art" id="addArtBtn">+ Ajouter une œuvre</button>
+            </div>
+            <div id="artSlots"></div>
+          </div>
+
+          <!-- Actions -->
+          <div class="vis-actions">
+            <button class="btn-secondary" id="resetBtn">Tout effacer</button>
+            <button class="btn-primary" id="downloadBtn">Télécharger</button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- APERÇU FIXE -->
+      <div class="vis-canvas-wrap">
+        <div class="vis-empty" id="emptyMsg">Uploadez une photo de votre salon pour commencer</div>
+        <canvas id="previewCanvas" style="display:none;"></canvas>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="page-artistes" class="page">
+  <div class="page-header"><span class="section-label">Nos créateurs</span><h1>Artistes</h1></div>
+  <div class="artists-page" id="artistesContent"></div>
+</div>
+
+<!-- VISUALISEUR -->
+<div id="page-visualiseur" class="page">
+  <div class="page-header"><span class="section-label">Essayez avant d'acheter</span><h1>Visualiser chez moi</h1></div>
+  <div class="vis-page">
+    <div class="vis-intro">
+      <p>Uploadez une photo de votre salon et composez votre mur avec jusqu'à 3 œuvres simultanément.</p>
+    </div>
+
+    <div class="vis-layout">
+      <!-- PANNEAU GAUCHE -->
+      <div class="vis-controls">
+        <div class="vis-controls-inner">
+
+          <!-- Upload -->
+          <label class="upload-zone" for="roomUpload">
+            <div class="upload-icon">🖼️</div>
+            <p><strong>Cliquez ou glissez</strong><br>une photo de votre pièce<br><small>JPG, PNG — max 10 Mo</small></p>
+            <input type="file" id="roomUpload" accept="image/*">
+          </label>
+
+          <!-- Nombre d'oeuvres -->
+          <div>
+            <span class="picker-label">Nombre d'œuvres sur le mur</span>
+            <div class="slot-tabs">
+              <button class="slot-tab active" data-slots="1">1 œuvre</button>
+              <button class="slot-tab" data-slots="2">2 œuvres</button>
+              <button class="slot-tab" data-slots="3">3 œuvres</button>
+            </div>
+          </div>
+
+          <!-- Oeuvres slots -->
+          <div id="slotsContainer"></div>
+
+          <!-- Actions -->
+          <div class="vis-actions">
+            <button class="btn-secondary" id="resetBtn">Réinitialiser</button>
+            <button class="btn-primary" id="downloadBtn">Télécharger</button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- APERÇU -->
+      <div class="vis-canvas-wrap">
+        <div class="vis-empty" id="emptyMsg">Uploadez une photo de votre salon pour commencer</div>
+        <canvas id="previewCanvas" style="display:none;"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div id="page-artistes" class="page">
   <div class="page-header"><span class="section-label">Nos créateurs</span><h1>Artistes</h1></div>
   <div class="artists-page" id="artistesContent"></div>
@@ -490,52 +625,188 @@ function renderArtistes() {
   });
 }
 
+// ============================================================
+// VISUALISEUR MULTI-OEUVRES
+// ============================================================
 const canvas = document.getElementById('previewCanvas');
 const ctx = canvas.getContext('2d');
-let roomImg = null, artImg = null, selIdx = 0;
-function getFirstImage(t){return t.imageVis||t.image||(t.images&&t.images[0])||'';}
+let roomImg = null;
+let slots = []; // [{artIdx, x, y, size, img}]
+const SLOT_COLORS = ['#000000','#c0392b','#2980b9','#27ae60','#8e44ad','#e67e22','#16a085','#d35400'];
 
-function renderThumbs() {
-  const tg = document.getElementById('thumbGrid');
-  if (!tg) return;
-  tg.innerHTML = '';
-  TABLEAUX.forEach((t,i) => {
-    const div = document.createElement('div');
-    div.className = 'thumb' + (i===selIdx?' selected':'');
-    div.innerHTML = `<img src="${getFirstImage(t)}" alt="${t.titre}" loading="lazy">`;
-    div.addEventListener('click',()=>{selIdx=i;updateVis();});
-    tg.appendChild(div);
+function getFirstImage(t){ return t.imageVis||t.image||(t.images&&t.images[0])||''; }
+
+function createSlot() {
+  const idx = slots.length;
+  const artIdx = 0;
+  slots.push({ artIdx, x: 30 + idx*10, y: 20 + idx*5, size: 25, img: null });
+  loadSlotImage(idx);
+  renderSlots();
+  drawComposite();
+}
+
+function loadSlotImage(idx) {
+  if (!TABLEAUX[slots[idx].artIdx]) return;
+  const src = getFirstImage(TABLEAUX[slots[idx].artIdx]);
+  if (!src) return;
+  const img = new Image();
+  img.crossOrigin = 'anonymous';
+  img.onload = () => { slots[idx].img = img; drawComposite(); };
+  img.src = src;
+}
+
+function removeSlot(idx) {
+  slots.splice(idx, 1);
+  renderSlots();
+  drawComposite();
+}
+
+function renderSlots() {
+  const container = document.getElementById('artSlots');
+  if (!container) return;
+  if (slots.length === 0) {
+    container.innerHTML = '<p style="font-size:0.72rem;color:var(--grey-text);opacity:0.5;text-align:center;padding:1rem 0;">Aucune œuvre ajoutée</p>';
+    return;
+  }
+  container.innerHTML = '';
+  slots.forEach((slot, idx) => {
+    const color = SLOT_COLORS[idx % SLOT_COLORS.length];
+    const block = document.createElement('div');
+    block.className = 'art-slot';
+    block.innerHTML = \`
+      <div class="art-slot-header">
+        <span class="art-slot-title">
+          <span class="art-slot-dot" style="background:\${color}"></span>
+          Œuvre \${idx+1} — \${TABLEAUX[slot.artIdx]?.titre||''}
+        </span>
+        <button class="btn-remove-slot" data-idx="\${idx}" title="Retirer">✕</button>
+      </div>
+      <div class="slot-thumb-mini" id="thumbs-\${idx}"></div>
+      <div class="slot-nav">
+        <button class="arrow-btn" data-idx="\${idx}" data-dir="-1">←</button>
+        <button class="arrow-btn" data-idx="\${idx}" data-dir="1">→</button>
+        <span class="slot-counter">\${slot.artIdx+1}/\${TABLEAUX.length}</span>
+      </div>
+      <div class="slot-sliders">
+        <div class="slider-row"><label>Taille</label><input type="range" min="3" max="80" value="\${slot.size}" data-idx="\${idx}" data-prop="size"><span>\${slot.size}%</span></div>
+        <div class="slider-row"><label>Horizontal</label><input type="range" min="0" max="100" value="\${slot.x}" data-idx="\${idx}" data-prop="x"><span>\${slot.x}%</span></div>
+        <div class="slider-row"><label>Vertical</label><input type="range" min="0" max="100" value="\${slot.y}" data-idx="\${idx}" data-prop="y"><span>\${slot.y}%</span></div>
+      </div>
+    \`;
+    container.appendChild(block);
+
+    // Fill mini thumbs
+    const thumbGrid = block.querySelector(\`.slot-thumb-mini\`);
+    TABLEAUX.forEach((t, ti) => {
+      const d = document.createElement('div');
+      d.className = 'thumb' + (ti === slot.artIdx ? ' selected' : '');
+      d.innerHTML = \`<img src="\${getFirstImage(t)}" loading="lazy">\`;
+      d.addEventListener('click', () => { slots[idx].artIdx = ti; loadSlotImage(idx); renderSlots(); });
+      thumbGrid.appendChild(d);
+    });
+
+    // Remove button
+    block.querySelector('.btn-remove-slot').addEventListener('click', () => removeSlot(idx));
+
+    // Arrow nav
+    block.querySelectorAll('.arrow-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const i = +btn.dataset.idx;
+        const dir = +btn.dataset.dir;
+        slots[i].artIdx = (slots[i].artIdx + dir + TABLEAUX.length) % TABLEAUX.length;
+        loadSlotImage(i);
+        renderSlots();
+      });
+    });
+
+    // Sliders
+    block.querySelectorAll('input[type=range]').forEach(input => {
+      input.addEventListener('input', () => {
+        const i = +input.dataset.idx;
+        const prop = input.dataset.prop;
+        slots[i][prop] = parseFloat(input.value);
+        input.nextElementSibling.textContent = input.value + '%';
+        drawComposite();
+      });
+    });
   });
-  document.getElementById('artCounter').textContent = `${selIdx+1} / ${TABLEAUX.length}`;
 }
 
-document.getElementById('prevArt').addEventListener('click',()=>{selIdx=(selIdx-1+TABLEAUX.length)%TABLEAUX.length;updateVis();});
-document.getElementById('nextArt').addEventListener('click',()=>{selIdx=(selIdx+1)%TABLEAUX.length;updateVis();});
-document.getElementById('roomUpload').addEventListener('change',e=>{if(e.target.files[0])loadRoom(e.target.files[0]);});
+function drawComposite() {
+  if (!roomImg) return;
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.drawImage(roomImg, 0, 0);
+  slots.forEach((slot, idx) => {
+    if (!slot.img) return;
+    const color = SLOT_COLORS[idx % SLOT_COLORS.length];
+    const artW = canvas.width * slot.size / 100;
+    const artH = artW * (slot.img.height / slot.img.width);
+    const artX = canvas.width * slot.x / 100 - artW / 2;
+    const artY = canvas.height * slot.y / 100 - artH / 2;
+    ctx.save();
+    ctx.shadowColor = 'rgba(0,0,0,0.45)';
+    ctx.shadowBlur = 30;
+    ctx.shadowOffsetX = 4;
+    ctx.shadowOffsetY = 8;
+    if (TABLEAUX[slot.artIdx]?.rond) {
+      ctx.beginPath();
+      ctx.arc(artX+artW/2, artY+artH/2, artW/2, 0, Math.PI*2);
+      ctx.clip();
+    }
+    ctx.drawImage(slot.img, artX, artY, artW, artH);
+    ctx.restore();
+    if (!TABLEAUX[slot.artIdx]?.rond) {
+      ctx.strokeStyle = 'rgba(255,255,255,0.12)';
+      ctx.lineWidth = Math.max(2, artW*0.01);
+      ctx.strokeRect(artX, artY, artW, artH);
+    }
+  });
+}
 
-function loadRoom(file){
-  const reader=new FileReader();
-  reader.onload=ev=>{const img=new Image();img.onload=()=>{roomImg=img;canvas.width=img.width;canvas.height=img.height;document.getElementById('emptyMsg').style.display='none';canvas.style.display='block';loadArtwork();};img.src=ev.target.result;};
-  reader.readAsDataURL(file);
-}
-function loadArtwork(){const img=new Image();img.crossOrigin='anonymous';img.onload=()=>{artImg=img;drawComposite();};img.onerror=()=>{artImg=null;drawComposite();};img.src=getFirstImage(TABLEAUX[selIdx]);}
-function drawComposite(){
-  if(!roomImg)return;
-  ctx.clearRect(0,0,canvas.width,canvas.height);ctx.drawImage(roomImg,0,0);if(!artImg)return;
-  const size=parseFloat(document.getElementById('sizeSlider').value)/100;
-  const xPct=parseFloat(document.getElementById('xSlider').value)/100;
-  const yPct=parseFloat(document.getElementById('ySlider').value)/100;
-  const artW=canvas.width*size;const artH=artW*(artImg.height/artImg.width);
-  const artX=canvas.width*xPct-artW/2;const artY=canvas.height*yPct-artH/2;
-  ctx.save();ctx.shadowColor='rgba(0,0,0,0.5)';ctx.shadowBlur=35;ctx.shadowOffsetX=5;ctx.shadowOffsetY=10;
-  if(TABLEAUX[selIdx].rond){ctx.beginPath();ctx.arc(artX+artW/2,artY+artH/2,artW/2,0,Math.PI*2);ctx.clip();}
-  ctx.drawImage(artImg,artX,artY,artW,artH);ctx.restore();
-  if(!TABLEAUX[selIdx].rond){ctx.strokeStyle='rgba(255,255,255,0.15)';ctx.lineWidth=Math.max(2,artW*0.012);ctx.strokeRect(artX,artY,artW,artH);}
-}
-function updateVis(){renderThumbs();if(roomImg)loadArtwork();}
-['sizeSlider','xSlider','ySlider'].forEach(id=>{document.getElementById(id).addEventListener('input',()=>{document.getElementById(id.replace('Slider','Val')).textContent=document.getElementById(id).value+'%';drawComposite();});});
-document.getElementById('resetBtn').addEventListener('click',()=>{document.getElementById('sizeSlider').value=25;document.getElementById('sizeVal').textContent='25%';document.getElementById('xSlider').value=50;document.getElementById('xVal').textContent='50%';document.getElementById('ySlider').value=30;document.getElementById('yVal').textContent='30%';drawComposite();});
-document.getElementById('downloadBtn').addEventListener('click',()=>{if(!roomImg)return alert("Uploadez d'abord une photo.");const link=document.createElement('a');link.download='afrodeco-'+TABLEAUX[selIdx].titre+'.png';link.href=canvas.toDataURL('image/png');link.click();});
+// Room upload
+document.getElementById('roomUpload').addEventListener('change', e => {
+  if (!e.target.files[0]) return;
+  const reader = new FileReader();
+  reader.onload = ev => {
+    const img = new Image();
+    img.onload = () => {
+      roomImg = img;
+      canvas.width = img.width;
+      canvas.height = img.height;
+      document.getElementById('emptyMsg').style.display = 'none';
+      canvas.style.display = 'block';
+      if (slots.length === 0) createSlot();
+      else drawComposite();
+    };
+    img.src = ev.target.result;
+  };
+  reader.readAsDataURL(e.target.files[0]);
+});
+
+// Add artwork button
+document.getElementById('addArtBtn').addEventListener('click', () => {
+  createSlot();
+  if (!roomImg) document.getElementById('roomUpload').click();
+});
+
+// Reset
+document.getElementById('resetBtn').addEventListener('click', () => {
+  slots = [];
+  renderSlots();
+  drawComposite();
+});
+
+// Download
+document.getElementById('downloadBtn').addEventListener('click', () => {
+  if (!roomImg) return alert("Uploadez d'abord une photo.");
+  const link = document.createElement('a');
+  link.download = 'afrodeco-composition.png';
+  link.href = canvas.toDataURL('image/png');
+  link.click();
+});
+
+// Init empty state
+renderSlots();
 
 // Burger menu
 const burger = document.getElementById('burgerBtn');
