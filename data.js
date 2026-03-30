@@ -337,6 +337,56 @@ const TABLEAUX = [
     image: BASE + "Photos-8.jpg"
   },
   {
+    id: 32,
+    titre: "Nature 1",
+    artiste: "Afrodeco Studio",
+    description: "Œuvre inspirée de la nature africaine, entre végétation luxuriante et sérénité.",
+    categorie: "nature",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/Nature-1.png"
+  },
+  {
+    id: 33,
+    titre: "Nature 2",
+    artiste: "Afrodeco Studio",
+    description: "Composition naturelle aux tons apaisants, évocation du paysage africain.",
+    categorie: "nature",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/Nature-2.png"
+  },
+  {
+    id: 34,
+    titre: "Nature 3",
+    artiste: "Afrodeco Studio",
+    description: "Paysage végétal contemporain aux couleurs profondes et à la texture généreuse.",
+    categorie: "nature",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/Nature-3.png"
+  },
+  {
+    id: 35,
+    titre: "Nature 4",
+    artiste: "Afrodeco Studio",
+    description: "Formes organiques et palette naturelle pour une présence apaisante sur vos murs.",
+    categorie: "nature",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/Nature-4.png"
+  },
+  {
+    id: 36,
+    titre: "Nature 5",
+    artiste: "Afrodeco Studio",
+    description: "Œuvre végétale aux influences africaines, entre force et douceur.",
+    categorie: "nature",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/Nature-5.png"
+  },
+  {
     id: 31,
     titre: "Ouidah Mibiton",
     artiste: "Alex Maurel",
