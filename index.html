@@ -136,34 +136,41 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 .artist-bio{font-size:0.83rem;color:var(--grey-text);line-height:1.85;margin-bottom:2rem;max-width:600px;font-weight:350;}
 
 /* VISUALISEUR */
-.vis-page{padding:3rem 5vw;}
-.vis-intro p{font-size:0.85rem;line-height:1.9;color:var(--grey-text);margin-top:0.8rem;max-width:560px;margin-bottom:2.5rem;font-weight:350;}
-.vis-layout{display:grid;grid-template-columns:1fr 1.6fr;gap:3rem;align-items:start;}
-.vis-controls{display:flex;flex-direction:column;gap:1.8rem;}
-.upload-zone{border:1.5px dashed var(--grey-mid);padding:2.5rem;text-align:center;cursor:pointer;transition:all 0.2s;background:var(--grey-light);}
+.vis-page{padding:0;}
+.vis-intro{padding:1.5rem 5vw;border-bottom:1px solid var(--grey);}
+.vis-intro p{font-size:0.82rem;line-height:1.8;color:var(--grey-text);margin-top:0.5rem;font-weight:350;}
+.vis-layout{display:grid;grid-template-columns:380px 1fr;height:calc(100vh - 140px);overflow:hidden;}
+.vis-controls{display:flex;flex-direction:column;gap:0;overflow-y:auto;border-right:1px solid var(--grey);padding:1.5rem;}
+.vis-controls-inner{display:flex;flex-direction:column;gap:1.5rem;}
+.upload-zone{border:1.5px dashed var(--grey-mid);padding:1.5rem;text-align:center;cursor:pointer;transition:all 0.2s;background:var(--grey-light);}
 .upload-zone:hover{border-color:var(--black);}
 .upload-zone input{display:none;}
-.upload-icon{font-size:1.8rem;margin-bottom:0.8rem;opacity:0.3;}
-.upload-zone p{font-size:0.76rem;color:var(--grey-text);line-height:1.7;font-weight:350;}
-.picker-label{font-size:0.62rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--black);margin-bottom:0.8rem;display:block;font-weight:600;}
-.thumb-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;}
-@media(max-width:768px){.thumb-grid{grid-template-columns:repeat(3,1fr);gap:6px;}}
+.upload-icon{font-size:1.4rem;margin-bottom:0.5rem;opacity:0.3;}
+.upload-zone p{font-size:0.72rem;color:var(--grey-text);line-height:1.6;font-weight:350;}
+.picker-label{font-size:0.58rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--black);margin-bottom:0.6rem;display:block;font-weight:600;}
+.thumb-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;}
+@media(max-width:768px){.thumb-grid{grid-template-columns:repeat(3,1fr);gap:4px;}}
 .thumb{aspect-ratio:1;overflow:hidden;cursor:pointer;border:2px solid transparent;transition:border-color 0.2s;}
 .thumb.selected{border-color:var(--black);}
 .thumb img{width:100%;height:100%;object-fit:cover;}
-.nav-arrows{display:flex;gap:0.5rem;margin-top:0.8rem;align-items:center;}
-.arrow-btn{width:34px;height:34px;background:var(--black);color:var(--white);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:'Aspekta',sans-serif;transition:background 0.2s;}
+.nav-arrows{display:flex;gap:0.5rem;margin-top:0.6rem;align-items:center;}
+.arrow-btn{width:30px;height:30px;background:var(--black);color:var(--white);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:'Aspekta',sans-serif;transition:background 0.2s;font-size:0.8rem;}
 .arrow-btn:hover{background:var(--grey-dark);}
-.art-counter{font-size:0.7rem;color:var(--grey-text);margin-left:0.5rem;font-weight:350;opacity:0.6;}
-.slider-group{display:flex;flex-direction:column;gap:0.7rem;}
-.slider-row{display:flex;align-items:center;gap:1rem;}
-.slider-row label{font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;width:65px;color:var(--grey-text);font-weight:450;opacity:0.6;}
+.art-counter{font-size:0.68rem;color:var(--grey-text);margin-left:0.5rem;font-weight:350;opacity:0.6;}
+.slider-group{display:flex;flex-direction:column;gap:0.5rem;}
+.slider-row{display:flex;align-items:center;gap:0.8rem;}
+.slider-row label{font-size:0.58rem;letter-spacing:0.15em;text-transform:uppercase;width:60px;color:var(--grey-text);font-weight:450;opacity:0.6;}
 .slider-row input[type=range]{flex:1;accent-color:var(--black);}
-.slider-row span{font-size:0.7rem;color:var(--grey-text);width:32px;text-align:right;font-weight:350;}
-.vis-canvas-wrap{background:var(--grey);min-height:420px;display:flex;align-items:center;justify-content:center;}
-.vis-empty{text-align:center;padding:4rem 2rem;font-family:'Nomad',sans-serif;font-size:1.1rem;color:rgba(0,0,0,0.25);font-style:italic;}
-#previewCanvas{width:100%;display:block;}
-.vis-actions{display:flex;gap:0.8rem;margin-top:1.2rem;}
+.slider-row span{font-size:0.68rem;color:var(--grey-text);width:32px;text-align:right;font-weight:350;}
+.vis-canvas-wrap{background:var(--grey);display:flex;align-items:center;justify-content:center;position:sticky;top:0;height:calc(100vh - 140px);overflow:hidden;}
+.vis-empty{text-align:center;padding:2rem;font-family:'Nomad',sans-serif;font-size:1rem;color:rgba(0,0,0,0.25);font-style:italic;}
+#previewCanvas{width:100%;height:100%;object-fit:contain;display:block;}
+.vis-actions{display:flex;gap:0.6rem;margin-top:0.5rem;}
+@media(max-width:768px){
+  .vis-layout{grid-template-columns:1fr;height:auto;overflow:visible;}
+  .vis-controls{border-right:none;border-bottom:1px solid var(--grey);max-height:50vh;overflow-y:auto;}
+  .vis-canvas-wrap{position:relative;height:50vw;min-height:280px;}
+}
 .btn-primary{display:inline-block;padding:0.85rem 2.2rem;background:var(--black);color:var(--white);font-family:'Aspekta',sans-serif;font-size:0.65rem;letter-spacing:0.25em;text-transform:uppercase;cursor:pointer;border:none;font-weight:600;text-decoration:none;transition:background 0.2s;}
 .btn-primary:hover{background:var(--grey-dark);}
 .btn-secondary{padding:0.85rem 2.2rem;background:none;border:1.5px solid var(--black);font-family:'Aspekta',sans-serif;font-size:0.65rem;letter-spacing:0.25em;text-transform:uppercase;cursor:pointer;font-weight:450;transition:all 0.2s;}
@@ -325,6 +332,7 @@ footer{background:var(--black);color:var(--white);padding:5rem 5vw 3rem;}
     <div class="vis-intro"><p>Uploadez une photo de votre salon et essayez n'importe quel tableau sur vos murs en temps réel.</p></div>
     <div class="vis-layout">
       <div class="vis-controls">
+        <div class="vis-controls-inner">
         <label class="upload-zone" for="roomUpload">
           <div class="upload-icon">🖼️</div>
           <p><strong>Cliquez ou glissez</strong><br>une photo de votre pièce<br><small>JPG, PNG — max 10 Mo</small></p>
@@ -351,8 +359,9 @@ footer{background:var(--black);color:var(--white);padding:5rem 5vw 3rem;}
           <button class="btn-secondary" id="resetBtn">Réinitialiser</button>
           <button class="btn-primary" id="downloadBtn">Télécharger</button>
         </div>
+        </div><!-- end vis-controls-inner -->
       </div>
-      <div>
+      <div class="vis-canvas-wrap-outer">
         <div class="vis-canvas-wrap">
           <div class="vis-empty" id="emptyMsg">Uploadez une photo de votre salon pour commencer</div>
           <canvas id="previewCanvas" style="display:none;"></canvas>
