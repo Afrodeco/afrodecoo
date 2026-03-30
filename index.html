@@ -676,21 +676,21 @@ function renderSlots() {
     block.innerHTML = `
       <div class="art-slot-header">
         <span class="art-slot-title">
-          <span class="art-slot-dot" style="background:\${color}"></span>
-          Œuvre \${idx+1} — \${TABLEAUX[slot.artIdx]?.titre||''}
+          <span class="art-slot-dot" style="background:${color}"></span>
+          Œuvre ${idx+1} — ${TABLEAUX[slot.artIdx]?.titre||''}
         </span>
-        <button class="btn-remove-slot" data-idx="\${idx}" title="Retirer">✕</button>
+        <button class="btn-remove-slot" data-idx="${idx}" title="Retirer">✕</button>
       </div>
-      <div class="slot-thumb-mini" id="thumbs-\${idx}"></div>
+      <div class="slot-thumb-mini" id="thumbs-${idx}"></div>
       <div class="slot-nav">
-        <button class="arrow-btn" data-idx="\${idx}" data-dir="-1">←</button>
-        <button class="arrow-btn" data-idx="\${idx}" data-dir="1">→</button>
-        <span class="slot-counter">\${slot.artIdx+1}/\${TABLEAUX.length}</span>
+        <button class="arrow-btn" data-idx="${idx}" data-dir="-1">←</button>
+        <button class="arrow-btn" data-idx="${idx}" data-dir="1">→</button>
+        <span class="slot-counter">${slot.artIdx+1}/${TABLEAUX.length}</span>
       </div>
       <div class="slot-sliders">
-        <div class="slider-row"><label>Taille</label><input type="range" min="3" max="80" value="\${slot.size}" data-idx="\${idx}" data-prop="size"><span>\${slot.size}%</span></div>
-        <div class="slider-row"><label>Horizontal</label><input type="range" min="0" max="100" value="\${slot.x}" data-idx="\${idx}" data-prop="x"><span>\${slot.x}%</span></div>
-        <div class="slider-row"><label>Vertical</label><input type="range" min="0" max="100" value="\${slot.y}" data-idx="\${idx}" data-prop="y"><span>\${slot.y}%</span></div>
+        <div class="slider-row"><label>Taille</label><input type="range" min="3" max="80" value="${slot.size}" data-idx="${idx}" data-prop="size"><span>${slot.size}%</span></div>
+        <div class="slider-row"><label>Horizontal</label><input type="range" min="0" max="100" value="${slot.x}" data-idx="${idx}" data-prop="x"><span>${slot.x}%</span></div>
+        <div class="slider-row"><label>Vertical</label><input type="range" min="0" max="100" value="${slot.y}" data-idx="${idx}" data-prop="y"><span>${slot.y}%</span></div>
       </div>
     `;
     container.appendChild(block);
@@ -700,7 +700,7 @@ function renderSlots() {
     TABLEAUX.forEach((t, ti) => {
       const d = document.createElement('div');
       d.className = 'thumb' + (ti === slot.artIdx ? ' selected' : '');
-      d.innerHTML = `<img src="\${getFirstImage(t)}" loading="lazy">`;
+      d.innerHTML = `<img src="${getFirstImage(t)}" loading="lazy">`;
       d.addEventListener('click', () => { slots[idx].artIdx = ti; loadSlotImage(idx); renderSlots(); });
       thumbGrid.appendChild(d);
     });
