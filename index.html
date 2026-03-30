@@ -673,7 +673,7 @@ function renderSlots() {
     const color = SLOT_COLORS[idx % SLOT_COLORS.length];
     const block = document.createElement('div');
     block.className = 'art-slot';
-    block.innerHTML = \`
+    block.innerHTML = `
       <div class="art-slot-header">
         <span class="art-slot-title">
           <span class="art-slot-dot" style="background:\${color}"></span>
@@ -692,15 +692,15 @@ function renderSlots() {
         <div class="slider-row"><label>Horizontal</label><input type="range" min="0" max="100" value="\${slot.x}" data-idx="\${idx}" data-prop="x"><span>\${slot.x}%</span></div>
         <div class="slider-row"><label>Vertical</label><input type="range" min="0" max="100" value="\${slot.y}" data-idx="\${idx}" data-prop="y"><span>\${slot.y}%</span></div>
       </div>
-    \`;
+    `;
     container.appendChild(block);
 
     // Fill mini thumbs
-    const thumbGrid = block.querySelector(\`.slot-thumb-mini\`);
+    const thumbGrid = block.querySelector(`.slot-thumb-mini`);
     TABLEAUX.forEach((t, ti) => {
       const d = document.createElement('div');
       d.className = 'thumb' + (ti === slot.artIdx ? ' selected' : '');
-      d.innerHTML = \`<img src="\${getFirstImage(t)}" loading="lazy">\`;
+      d.innerHTML = `<img src="\${getFirstImage(t)}" loading="lazy">`;
       d.addEventListener('click', () => { slots[idx].artIdx = ti; loadSlotImage(idx); renderSlots(); });
       thumbGrid.appendChild(d);
     });
