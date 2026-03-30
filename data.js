@@ -355,13 +355,6 @@ const TABLEAUX = [
 
 const ARTISTES = [
   {
-    nom: "Afrodeco Studio",
-    bio: "Le studio créatif d'Afrodeco, collectif d'artistes passionnés par l'art africain contemporain.",
-    photo: "",
-    specialite: "Art Africain Contemporain",
-    localisation: ""
-  },
-  {
     nom: "Alex Maurel",
     bio: "Designer graphique talentueux et amoureux de la ville de Ouidah, Alex Maurel s'est inspiré de ses racines pour créer Ouidah Mibiton. Une œuvre empreinte d'authenticité et de passion, qui capture l'essence de la Porte du Non-Retour. Son art raconte des récits profonds à travers une illustration moderne, mêlant couleurs éclatantes et lignes épurées pour transmettre une émotion unique.",
     photo: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Alex Maurel.JPG",
