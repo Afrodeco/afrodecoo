@@ -599,28 +599,28 @@ function renderArtistes() {
   function getImg(t){ return t.imageVis||t.image||(t.images&&t.images[0])||''; }
 
   // ── Perspective warp par tranches verticales (homographie approchée)
-  function drawWarp(img, corners, N=60){
+  function drawWarp(img, corners, N=80){
     const [tl,tr,br,bl]=corners;
+    const iW=img.width, iH=img.height;
     for(let i=0;i<N;i++){
       const t0=i/N, t1=(i+1)/N;
       const lx0=tl[0]+(bl[0]-tl[0])*t0, ly0=tl[1]+(bl[1]-tl[1])*t0;
       const rx0=tr[0]+(br[0]-tr[0])*t0, ry0=tr[1]+(br[1]-tr[1])*t0;
       const lx1=tl[0]+(bl[0]-tl[0])*t1, ly1=tl[1]+(bl[1]-tl[1])*t1;
       const rx1=tr[0]+(br[0]-tr[0])*t1, ry1=tr[1]+(br[1]-tr[1])*t1;
-      const sliceW=img.width/N;
-      const dstW=Math.sqrt((rx0-lx0)**2+(ry0-ly0)**2);
-      const dstH=Math.sqrt((lx1-lx0)**2+(ly1-ly0)**2);
-      if(dstW<0.5||dstH<0.5) continue;
-      const a=rx0-lx0, b=ry0-ly0;
-      const c2=lx1-lx0, d=ly1-ly0;
+      const sx=i*iW/N, sw=iW/N+1;
+      const dw=Math.hypot(rx0-lx0, ry0-ly0);
+      const dh=Math.hypot(lx1-lx0, ly1-ly0);
+      if(dw<0.5||dh<0.5) continue;
       ctx.save();
       ctx.beginPath();
       ctx.moveTo(lx0,ly0); ctx.lineTo(rx0,ry0);
       ctx.lineTo(rx1,ry1); ctx.lineTo(lx1,ly1);
       ctx.closePath(); ctx.clip();
-      const scH=dstH/img.height;
-      ctx.transform(a/img.height, b/img.height, c2/img.height, d/img.height, lx0, ly0);
-      ctx.drawImage(img, i*sliceW, 0, sliceW+1, img.height, 0, 0, (sliceW+1)/img.height*img.height, img.height);
+      const ax=rx0-lx0, ay=ry0-ly0;
+      const bx=lx1-lx0, by=ly1-ly0;
+      ctx.transform(ax/dw, ay/dw, bx/dh, by/dh, lx0, ly0);
+      ctx.drawImage(img, sx, 0, sw, iH, 0, 0, dw, dh);
       ctx.restore();
     }
   }
