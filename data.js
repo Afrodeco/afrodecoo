@@ -387,6 +387,56 @@ const TABLEAUX = [
     image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/Nature-5.png"
   },
   {
+    id: 37,
+    titre: "Nature 6",
+    artiste: "Afrodeco Studio",
+    description: "Œuvre inspirée de la nature africaine, entre végétation luxuriante et sérénité.",
+    categorie: "nature",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/Nature-6.png"
+  },
+  {
+    id: 38,
+    titre: "Nature 7",
+    artiste: "Afrodeco Studio",
+    description: "Composition naturelle aux tons apaisants, évocation du paysage africain.",
+    categorie: "nature",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/Nature-7.png"
+  },
+  {
+    id: 39,
+    titre: "Nature 8",
+    artiste: "Afrodeco Studio",
+    description: "Paysage végétal contemporain aux couleurs profondes et à la texture généreuse.",
+    categorie: "nature",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/Nature-8.png"
+  },
+  {
+    id: 40,
+    titre: "Nature 9",
+    artiste: "Afrodeco Studio",
+    description: "Formes organiques et palette naturelle pour une présence apaisante sur vos murs.",
+    categorie: "nature",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/Nature-9.png"
+  },
+  {
+    id: 41,
+    titre: "Nature 10",
+    artiste: "Afrodeco Studio",
+    description: "Œuvre végétale aux influences africaines, entre force et douceur.",
+    categorie: "nature",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/Nature-10.png"
+  },
+  {
     id: 31,
     titre: "Ouidah Mibiton",
     artiste: "Alex Maurel",
