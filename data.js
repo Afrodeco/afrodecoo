@@ -259,7 +259,7 @@ const TABLEAUX = [
   {
     id: 23,
     titre: "Photo 1",
-    artiste: "Alex Maurel",
+    artiste: "Afrodeco Studio",
     description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
     categorie: "photographie",
     prix: 150,
@@ -269,7 +269,7 @@ const TABLEAUX = [
   {
     id: 24,
     titre: "Photo 2",
-    artiste: "Alex Maurel",
+    artiste: "Afrodeco Studio",
     description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
     categorie: "photographie",
     prix: 150,
@@ -279,7 +279,7 @@ const TABLEAUX = [
   {
     id: 25,
     titre: "Photo 3",
-    artiste: "Alex Maurel",
+    artiste: "Afrodeco Studio",
     description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
     categorie: "photographie",
     prix: 150,
@@ -289,7 +289,7 @@ const TABLEAUX = [
   {
     id: 26,
     titre: "Photo 4",
-    artiste: "Alex Maurel",
+    artiste: "Afrodeco Studio",
     description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
     categorie: "photographie",
     prix: 150,
@@ -299,7 +299,7 @@ const TABLEAUX = [
   {
     id: 27,
     titre: "Photo 5",
-    artiste: "Alex Maurel",
+    artiste: "Afrodeco Studio",
     description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
     categorie: "photographie",
     prix: 150,
@@ -309,7 +309,7 @@ const TABLEAUX = [
   {
     id: 28,
     titre: "Photo 6",
-    artiste: "Alex Maurel",
+    artiste: "Afrodeco Studio",
     description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
     categorie: "photographie",
     prix: 150,
@@ -319,7 +319,7 @@ const TABLEAUX = [
   {
     id: 29,
     titre: "Photo 7",
-    artiste: "Alex Maurel",
+    artiste: "Afrodeco Studio",
     description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
     categorie: "photographie",
     prix: 150,
@@ -329,7 +329,7 @@ const TABLEAUX = [
   {
     id: 30,
     titre: "Photo 8",
-    artiste: "Alex Maurel",
+    artiste: "Afrodeco Studio",
     description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
     categorie: "photographie",
     prix: 150,
@@ -460,6 +460,13 @@ const ARTISTES = [
     photo: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Alex Maurel.JPG",
     specialite: "Design Graphique — Illustration",
     localisation: "Ouidah, Bénin"
+  },
+  {
+    nom: "Itssenaxia",
+    bio: "À compléter avec la biographie d'Itssenaxia.",
+    photo: "",
+    specialite: "",
+    localisation: ""
   }
 ];
 
