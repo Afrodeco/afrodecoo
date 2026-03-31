@@ -370,8 +370,11 @@ footer{background:var(--black);color:var(--white);padding:5rem 5vw 3rem;}
 
   <div class="vis2-wrap">
 
+    <!-- Bandeau instructions perspective -->
+    <div id="vis2PerspMsg" style="display:none;position:absolute;top:0;left:0;right:0;z-index:10;background:rgba(255,68,68,0.9);color:white;padding:0.7rem 1.5rem;font-family:'Aspekta',sans-serif;font-size:0.72rem;letter-spacing:0.1em;align-items:center;justify-content:space-between;gap:1rem;"></div>
+
     <!-- Zone canvas -->
-    <div class="vis2-canvas-area" id="vis2Area">
+    <div class="vis2-canvas-area" id="vis2Area" style="position:relative;">
       <div class="vis2-empty" id="vis2Empty">
         <div class="vis2-empty-icon">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 16l5-5 4 4 3-3 4 4"/><circle cx="8.5" cy="8.5" r="1.5"/></svg>
@@ -391,6 +394,10 @@ footer{background:var(--black);color:var(--white);padding:5rem 5vw 3rem;}
         <!-- Choisir oeuvre -->
         <div class="vis2-ctrl-group">
           <button class="vis2-pick-btn" id="vis2PickBtn">Choisir une œuvre</button>
+        </div>
+        <!-- Perspective -->
+        <div class="vis2-ctrl-group">
+          <button class="vis2-pick-btn" id="vis2PerspBtn" style="background:rgba(255,255,255,0.08);border-color:#666;">📐 Caler sur le mur</button>
         </div>
         <!-- Taille -->
         <div class="vis2-ctrl-group">
@@ -577,7 +584,7 @@ function renderArtistes() {
 }
 
 // ============================================================
-// VISUALISEUR v2 — PHOTO EDITOR STYLE
+// VISUALISEUR v2 — PHOTO EDITOR + PERSPECTIVE WARP
 // ============================================================
 (function(){
   const canvas = document.getElementById('vis2Canvas');
@@ -585,79 +592,140 @@ function renderArtistes() {
   const COLORS = ['#e8d5b0','#c0392b','#2980b9','#27ae60','#8e44ad','#e67e22','#16a085','#d35400'];
   const FRAME_COLORS = {'bois-noir':'#1a1108','bois-naturel':'#c8a96e','bois-blanc':'#f0ece4','toile':'transparent','none':'transparent'};
 
-  let roomImg = null;
-  let slots = [];
-  let activeSlot = 0;
-  let modalTargetSlot = null;
-  let modalFilter = 'tout';
+  let roomImg=null, slots=[], activeSlot=0, modalTargetSlot=null, modalFilter='tout';
+  // Mode perspective : 'none' | 'picking' | 'done'
+  let perspMode='none', perspSlot=-1, perspPts=[];
 
   function getImg(t){ return t.imageVis||t.image||(t.images&&t.images[0])||''; }
 
-  // Load image for slot
-  function loadSlotImg(idx){
-    const t = TABLEAUX[slots[idx].artIdx];
-    if(!t) return;
-    const img = new Image();
-    img.crossOrigin='anonymous';
-    img.onload=()=>{ slots[idx].img=img; draw(); };
-    img.src = getImg(t);
+  // ── Perspective warp par tranches verticales (homographie approchée)
+  function drawWarp(img, corners, N=60){
+    const [tl,tr,br,bl]=corners;
+    for(let i=0;i<N;i++){
+      const t0=i/N, t1=(i+1)/N;
+      const lx0=tl[0]+(bl[0]-tl[0])*t0, ly0=tl[1]+(bl[1]-tl[1])*t0;
+      const rx0=tr[0]+(br[0]-tr[0])*t0, ry0=tr[1]+(br[1]-tr[1])*t0;
+      const lx1=tl[0]+(bl[0]-tl[0])*t1, ly1=tl[1]+(bl[1]-tl[1])*t1;
+      const rx1=tr[0]+(br[0]-tr[0])*t1, ry1=tr[1]+(br[1]-tr[1])*t1;
+      const sliceW=img.width/N;
+      const dstW=Math.sqrt((rx0-lx0)**2+(ry0-ly0)**2);
+      const dstH=Math.sqrt((lx1-lx0)**2+(ly1-ly0)**2);
+      if(dstW<0.5||dstH<0.5) continue;
+      const a=rx0-lx0, b=ry0-ly0;
+      const c2=lx1-lx0, d=ly1-ly0;
+      ctx.save();
+      ctx.beginPath();
+      ctx.moveTo(lx0,ly0); ctx.lineTo(rx0,ry0);
+      ctx.lineTo(rx1,ry1); ctx.lineTo(lx1,ly1);
+      ctx.closePath(); ctx.clip();
+      const scH=dstH/img.height;
+      ctx.transform(a/img.height, b/img.height, c2/img.height, d/img.height, lx0, ly0);
+      ctx.drawImage(img, i*sliceW, 0, sliceW+1, img.height, 0, 0, (sliceW+1)/img.height*img.height, img.height);
+      ctx.restore();
+    }
   }
 
-  // Draw everything
-  function draw(clean=false){
-    if(!roomImg) return;
-    ctx.clearRect(0,0,canvas.width,canvas.height);
-    ctx.drawImage(roomImg,0,0);
-    slots.forEach((s,i)=>{
-      if(!s.img) return;
-      const artW = canvas.width * s.size/100;
-      const artH = artW * (s.img.height/s.img.width);
-      const artX = canvas.width * s.x/100 - artW/2;
-      const artY = canvas.height * s.y/100 - artH/2;
-      const frame = s.frame||'none';
-      const border = frame==='none'?0: frame==='toile'? artW*0.025 : artW*0.04;
-      ctx.save();
-      ctx.shadowColor='rgba(0,0,0,0.5)';
-      ctx.shadowBlur=artW*0.08;
-      ctx.shadowOffsetX=artW*0.01;
-      ctx.shadowOffsetY=artW*0.04;
-      if(border>0){
+  // ── Rendu d'un slot (normal ou warp)
+  function drawSlot(s, i, clean){
+    if(!s.img) return;
+    const frame=s.frame||'none';
+    const artW=canvas.width*s.size/100;
+    const artH=artW*(s.img.height/s.img.width);
+    const cx=canvas.width*s.x/100, cy=canvas.height*s.y/100;
+    const border=frame==='none'?0:frame==='toile'?artW*0.025:artW*0.04;
+
+    ctx.save();
+    ctx.shadowColor='rgba(0,0,0,0.5)';
+    ctx.shadowBlur=artW*0.07;
+    ctx.shadowOffsetX=artW*0.01;
+    ctx.shadowOffsetY=artW*0.035;
+
+    if(s.corners){
+      // MODE PERSPECTIVE
+      const [tl,tr,br,bl]=s.corners;
+      // Cadre : agrandir légèrement les coins
+      if(border>0 && frame!=='toile'){
+        const bRatio=border/artW;
+        const ftl=[tl[0]-(tr[0]-tl[0])*bRatio-(bl[0]-tl[0])*bRatio, tl[1]-(tr[1]-tl[1])*bRatio-(bl[1]-tl[1])*bRatio];
+        const ftr=[tr[0]+(tr[0]-tl[0])*bRatio-(br[0]-tr[0])*bRatio, tr[1]+(tr[1]-tl[1])*bRatio-(br[1]-tr[1])*bRatio];
+        const fbr=[br[0]+(br[0]-bl[0])*bRatio+(br[0]-tr[0])*bRatio, br[1]+(br[1]-bl[1])*bRatio+(br[1]-tr[1])*bRatio];
+        const fbl=[bl[0]-(br[0]-bl[0])*bRatio+(bl[0]-tl[0])*bRatio, bl[1]-(br[1]-bl[1])*bRatio+(bl[1]-tl[1])*bRatio];
         ctx.fillStyle=FRAME_COLORS[frame];
-        if(frame==='toile'){
-          ctx.fillStyle='rgba(0,0,0,0)';
-          // toile: draw image then border stroke
-        } else {
-          ctx.fillRect(artX-border, artY-border, artW+border*2, artH+border*2);
-        }
+        ctx.beginPath();
+        ctx.moveTo(ftl[0],ftl[1]); ctx.lineTo(ftr[0],ftr[1]);
+        ctx.lineTo(fbr[0],fbr[1]); ctx.lineTo(fbl[0],fbl[1]);
+        ctx.closePath(); ctx.fill();
+      }
+      ctx.shadowColor='transparent';
+      drawWarp(s.img, s.corners);
+    } else {
+      // MODE NORMAL rectangulaire
+      const artX=cx-artW/2, artY=cy-artH/2;
+      if(border>0 && frame!=='toile'){
+        ctx.fillStyle=FRAME_COLORS[frame];
+        ctx.fillRect(artX-border, artY-border, artW+border*2, artH+border*2);
       }
       ctx.shadowColor='transparent';
       ctx.drawImage(s.img, artX, artY, artW, artH);
       if(frame==='toile'){
         ctx.strokeStyle='rgba(180,160,120,0.6)';
         ctx.lineWidth=artW*0.025;
-        ctx.strokeRect(artX+artW*0.012, artY+artH*s.img.width/s.img.height*0.012, artW-artW*0.024, artH-artH*s.img.width/s.img.height*0.024);
+        ctx.strokeRect(artX+artW*0.012, artY+artW*0.012*(s.img.height/s.img.width), artW*0.976, artH*0.976);
       }
-      // Active highlight — visible uniquement sur écran, jamais sur téléchargement
-      if(i===activeSlot && !clean){
-        ctx.strokeStyle='rgba(255,255,255,0.6)';
-        ctx.lineWidth=2;
-        ctx.setLineDash([6,4]);
-        ctx.strokeRect(artX-(border||0)-2, artY-(border||0)-2, artW+(border||0)*2+4, artH+(border||0)*2+4);
-        ctx.setLineDash([]);
+    }
+
+    // Pointillé sélection (écran uniquement)
+    if(i===activeSlot && !clean){
+      if(s.corners){
+        const [tl,tr,br,bl]=s.corners;
+        ctx.strokeStyle='rgba(255,255,255,0.7)';
+        ctx.lineWidth=2; ctx.setLineDash([6,4]);
+        ctx.beginPath();
+        ctx.moveTo(tl[0],tl[1]); ctx.lineTo(tr[0],tr[1]);
+        ctx.lineTo(br[0],br[1]); ctx.lineTo(bl[0],bl[1]);
+        ctx.closePath(); ctx.stroke(); ctx.setLineDash([]);
+        // Points de coin
+        s.corners.forEach(([px,py])=>{
+          ctx.fillStyle='white'; ctx.beginPath();
+          ctx.arc(px,py,6,0,Math.PI*2); ctx.fill();
+        });
+      } else {
+        const artX=cx-artW/2, artY=cy-artH/2;
+        ctx.strokeStyle='rgba(255,255,255,0.6)'; ctx.lineWidth=2; ctx.setLineDash([6,4]);
+        ctx.strokeRect(artX-2,artY-2,artW+4,artH+4); ctx.setLineDash([]);
       }
-      ctx.restore();
-    });
+    }
+    ctx.restore();
   }
 
-  // Render slots strip
+  // ── Draw all
+  function draw(clean=false){
+    if(!roomImg) return;
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    ctx.drawImage(roomImg,0,0);
+    slots.forEach((s,i)=>drawSlot(s,i,clean));
+    // Affiche les points déjà cliqués en mode picking
+    if(!clean && perspMode==='picking'){
+      perspPts.forEach((pt,pi)=>{
+        ctx.fillStyle='#ff4444';
+        ctx.beginPath(); ctx.arc(pt[0],pt[1],8,0,Math.PI*2); ctx.fill();
+        ctx.fillStyle='white';
+        ctx.font='bold 12px sans-serif'; ctx.textAlign='center'; ctx.textBaseline='middle';
+        ctx.fillText(pi+1,pt[0],pt[1]);
+      });
+    }
+  }
+
+  // ── Render slots strip
   function renderStrip(){
-    const strip = document.getElementById('vis2SlotsStrip');
+    const strip=document.getElementById('vis2SlotsStrip');
     strip.innerHTML='';
     slots.forEach((s,i)=>{
-      const chip = document.createElement('div');
+      const chip=document.createElement('div');
       chip.className='vis2-slot-chip'+(i===activeSlot?' active':'');
-      chip.innerHTML=`<span class="vis2-slot-dot" style="background:${COLORS[i%COLORS.length]}"></span><span class="vis2-slot-name">${TABLEAUX[s.artIdx]?.titre||'Œuvre '+(i+1)}</span><button class="vis2-slot-del" data-i="${i}">✕</button>`;
-      chip.addEventListener('click',(e)=>{
+      const hasPerspective=!!s.corners;
+      chip.innerHTML=`<span class="vis2-slot-dot" style="background:${COLORS[i%COLORS.length]}"></span><span class="vis2-slot-name">${TABLEAUX[s.artIdx]?.titre||'Œuvre '+(i+1)}${hasPerspective?' 📐':''}</span><button class="vis2-slot-del" data-i="${i}">✕</button>`;
+      chip.addEventListener('click',e=>{
         if(e.target.classList.contains('vis2-slot-del')) return;
         activeSlot=i; renderStrip(); syncControls(); draw();
       });
@@ -670,125 +738,185 @@ function renderArtistes() {
     });
   }
 
-  // Sync controls to active slot
+  // ── Sync controls
   function syncControls(){
-    const panel = document.getElementById('vis2ControlsPanel');
+    const panel=document.getElementById('vis2ControlsPanel');
     if(slots.length===0){ panel.classList.remove('visible'); return; }
     panel.classList.add('visible');
-    const s = slots[activeSlot];
-    if(!s) return;
+    const s=slots[activeSlot]; if(!s) return;
     document.getElementById('vis2Size').value=s.size;
     document.getElementById('vis2SizeVal').textContent=Math.round(s.size)+'%';
     document.getElementById('vis2X').value=s.x;
     document.getElementById('vis2Y').value=s.y;
-    // Frame buttons
     document.querySelectorAll('.vis2-frame-btn').forEach(b=>{
-      b.classList.toggle('active', b.dataset.frame===(s.frame||'none'));
+      b.classList.toggle('active',b.dataset.frame===(s.frame||'none'));
     });
+    // Bouton perspective
+    const pb=document.getElementById('vis2PerspBtn');
+    if(pb){
+      pb.textContent=s.corners?'Réinitialiser mur':'📐 Caler sur le mur';
+      pb.classList.toggle('active-mode',!!s.corners);
+    }
   }
 
-  // Add slot
+  // ── Perspective mode
+  function startPerspective(slotIdx){
+    if(slots[slotIdx].corners){
+      // Reset
+      slots[slotIdx].corners=null;
+      renderStrip(); syncControls(); draw(); return;
+    }
+    perspMode='picking'; perspSlot=slotIdx; perspPts=[];
+    canvas.style.cursor='crosshair';
+    showPerspInstructions(1);
+    draw();
+  }
+
+  function showPerspInstructions(step){
+    const labels=['haut-gauche','haut-droit','bas-droit','bas-gauche'];
+    const bar=document.getElementById('vis2PerspMsg');
+    if(!bar) return;
+    if(step>4){ bar.style.display='none'; return; }
+    bar.style.display='flex';
+    bar.innerHTML=`<span>Cliquez sur le coin <strong>${labels[step-1]}</strong> du mur (${step}/4)</span><button id="vis2PerspCancel">Annuler</button>`;
+    document.getElementById('vis2PerspCancel').onclick=cancelPerspective;
+  }
+
+  function cancelPerspective(){
+    perspMode='none'; perspPts=[]; perspSlot=-1;
+    canvas.style.cursor='crosshair';
+    document.getElementById('vis2PerspMsg').style.display='none';
+    draw();
+  }
+
+  // ── Add slot
   function addSlot(){
-    const i = slots.length;
-    slots.push({artIdx:i%TABLEAUX.length, x:30+i*8, y:25+i*5, size:22, img:null, frame:'none'});
-    loadSlotImg(i);
-    activeSlot=i;
+    const i=slots.length;
+    slots.push({artIdx:i%TABLEAUX.length, x:30+i*8, y:25+i*5, size:22, img:null, frame:'none', corners:null});
+    loadSlotImg(i); activeSlot=i;
     renderStrip(); syncControls(); draw();
   }
 
-  // Load room image
+  function loadSlotImg(idx){
+    const t=TABLEAUX[slots[idx].artIdx]; if(!t) return;
+    const img=new Image(); img.crossOrigin='anonymous';
+    img.onload=()=>{ slots[idx].img=img; draw(); };
+    img.src=getImg(t);
+  }
+
+  // ── Load room
   function loadRoom(file){
     const reader=new FileReader();
     reader.onload=ev=>{
       const img=new Image();
       img.onload=()=>{
-        roomImg=img;
-        canvas.width=img.width;
-        canvas.height=img.height;
+        roomImg=img; canvas.width=img.width; canvas.height=img.height;
         canvas.style.display='block';
         document.getElementById('vis2Empty').style.display='none';
-        if(slots.length===0) addSlot();
-        else draw();
+        if(slots.length===0) addSlot(); else draw();
       };
       img.src=ev.target.result;
     };
     reader.readAsDataURL(file);
   }
 
-  // Upload triggers
-  document.getElementById('vis2UploadTrigger').addEventListener('click',()=>document.getElementById('vis2FileInput').click());
-  document.getElementById('vis2ChangePhoto').addEventListener('click',()=>document.getElementById('vis2FileInput').click());
-  document.getElementById('vis2FileInput').addEventListener('change',e=>{ if(e.target.files[0]) loadRoom(e.target.files[0]); });
+  // ── Canvas interactions
+  let dragging=false, dragOffX=0, dragOffY=0, dragCornerIdx=-1;
 
-  // Add slot
-  document.getElementById('vis2AddBtn').addEventListener('click',()=>addSlot());
+  function canvasCoords(e){
+    const rect=canvas.getBoundingClientRect();
+    return [(e.clientX-rect.left)*canvas.width/rect.width, (e.clientY-rect.top)*canvas.height/rect.height];
+  }
 
-  // Sliders
-  document.getElementById('vis2Size').addEventListener('input',function(){
-    if(!slots[activeSlot]) return;
-    slots[activeSlot].size=parseFloat(this.value);
-    document.getElementById('vis2SizeVal').textContent=Math.round(this.value)+'%';
-    draw();
-  });
-  document.getElementById('vis2X').addEventListener('input',function(){
-    if(!slots[activeSlot]) return;
-    slots[activeSlot].x=parseFloat(this.value); draw();
-  });
-  document.getElementById('vis2Y').addEventListener('input',function(){
-    if(!slots[activeSlot]) return;
-    slots[activeSlot].y=parseFloat(this.value); draw();
-  });
-
-  // Frame buttons
-  document.getElementById('vis2FrameGroup').addEventListener('click',e=>{
-    const btn=e.target.closest('.vis2-frame-btn');
-    if(!btn||!slots[activeSlot]) return;
-    slots[activeSlot].frame=btn.dataset.frame;
-    syncControls(); draw();
-  });
-
-  // Download
-  document.getElementById('vis2DlBtn').addEventListener('click',()=>{
-    if(!roomImg) return;
-    draw(true); // dessine sans le pointillé
-    const link=document.createElement('a');
-    link.download='afrodeco-visualisation.png';
-    link.href=canvas.toDataURL('image/png');
-    link.click();
-    draw(); // remet l'affichage normal
-  });
-
-  // Drag on canvas
-  let dragging=false, dragOffX=0, dragOffY=0;
   canvas.addEventListener('mousedown',e=>{
     if(!roomImg||slots.length===0) return;
-    const rect=canvas.getBoundingClientRect();
-    const scaleX=canvas.width/rect.width, scaleY=canvas.height/rect.height;
-    const mx=(e.clientX-rect.left)*scaleX, my=(e.clientY-rect.top)*scaleY;
-    // Find clicked slot (reverse order — topmost first)
+    const [mx,my]=canvasCoords(e);
+
+    // Mode perspective : enregistre les points
+    if(perspMode==='picking'){
+      perspPts.push([mx,my]);
+      if(perspPts.length===4){
+        slots[perspSlot].corners=[...perspPts];
+        // Calcule x/y/size à partir des coins pour que les sliders restent cohérents
+        const [tl,tr,br,bl]=perspPts;
+        const cx=(tl[0]+tr[0]+br[0]+bl[0])/4, cy=(tl[1]+tr[1]+br[1]+bl[1])/4;
+        const w=Math.sqrt((tr[0]-tl[0])**2+(tr[1]-tl[1])**2);
+        slots[perspSlot].x=cx/canvas.width*100;
+        slots[perspSlot].y=cy/canvas.height*100;
+        slots[perspSlot].size=w/canvas.width*100;
+        perspMode='done'; perspPts=[]; perspSlot=-1;
+        canvas.style.cursor='crosshair';
+        document.getElementById('vis2PerspMsg').style.display='none';
+        renderStrip(); syncControls(); draw();
+      } else {
+        showPerspInstructions(perspPts.length+1);
+        draw();
+      }
+      return;
+    }
+
+    // Vérifie si on clique sur un coin de perspective (pour déplacer)
+    for(let i=slots.length-1;i>=0;i--){
+      const s=slots[i]; if(!s.corners) continue;
+      for(let ci=0;ci<4;ci++){
+        const [px,py]=s.corners[ci];
+        if(Math.abs(mx-px)<12&&Math.abs(my-py)<12){
+          activeSlot=i; dragging=true; dragCornerIdx=ci;
+          renderStrip(); syncControls(); draw(); return;
+        }
+      }
+    }
+
+    // Sinon drag normal
     for(let i=slots.length-1;i>=0;i--){
       const s=slots[i]; if(!s.img) continue;
-      const artW=canvas.width*s.size/100, artH=artW*(s.img.height/s.img.width);
-      const artX=canvas.width*s.x/100-artW/2, artY=canvas.height*s.y/100-artH/2;
-      if(mx>=artX&&mx<=artX+artW&&my>=artY&&my<=artY+artH){
-        activeSlot=i; dragging=true;
-        dragOffX=mx-canvas.width*s.x/100; dragOffY=my-canvas.height*s.y/100;
-        renderStrip(); syncControls(); draw(); return;
+      if(s.corners){
+        const [tl,tr,br,bl]=s.corners;
+        const cx=(tl[0]+tr[0]+br[0]+bl[0])/4, cy=(tl[1]+tr[1]+br[1]+bl[1])/4;
+        const w=Math.sqrt((tr[0]-tl[0])**2+(tr[1]-tl[1])**2);
+        if(Math.abs(mx-cx)<w/2&&Math.abs(my-cy)<w/2){
+          activeSlot=i; dragging=true; dragCornerIdx=-1;
+          dragOffX=mx-cx; dragOffY=my-cy;
+          renderStrip(); syncControls(); draw(); return;
+        }
+      } else {
+        const artW=canvas.width*s.size/100, artH=artW*(s.img.height/s.img.width);
+        const artX=canvas.width*s.x/100-artW/2, artY=canvas.height*s.y/100-artH/2;
+        if(mx>=artX&&mx<=artX+artW&&my>=artY&&my<=artY+artH){
+          activeSlot=i; dragging=true; dragCornerIdx=-1;
+          dragOffX=mx-canvas.width*s.x/100; dragOffY=my-canvas.height*s.y/100;
+          renderStrip(); syncControls(); draw(); return;
+        }
       }
     }
   });
+
   canvas.addEventListener('mousemove',e=>{
     if(!dragging||!slots[activeSlot]) return;
-    const rect=canvas.getBoundingClientRect();
-    const scaleX=canvas.width/rect.width, scaleY=canvas.height/rect.height;
-    const mx=(e.clientX-rect.left)*scaleX, my=(e.clientY-rect.top)*scaleY;
-    slots[activeSlot].x=Math.max(0,Math.min(100,(mx-dragOffX)/canvas.width*100));
-    slots[activeSlot].y=Math.max(0,Math.min(100,(my-dragOffY)/canvas.height*100));
-    syncControls(); draw();
+    const [mx,my]=canvasCoords(e);
+    const s=slots[activeSlot];
+    if(dragCornerIdx>=0 && s.corners){
+      // Déplace un coin
+      s.corners[dragCornerIdx]=[mx,my];
+    } else if(s.corners){
+      // Déplace tout le quadrilatère
+      const [tl,tr,br,bl]=s.corners;
+      const cx=(tl[0]+tr[0]+br[0]+bl[0])/4, cy=(tl[1]+tr[1]+br[1]+bl[1])/4;
+      const dx=mx-dragOffX-cx, dy=my-dragOffY-cy;
+      s.corners=s.corners.map(([px,py])=>[px+dx,py+dy]);
+      dragOffX=mx-( (s.corners[0][0]+s.corners[1][0]+s.corners[2][0]+s.corners[3][0])/4 );
+      dragOffY=my-( (s.corners[0][1]+s.corners[1][1]+s.corners[2][1]+s.corners[3][1])/4 );
+    } else {
+      s.x=Math.max(0,Math.min(100,(mx-dragOffX)/canvas.width*100));
+      s.y=Math.max(0,Math.min(100,(my-dragOffY)/canvas.height*100));
+      syncControls();
+    }
+    draw();
   });
-  canvas.addEventListener('mouseup',()=>dragging=false);
-  canvas.addEventListener('mouseleave',()=>dragging=false);
-  // Touch
+
+  canvas.addEventListener('mouseup',()=>{ dragging=false; dragCornerIdx=-1; });
+  canvas.addEventListener('mouseleave',()=>{ dragging=false; dragCornerIdx=-1; });
+
   canvas.addEventListener('touchstart',e=>{
     const t=e.touches[0];
     canvas.dispatchEvent(new MouseEvent('mousedown',{clientX:t.clientX,clientY:t.clientY}));
@@ -800,7 +928,76 @@ function renderArtistes() {
   },{passive:false});
   canvas.addEventListener('touchend',()=>canvas.dispatchEvent(new MouseEvent('mouseup')));
 
-  // Modal galerie
+  // ── Upload
+  document.getElementById('vis2UploadTrigger').addEventListener('click',()=>document.getElementById('vis2FileInput').click());
+  document.getElementById('vis2ChangePhoto').addEventListener('click',()=>document.getElementById('vis2FileInput').click());
+  document.getElementById('vis2FileInput').addEventListener('change',e=>{ if(e.target.files[0]) loadRoom(e.target.files[0]); });
+
+  // ── Sliders
+  document.getElementById('vis2AddBtn').addEventListener('click',()=>addSlot());
+  document.getElementById('vis2Size').addEventListener('input',function(){
+    const s=slots[activeSlot]; if(!s) return;
+    s.size=parseFloat(this.value);
+    document.getElementById('vis2SizeVal').textContent=Math.round(this.value)+'%';
+    // Si perspective active, rescale les coins
+    if(s.corners){
+      const [tl,tr,br,bl]=s.corners;
+      const cx=(tl[0]+tr[0]+br[0]+bl[0])/4, cy=(tl[1]+tr[1]+br[1]+bl[1])/4;
+      const curW=Math.sqrt((tr[0]-tl[0])**2+(tr[1]-tl[1])**2);
+      const scale=(s.size/100*canvas.width)/curW;
+      s.corners=s.corners.map(([px,py])=>[cx+(px-cx)*scale, cy+(py-cy)*scale]);
+    }
+    draw();
+  });
+  document.getElementById('vis2X').addEventListener('input',function(){
+    const s=slots[activeSlot]; if(!s) return;
+    if(s.corners){
+      const [tl,tr,br,bl]=s.corners;
+      const cx=(tl[0]+tr[0]+br[0]+bl[0])/4;
+      const newCx=parseFloat(this.value)/100*canvas.width;
+      const dx=newCx-cx;
+      s.corners=s.corners.map(([px,py])=>[px+dx,py]);
+    }
+    s.x=parseFloat(this.value); draw();
+  });
+  document.getElementById('vis2Y').addEventListener('input',function(){
+    const s=slots[activeSlot]; if(!s) return;
+    if(s.corners){
+      const [tl,tr,br,bl]=s.corners;
+      const cy=(tl[1]+tr[1]+br[1]+bl[1])/4;
+      const newCy=parseFloat(this.value)/100*canvas.height;
+      const dy=newCy-cy;
+      s.corners=s.corners.map(([px,py])=>[px,py+dy]);
+    }
+    s.y=parseFloat(this.value); draw();
+  });
+
+  // ── Frame
+  document.getElementById('vis2FrameGroup').addEventListener('click',e=>{
+    const btn=e.target.closest('.vis2-frame-btn');
+    if(!btn||!slots[activeSlot]) return;
+    slots[activeSlot].frame=btn.dataset.frame;
+    syncControls(); draw();
+  });
+
+  // ── Perspective button
+  document.getElementById('vis2PerspBtn').addEventListener('click',()=>{
+    if(slots.length===0) return;
+    startPerspective(activeSlot);
+  });
+
+  // ── Download
+  document.getElementById('vis2DlBtn').addEventListener('click',()=>{
+    if(!roomImg) return;
+    draw(true);
+    const link=document.createElement('a');
+    link.download='afrodeco-visualisation.png';
+    link.href=canvas.toDataURL('image/png');
+    link.click();
+    draw();
+  });
+
+  // ── Modal galerie
   function buildModal(){
     const filtersEl=document.getElementById('vis2ModalFilters');
     filtersEl.innerHTML='';
@@ -814,7 +1011,7 @@ function renderArtistes() {
     const grid=document.getElementById('vis2ModalGrid');
     grid.innerHTML='';
     const list=modalFilter==='tout'?TABLEAUX:TABLEAUX.filter(t=>t.categorie===modalFilter);
-    list.forEach((t,_)=>{
+    list.forEach(t=>{
       const ti=TABLEAUX.indexOf(t);
       const item=document.createElement('div');
       item.className='vis2-modal-item'+(modalTargetSlot!==null&&slots[modalTargetSlot]?.artIdx===ti?' selected':'');
@@ -823,26 +1020,17 @@ function renderArtistes() {
         if(modalTargetSlot===null) return;
         slots[modalTargetSlot].artIdx=ti;
         loadSlotImg(modalTargetSlot);
-        renderStrip();
-        closeModal();
+        renderStrip(); closeModal();
       });
       grid.appendChild(item);
     });
   }
-  function openModal(slotIdx){
-    modalTargetSlot=slotIdx;
-    buildModal();
-    document.getElementById('vis2Modal').classList.add('open');
-  }
-  function closeModal(){
-    document.getElementById('vis2Modal').classList.remove('open');
-    modalTargetSlot=null;
-  }
+  function openModal(idx){ modalTargetSlot=idx; buildModal(); document.getElementById('vis2Modal').classList.add('open'); }
+  function closeModal(){ document.getElementById('vis2Modal').classList.remove('open'); modalTargetSlot=null; }
   document.getElementById('vis2PickBtn').addEventListener('click',()=>openModal(activeSlot));
   document.getElementById('vis2ModalClose').addEventListener('click',closeModal);
   document.getElementById('vis2Modal').addEventListener('click',e=>{ if(e.target===document.getElementById('vis2Modal')) closeModal(); });
 
-  // Init renderThumbs override
   window.renderThumbs=function(){ renderStrip(); syncControls(); };
 })();
 
