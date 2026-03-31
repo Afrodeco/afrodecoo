@@ -415,6 +415,7 @@ footer{background:var(--black);color:var(--white);padding:5rem 5vw 3rem;}
             <button class="vis2-frame-btn active" data-frame="none">Sans</button>
             <button class="vis2-frame-btn" data-frame="bois-noir">Bois noir</button>
             <button class="vis2-frame-btn" data-frame="bois-naturel">Bois naturel</button>
+            <button class="vis2-frame-btn" data-frame="bois-blanc">Bois blanc</button>
             <button class="vis2-frame-btn" data-frame="toile">Toile</button>
           </div>
         </div>
@@ -582,7 +583,7 @@ function renderArtistes() {
   const canvas = document.getElementById('vis2Canvas');
   const ctx = canvas.getContext('2d');
   const COLORS = ['#e8d5b0','#c0392b','#2980b9','#27ae60','#8e44ad','#e67e22','#16a085','#d35400'];
-  const FRAME_COLORS = {'bois-noir':'#1a1108','bois-naturel':'#c8a96e','toile':'transparent','none':'transparent'};
+  const FRAME_COLORS = {'bois-noir':'#1a1108','bois-naturel':'#c8a96e','bois-blanc':'#f0ece4','toile':'transparent','none':'transparent'};
 
   let roomImg = null;
   let slots = [];
@@ -603,7 +604,7 @@ function renderArtistes() {
   }
 
   // Draw everything
-  function draw(){
+  function draw(clean=false){
     if(!roomImg) return;
     ctx.clearRect(0,0,canvas.width,canvas.height);
     ctx.drawImage(roomImg,0,0);
@@ -636,8 +637,8 @@ function renderArtistes() {
         ctx.lineWidth=artW*0.025;
         ctx.strokeRect(artX+artW*0.012, artY+artH*s.img.width/s.img.height*0.012, artW-artW*0.024, artH-artH*s.img.width/s.img.height*0.024);
       }
-      // Active highlight
-      if(i===activeSlot){
+      // Active highlight — visible uniquement sur écran, jamais sur téléchargement
+      if(i===activeSlot && !clean){
         ctx.strokeStyle='rgba(255,255,255,0.6)';
         ctx.lineWidth=2;
         ctx.setLineDash([6,4]);
@@ -749,10 +750,12 @@ function renderArtistes() {
   // Download
   document.getElementById('vis2DlBtn').addEventListener('click',()=>{
     if(!roomImg) return;
+    draw(true); // dessine sans le pointillé
     const link=document.createElement('a');
     link.download='afrodeco-visualisation.png';
     link.href=canvas.toDataURL('image/png');
     link.click();
+    draw(); // remet l'affichage normal
   });
 
   // Drag on canvas
