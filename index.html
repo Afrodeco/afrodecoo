@@ -599,28 +599,53 @@ function renderArtistes() {
   function getImg(t){ return t.imageVis||t.image||(t.images&&t.images[0])||''; }
 
   // ── Perspective warp par tranches verticales (homographie approchée)
-  function drawWarp(img, corners, N=80){
+  function drawWarp(img, corners, N=100){
+    // Tranches horizontales : pour chaque ligne i/N,
+    // on interpole les bords gauche (tl->bl) et droit (tr->br)
+    // puis on dessine la tranche source correspondante
     const [tl,tr,br,bl]=corners;
     const iW=img.width, iH=img.height;
     for(let i=0;i<N;i++){
       const t0=i/N, t1=(i+1)/N;
-      const lx0=tl[0]+(bl[0]-tl[0])*t0, ly0=tl[1]+(bl[1]-tl[1])*t0;
-      const rx0=tr[0]+(br[0]-tr[0])*t0, ry0=tr[1]+(br[1]-tr[1])*t0;
-      const lx1=tl[0]+(bl[0]-tl[0])*t1, ly1=tl[1]+(bl[1]-tl[1])*t1;
-      const rx1=tr[0]+(br[0]-tr[0])*t1, ry1=tr[1]+(br[1]-tr[1])*t1;
-      const sx=i*iW/N, sw=iW/N+1;
-      const dw=Math.hypot(rx0-lx0, ry0-ly0);
-      const dh=Math.hypot(lx1-lx0, ly1-ly0);
-      if(dw<0.5||dh<0.5) continue;
+      // Points des 4 coins de la tranche horizontale dans l'espace destination
+      // Bord gauche: tl→bl
+      const x0l=tl[0]+(bl[0]-tl[0])*t0, y0l=tl[1]+(bl[1]-tl[1])*t0; // haut-gauche
+      const x1l=tl[0]+(bl[0]-tl[0])*t1, y1l=tl[1]+(bl[1]-tl[1])*t1; // bas-gauche
+      // Bord droit: tr→br
+      const x0r=tr[0]+(br[0]-tr[0])*t0, y0r=tr[1]+(br[1]-tr[1])*t0; // haut-droit
+      const x1r=tr[0]+(br[0]-tr[0])*t1, y1r=tr[1]+(br[1]-tr[1])*t1; // bas-droit
+
+      // Tranche source: ligne i à i+1 dans l'image
+      const sy=i*iH/N, sh=iH/N+1;
+
+      // Vecteur horizontal (gauche → droit) de cette tranche
+      const dx=x0r-x0l, dy=y0r-y0l;
+      const dw=Math.hypot(dx, dy); // largeur destination
+
+      // Vecteur vertical (haut → bas) côté gauche
+      const ex=x1l-x0l, ey=y1l-y0l;
+      const dh=Math.hypot(ex, ey); // hauteur destination
+
+      if(dw<0.5 || dh<0.5) continue;
+
       ctx.save();
+      // Clip sur ce trapèze
       ctx.beginPath();
-      ctx.moveTo(lx0,ly0); ctx.lineTo(rx0,ry0);
-      ctx.lineTo(rx1,ry1); ctx.lineTo(lx1,ly1);
+      ctx.moveTo(x0l,y0l); ctx.lineTo(x0r,y0r);
+      ctx.lineTo(x1r,y1r); ctx.lineTo(x1l,y1l);
       ctx.closePath(); ctx.clip();
-      const ax=rx0-lx0, ay=ry0-ly0;
-      const bx=lx1-lx0, by=ly1-ly0;
-      ctx.transform(ax/dw, ay/dw, bx/dh, by/dh, lx0, ly0);
-      ctx.drawImage(img, sx, 0, sw, iH, 0, 0, dw, dh);
+
+      // Transformation affine :
+      // - axe X : vecteur horizontal normalisé * dw
+      // - axe Y : vecteur vertical normalisé * dh
+      // - origine : coin haut-gauche de la tranche
+      ctx.transform(
+        dx/dw, dy/dw,   // colonne X (axe horizontal)
+        ex/dh, ey/dh,   // colonne Y (axe vertical)
+        x0l, y0l        // translation = coin haut-gauche
+      );
+      // Dessine la tranche source étirée aux dimensions de la tranche destination
+      ctx.drawImage(img, 0, sy, iW, sh, 0, 0, dw, dh);
       ctx.restore();
     }
   }
