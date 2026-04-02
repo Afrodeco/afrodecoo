@@ -259,7 +259,7 @@ const TABLEAUX = [
   {
     id: 23,
     titre: "Photo 1",
-    artiste: "Afrodeco Studio",
+    artiste: "Alex Maurel",
     description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
     categorie: "photographie",
     prix: 150,
@@ -269,7 +269,7 @@ const TABLEAUX = [
   {
     id: 24,
     titre: "Photo 2",
-    artiste: "Afrodeco Studio",
+    artiste: "Alex Maurel",
     description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
     categorie: "photographie",
     prix: 150,
@@ -279,7 +279,7 @@ const TABLEAUX = [
   {
     id: 25,
     titre: "Photo 3",
-    artiste: "Afrodeco Studio",
+    artiste: "Alex Maurel",
     description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
     categorie: "photographie",
     prix: 150,
@@ -289,7 +289,7 @@ const TABLEAUX = [
   {
     id: 26,
     titre: "Photo 4",
-    artiste: "Afrodeco Studio",
+    artiste: "Alex Maurel",
     description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
     categorie: "photographie",
     prix: 150,
@@ -299,7 +299,7 @@ const TABLEAUX = [
   {
     id: 27,
     titre: "Photo 5",
-    artiste: "Afrodeco Studio",
+    artiste: "Alex Maurel",
     description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
     categorie: "photographie",
     prix: 150,
@@ -309,7 +309,7 @@ const TABLEAUX = [
   {
     id: 28,
     titre: "Photo 6",
-    artiste: "Afrodeco Studio",
+    artiste: "Alex Maurel",
     description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
     categorie: "photographie",
     prix: 150,
@@ -319,7 +319,7 @@ const TABLEAUX = [
   {
     id: 29,
     titre: "Photo 7",
-    artiste: "Afrodeco Studio",
+    artiste: "Alex Maurel",
     description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
     categorie: "photographie",
     prix: 150,
@@ -329,112 +329,12 @@ const TABLEAUX = [
   {
     id: 30,
     titre: "Photo 8",
-    artiste: "Afrodeco Studio",
+    artiste: "Alex Maurel",
     description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
     categorie: "photographie",
     prix: 150,
     dimensions: "60×40 cm",
     image: BASE + "Photos-8.jpg"
-  },
-  {
-    id: 32,
-    titre: "Nature 1",
-    artiste: "Afrodeco Studio",
-    description: "Œuvre inspirée de la nature africaine, entre végétation luxuriante et sérénité.",
-    categorie: "nature",
-    prix: 184,
-    dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/Nature-1.png"
-  },
-  {
-    id: 33,
-    titre: "Nature 2",
-    artiste: "Afrodeco Studio",
-    description: "Composition naturelle aux tons apaisants, évocation du paysage africain.",
-    categorie: "nature",
-    prix: 184,
-    dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/Nature-2.png"
-  },
-  {
-    id: 34,
-    titre: "Nature 3",
-    artiste: "Afrodeco Studio",
-    description: "Paysage végétal contemporain aux couleurs profondes et à la texture généreuse.",
-    categorie: "nature",
-    prix: 184,
-    dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/Nature-3.png"
-  },
-  {
-    id: 35,
-    titre: "Nature 4",
-    artiste: "Afrodeco Studio",
-    description: "Formes organiques et palette naturelle pour une présence apaisante sur vos murs.",
-    categorie: "nature",
-    prix: 184,
-    dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/Nature-4.png"
-  },
-  {
-    id: 36,
-    titre: "Nature 5",
-    artiste: "Afrodeco Studio",
-    description: "Œuvre végétale aux influences africaines, entre force et douceur.",
-    categorie: "nature",
-    prix: 184,
-    dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/Nature-5.png"
-  },
-  {
-    id: 37,
-    titre: "Nature 6",
-    artiste: "Afrodeco Studio",
-    description: "Œuvre inspirée de la nature africaine, entre végétation luxuriante et sérénité.",
-    categorie: "nature",
-    prix: 184,
-    dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/Nature-6.png"
-  },
-  {
-    id: 38,
-    titre: "Nature 7",
-    artiste: "Afrodeco Studio",
-    description: "Composition naturelle aux tons apaisants, évocation du paysage africain.",
-    categorie: "nature",
-    prix: 184,
-    dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/Nature-7.png"
-  },
-  {
-    id: 39,
-    titre: "Nature 8",
-    artiste: "Afrodeco Studio",
-    description: "Paysage végétal contemporain aux couleurs profondes et à la texture généreuse.",
-    categorie: "nature",
-    prix: 184,
-    dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/Nature-8.png"
-  },
-  {
-    id: 40,
-    titre: "Nature 9",
-    artiste: "Afrodeco Studio",
-    description: "Formes organiques et palette naturelle pour une présence apaisante sur vos murs.",
-    categorie: "nature",
-    prix: 184,
-    dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/Nature-9.png"
-  },
-  {
-    id: 41,
-    titre: "Nature 10",
-    artiste: "Afrodeco Studio",
-    description: "Œuvre végétale aux influences africaines, entre force et douceur.",
-    categorie: "nature",
-    prix: 184,
-    dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/Nature-10.png"
   },
   {
     id: 31,
@@ -450,23 +350,194 @@ const TABLEAUX = [
       BASE + "Alex Maurel-2.jpg"
     ],
     imageVis: BASE + "Alex Maurel Oeuvre sans mockup.jpg"
+  },
+  {
+    id: 42,
+    titre: "Kid 1",
+    artiste: "Afrodeco Studio",
+    description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
+    categorie: "enfants",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-1.png"
+  },
+  {
+    id: 43,
+    titre: "Kid 2",
+    artiste: "Afrodeco Studio",
+    description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
+    categorie: "enfants",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-2.png"
+  },
+  {
+    id: 44,
+    titre: "Kid 3",
+    artiste: "Afrodeco Studio",
+    description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
+    categorie: "enfants",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-3.png"
+  },
+  {
+    id: 45,
+    titre: "Kid 4",
+    artiste: "Afrodeco Studio",
+    description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
+    categorie: "enfants",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-4.png"
+  },
+  {
+    id: 46,
+    titre: "Kid 5",
+    artiste: "Afrodeco Studio",
+    description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
+    categorie: "enfants",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-5.png"
+  },
+  {
+    id: 47,
+    titre: "Kid 6",
+    artiste: "Afrodeco Studio",
+    description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
+    categorie: "enfants",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-6.png"
+  },
+  {
+    id: 48,
+    titre: "Kid 7",
+    artiste: "Afrodeco Studio",
+    description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
+    categorie: "enfants",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-7.png"
+  },
+  {
+    id: 49,
+    titre: "Kid 8",
+    artiste: "Afrodeco Studio",
+    description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
+    categorie: "enfants",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-8.png"
+  },
+  {
+    id: 50,
+    titre: "Kid 9",
+    artiste: "Afrodeco Studio",
+    description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
+    categorie: "enfants",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-9.png"
+  },
+  {
+    id: 51,
+    titre: "Kid 10",
+    artiste: "Afrodeco Studio",
+    description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
+    categorie: "enfants",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-10.png"
+  },
+  {
+    id: 52,
+    titre: "Kid 11",
+    artiste: "Afrodeco Studio",
+    description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
+    categorie: "enfants",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-11.png"
+  },
+  {
+    id: 53,
+    titre: "Kid 12",
+    artiste: "Afrodeco Studio",
+    description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
+    categorie: "enfants",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-12.png"
+  },
+  {
+    id: 54,
+    titre: "Kid 13",
+    artiste: "Afrodeco Studio",
+    description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
+    categorie: "enfants",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-13.png"
+  },
+  {
+    id: 55,
+    titre: "Kid 14",
+    artiste: "Afrodeco Studio",
+    description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
+    categorie: "enfants",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-14.png"
+  },
+  {
+    id: 56,
+    titre: "Kid 15",
+    artiste: "Afrodeco Studio",
+    description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
+    categorie: "enfants",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-15.png"
+  },
+  {
+    id: 57,
+    titre: "Kid 16",
+    artiste: "Afrodeco Studio",
+    description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
+    categorie: "enfants",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-16.png"
+  },
+  {
+    id: 58,
+    titre: "Kid 17",
+    artiste: "Afrodeco Studio",
+    description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
+    categorie: "enfants",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-17.png"
   }
+
 ];
 
 const ARTISTES = [
+  {
+    nom: "Afrodeco Studio",
+    bio: "Le studio créatif d'Afrodeco, collectif d'artistes passionnés par l'art africain contemporain.",
+    photo: "",
+    specialite: "Art Africain Contemporain",
+    localisation: ""
+  },
   {
     nom: "Alex Maurel",
     bio: "Designer graphique talentueux et amoureux de la ville de Ouidah, Alex Maurel s'est inspiré de ses racines pour créer Ouidah Mibiton. Une œuvre empreinte d'authenticité et de passion, qui capture l'essence de la Porte du Non-Retour. Son art raconte des récits profonds à travers une illustration moderne, mêlant couleurs éclatantes et lignes épurées pour transmettre une émotion unique.",
     photo: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Alex Maurel.JPG",
     specialite: "Design Graphique — Illustration",
     localisation: "Ouidah, Bénin"
-  },
-  {
-    nom: "Itssenaxia",
-    bio: "À compléter avec la biographie d'Itssenaxia.",
-    photo: "",
-    specialite: "",
-    localisation: ""
   }
 ];
 
