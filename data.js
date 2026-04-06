@@ -521,6 +521,87 @@ const TABLEAUX = [
     dimensions: "50×70 cm",
     image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-17.png"
   }
+,
+  {
+    id: 59,
+    titre: "Quotes 1",
+    artiste: "Afrodeco Studio",
+    description: "Citation inspirante pour dynamiser votre espace de travail.",
+    categorie: "office",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/Quotes-1.png"
+  },
+  {
+    id: 60,
+    titre: "Quotes 2",
+    artiste: "Afrodeco Studio",
+    description: "Citation inspirante pour dynamiser votre espace de travail.",
+    categorie: "office",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/Quotes-2.png"
+  },
+  {
+    id: 61,
+    titre: "Quotes 3",
+    artiste: "Afrodeco Studio",
+    description: "Citation inspirante pour dynamiser votre espace de travail.",
+    categorie: "office",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/Quotes-3.png"
+  },
+  {
+    id: 62,
+    titre: "Quotes 4",
+    artiste: "Afrodeco Studio",
+    description: "Citation inspirante pour dynamiser votre espace de travail.",
+    categorie: "office",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/Quotes-4.png"
+  },
+  {
+    id: 63,
+    titre: "Quotes 5",
+    artiste: "Afrodeco Studio",
+    description: "Citation inspirante pour dynamiser votre espace de travail.",
+    categorie: "office",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/Quotes-5.png"
+  },
+  {
+    id: 64,
+    titre: "Quotes 6",
+    artiste: "Afrodeco Studio",
+    description: "Citation inspirante pour dynamiser votre espace de travail.",
+    categorie: "office",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/Quotes-6.png"
+  },
+  {
+    id: 65,
+    titre: "Quotes 7",
+    artiste: "Afrodeco Studio",
+    description: "Citation inspirante pour dynamiser votre espace de travail.",
+    categorie: "office",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/Quotes-7.png"
+  },
+  {
+    id: 66,
+    titre: "Quotes 8",
+    artiste: "Afrodeco Studio",
+    description: "Citation inspirante pour dynamiser votre espace de travail.",
+    categorie: "office",
+    prix: 145,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/Quotes-8.png"
+  }
 
 ];
 
@@ -550,5 +631,6 @@ const CATEGORIES_TABLEAUX = [
   { id: "art-africain", label: "Art Africain" },
   { id: "portrait", label: "Portraits" },
   { id: "nature", label: "Nature" },
-  { id: "enfants", label: "Chambre Enfants" }
+  { id: "enfants", label: "Chambre Enfants" },
+  { id: "office", label: "Office" }
 ];
