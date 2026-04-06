@@ -352,6 +352,106 @@ const TABLEAUX = [
     imageVis: BASE + "Alex Maurel Oeuvre sans mockup.jpg"
   },
   {
+    id: 32,
+    titre: "Nature 1",
+    artiste: "Afrodeco Studio",
+    description: "Œuvre inspirée de la nature africaine, entre végétation luxuriante et sérénité.",
+    categorie: "nature",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/Nature-1.png"
+  },
+  {
+    id: 33,
+    titre: "Nature 2",
+    artiste: "Afrodeco Studio",
+    description: "Œuvre inspirée de la nature africaine, entre végétation luxuriante et sérénité.",
+    categorie: "nature",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/Nature-2.png"
+  },
+  {
+    id: 34,
+    titre: "Nature 3",
+    artiste: "Afrodeco Studio",
+    description: "Œuvre inspirée de la nature africaine, entre végétation luxuriante et sérénité.",
+    categorie: "nature",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/Nature-3.png"
+  },
+  {
+    id: 35,
+    titre: "Nature 4",
+    artiste: "Afrodeco Studio",
+    description: "Œuvre inspirée de la nature africaine, entre végétation luxuriante et sérénité.",
+    categorie: "nature",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/Nature-4.png"
+  },
+  {
+    id: 36,
+    titre: "Nature 5",
+    artiste: "Afrodeco Studio",
+    description: "Œuvre inspirée de la nature africaine, entre végétation luxuriante et sérénité.",
+    categorie: "nature",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/Nature-5.png"
+  },
+  {
+    id: 37,
+    titre: "Nature 6",
+    artiste: "Afrodeco Studio",
+    description: "Œuvre inspirée de la nature africaine, entre végétation luxuriante et sérénité.",
+    categorie: "nature",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/Nature-6.png"
+  },
+  {
+    id: 38,
+    titre: "Nature 7",
+    artiste: "Afrodeco Studio",
+    description: "Œuvre inspirée de la nature africaine, entre végétation luxuriante et sérénité.",
+    categorie: "nature",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/Nature-7.png"
+  },
+  {
+    id: 39,
+    titre: "Nature 8",
+    artiste: "Afrodeco Studio",
+    description: "Œuvre inspirée de la nature africaine, entre végétation luxuriante et sérénité.",
+    categorie: "nature",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/Nature-8.png"
+  },
+  {
+    id: 40,
+    titre: "Nature 9",
+    artiste: "Afrodeco Studio",
+    description: "Œuvre inspirée de la nature africaine, entre végétation luxuriante et sérénité.",
+    categorie: "nature",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/Nature-9.png"
+  },
+  {
+    id: 41,
+    titre: "Nature 10",
+    artiste: "Afrodeco Studio",
+    description: "Œuvre inspirée de la nature africaine, entre végétation luxuriante et sérénité.",
+    categorie: "nature",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/Nature-10.png"
+  },
+  {
     id: 42,
     titre: "Kid 1",
     artiste: "Afrodeco Studio",
