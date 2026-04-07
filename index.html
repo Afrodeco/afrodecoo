@@ -246,6 +246,64 @@ footer{background:var(--black);color:var(--white);padding:5rem 5vw 3rem;}
 
 @media(max-width:900px){.hero-content{padding:0 1.5rem 4rem;}.cat-grid{grid-template-columns:1fr;}.footer-top{grid-template-columns:1fr 1fr;gap:2rem;}.vis-layout{grid-template-columns:1fr;}}
 @media(max-width:480px){.masonry-grid{padding:1rem;}.page-header{padding:2rem 1.5rem 1.5rem;}.filters-bar{padding:0.8rem 1rem;gap:0.4rem;}.filter-btn{font-size:0.58rem;padding:0.4rem 0.8rem;}.footer-top{grid-template-columns:1fr;}.hero-title{font-size:2.8rem;}}
+
+/* PAGE PRODUIT */
+#page-produit{display:none;}
+#page-produit.active{display:block;}
+.produit-wrap{max-width:1100px;margin:0 auto;padding:2rem 4vw 4rem;}
+.produit-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;}
+@media(max-width:768px){.produit-grid{grid-template-columns:1fr;gap:1.5rem;}.produit-wrap{padding:1rem 1.5rem 3rem;}}
+.produit-gallery{position:sticky;top:80px;}
+.produit-main-img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;background:var(--grey-light);}
+.produit-thumbs{display:flex;gap:6px;margin-top:6px;flex-wrap:wrap;}
+.produit-thumb{width:70px;height:70px;object-fit:cover;cursor:pointer;border:2px solid transparent;transition:border-color 0.2s;opacity:0.6;}
+.produit-thumb.active{border-color:var(--black);opacity:1;}
+.produit-info{display:flex;flex-direction:column;gap:1.4rem;}
+.produit-categorie{font-size:0.6rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--grey-text);font-weight:450;opacity:0.6;}
+.produit-titre{font-family:'Nomad',sans-serif;font-size:2rem;font-weight:400;line-height:1.15;color:var(--black);}
+.produit-description{font-size:0.85rem;line-height:1.9;color:var(--grey-text);font-weight:350;}
+.produit-dim-label{font-size:0.6rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:600;color:var(--black);margin-bottom:0.5rem;display:block;}
+.produit-dim-type{margin-bottom:1rem;}
+.produit-dim-type-label{font-size:0.58rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--grey-text);opacity:0.5;font-weight:450;display:block;margin-bottom:0.4rem;}
+.produit-dim-group{display:flex;flex-wrap:wrap;gap:0.4rem;}
+.produit-dim-btn{padding:0.45rem 0.85rem;border:1.5px solid var(--grey-mid);background:none;font-family:'Aspekta',sans-serif;font-size:0.65rem;font-weight:450;cursor:pointer;transition:all 0.2s;color:var(--grey-text);}
+.produit-dim-btn:hover{border-color:var(--black);color:var(--black);}
+.produit-dim-btn.active{border-color:var(--black);background:var(--black);color:var(--white);}
+.produit-prix-wrap{display:flex;align-items:baseline;gap:0.5rem;min-height:2.5rem;}
+.produit-prix{font-family:'Aspekta',sans-serif;font-size:1.5rem;font-weight:600;color:var(--black);}
+.produit-prix-note{font-size:0.7rem;color:var(--grey-text);opacity:0.5;}
+.produit-actions{display:flex;flex-direction:column;gap:0.7rem;}
+.btn-wa{display:flex;align-items:center;justify-content:center;gap:0.6rem;padding:1rem 1.5rem;background:#25D366;color:white;font-family:'Aspekta',sans-serif;font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;font-weight:600;text-decoration:none;transition:background 0.2s;border:none;cursor:pointer;width:100%;}
+.btn-wa:hover{background:#1ebe5a;}
+.btn-wa svg{width:18px;height:18px;fill:white;flex-shrink:0;}
+.btn-vis{display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.9rem 1.5rem;background:none;border:1.5px solid var(--black);font-family:'Aspekta',sans-serif;font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;font-weight:450;cursor:pointer;transition:all 0.2s;color:var(--black);width:100%;}
+.btn-vis:hover{background:var(--black);color:var(--white);}
+.produit-back{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--grey-text);opacity:0.5;cursor:pointer;margin-bottom:1.5rem;background:none;border:none;font-family:'Aspekta',sans-serif;font-weight:450;transition:opacity 0.2s;padding:0;}
+.produit-back:hover{opacity:1;}
+/* GALERIE SOCIALE */
+.social-strip{padding:4rem 0;overflow:hidden;background:var(--grey-light);border-top:1px solid var(--grey);border-bottom:1px solid var(--grey);}
+.social-strip-header{padding:0 5vw 2rem;display:flex;justify-content:space-between;align-items:flex-end;}
+.social-strip-title{font-family:'Nomad',sans-serif;font-size:1.6rem;font-weight:400;margin-top:0.4rem;}
+.social-track-wrap{overflow:hidden;}
+.social-track{display:flex;gap:10px;width:max-content;animation:socialScroll 30s linear infinite;}
+.social-track:hover{animation-play-state:paused;}
+.social-track img{height:280px;width:auto;object-fit:cover;display:block;flex-shrink:0;}
+@keyframes socialScroll{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+@media(max-width:768px){.social-track img{height:200px;}}
+/* AVIS CLIENTS */
+.avis-section{padding:5rem 5vw;}
+.avis-header{margin-bottom:2.5rem;}
+.avis-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+@media(max-width:900px){.avis-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:600px){.avis-grid{grid-template-columns:1fr;}}
+.avis-card{background:var(--white);border:1px solid var(--grey);padding:1.8rem;display:flex;flex-direction:column;gap:1rem;}
+.avis-stars{display:flex;gap:3px;margin-bottom:0.2rem;}
+.avis-star{width:11px;height:11px;background:var(--black);clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);}
+.avis-texte{font-size:0.82rem;line-height:1.85;color:var(--grey-text);font-weight:350;font-style:italic;flex:1;}
+.avis-auteur{margin-top:auto;display:flex;flex-direction:column;gap:0.15rem;}
+.avis-nom{font-size:0.68rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--black);}
+.avis-ville{font-size:0.62rem;color:var(--grey-text);opacity:0.5;}
+
 </style>
 </head>
 <body>
@@ -319,6 +377,17 @@ footer{background:var(--black);color:var(--white);padding:5rem 5vw 3rem;}
   </section>
 
   <div class="pattern-band"></div>
+  <section class="social-strip">
+    <div class="social-strip-header">
+      <div><span class="section-label">D&eacute;j&agrave; chez eux</span><h2 class="social-strip-title">Nos tableaux dans vos espaces</h2></div>
+      <span class="section-label">Photos clients r&eacute;elles</span>
+    </div>
+    <div class="social-track-wrap"><div class="social-track"><img src="https://raw.githubusercontent.com/Afrodeco/afrodecoo/6ddb012c2e2d4c8932d057dcad85bc556579a5f2/SocialProof-1.jpg" alt="Afrodeco" loading="lazy"><img src="https://raw.githubusercontent.com/Afrodeco/afrodecoo/6ddb012c2e2d4c8932d057dcad85bc556579a5f2/SocialProof-2.jpg" alt="Afrodeco" loading="lazy"><img src="https://raw.githubusercontent.com/Afrodeco/afrodecoo/6ddb012c2e2d4c8932d057dcad85bc556579a5f2/SocialProof-4.jpg" alt="Afrodeco" loading="lazy"><img src="https://raw.githubusercontent.com/Afrodeco/afrodecoo/6ddb012c2e2d4c8932d057dcad85bc556579a5f2/SocialProof-3jpg.jpg" alt="Afrodeco" loading="lazy"><img src="https://raw.githubusercontent.com/Afrodeco/afrodecoo/6ddb012c2e2d4c8932d057dcad85bc556579a5f2/SocialProof-1.jpg" alt="Afrodeco" loading="lazy"><img src="https://raw.githubusercontent.com/Afrodeco/afrodecoo/6ddb012c2e2d4c8932d057dcad85bc556579a5f2/SocialProof-2.jpg" alt="Afrodeco" loading="lazy"><img src="https://raw.githubusercontent.com/Afrodeco/afrodecoo/6ddb012c2e2d4c8932d057dcad85bc556579a5f2/SocialProof-4.jpg" alt="Afrodeco" loading="lazy"><img src="https://raw.githubusercontent.com/Afrodeco/afrodecoo/6ddb012c2e2d4c8932d057dcad85bc556579a5f2/SocialProof-3jpg.jpg" alt="Afrodeco" loading="lazy"></div></div>
+  </section>
+  <section class="avis-section">
+    <div class="avis-header"><span class="section-label">Ce qu'ils en disent</span><h2 class="section-title">Avis clients</h2></div>
+    <div class="avis-grid"><div class="avis-card"><div class="avis-stars"><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div></div><p class="avis-texte">&ldquo;Épaté par la rapidité, le professionnalisme et la beauté du tableau. Vraiment vous êtes simplement TOP. Je vais encore recommander.&rdquo;</p><div class="avis-auteur"><span class="avis-nom">Chefick A.</span><span class="avis-ville">Cotonou</span></div></div><div class="avis-card"><div class="avis-stars"><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div></div><p class="avis-texte">&ldquo;J'ai reçu les tableaux et j'ai adoré. La qualité est supérieure, pas ce que les gens vendent au dehors là.&rdquo;</p><div class="avis-auteur"><span class="avis-nom">Jennifer</span><span class="avis-ville">Bénin</span></div></div><div class="avis-card"><div class="avis-stars"><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div></div><p class="avis-texte">&ldquo;J'ai vu les tableaux, impeccables… Mon client va certainement aimer. Bravo, j'ai aimé la finition !&rdquo;</p><div class="avis-auteur"><span class="avis-nom">Mathieu S.</span><span class="avis-ville">Cotonou</span></div></div><div class="avis-card"><div class="avis-stars"><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div></div><p class="avis-texte">&ldquo;C'est trop zozo. Une composition parfaite avec la peinture du salon.&rdquo;</p><div class="avis-auteur"><span class="avis-nom">Cedo</span><span class="avis-ville">Bénin</span></div></div><div class="avis-card"><div class="avis-stars"><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div></div><p class="avis-texte">&ldquo;C'est parfait ! C'est toi que je remercie pour le travail !&rdquo;</p><div class="avis-auteur"><span class="avis-nom">Client Lyrias</span><span class="avis-ville">Ouidah</span></div></div><div class="avis-card"><div class="avis-stars"><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div></div><p class="avis-texte">&ldquo;C'est trop beau. Je te jure c'est trop magnifique.&rdquo;</p><div class="avis-auteur"><span class="avis-nom">Anonyme</span><span class="avis-ville">Bénin</span></div></div></div>
+  </section>
 
   <footer>
     <div class="footer-top">
@@ -350,6 +419,55 @@ footer{background:var(--black);color:var(--white);padding:5rem 5vw 3rem;}
       <p>Art africain contemporain</p>
     </div>
   </footer>
+</div>
+
+<!-- PAGE PRODUIT -->
+<div id="page-produit" class="page">
+  <div class="page-header"><span class="section-label">D&eacute;tail</span><h1 id="produitPageTitre">Tableau</h1></div>
+  <div class="produit-wrap">
+    <button class="produit-back" onclick="showPage('tableaux')">&#8592; Retour aux tableaux</button>
+    <div class="produit-grid">
+      <div class="produit-gallery">
+        <img class="produit-main-img" id="produitMainImg" src="" alt="">
+        <div class="produit-thumbs" id="produitThumbs"></div>
+      </div>
+      <div class="produit-info">
+        <div class="produit-categorie" id="produitCategorie"></div>
+        <h2 class="produit-titre" id="produitTitre"></h2>
+        <p class="produit-description" id="produitDescription"></p>
+        <div>
+          <span class="produit-dim-label">Choisir le format et la dimension</span>
+          <div class="produit-dim-type">
+            <span class="produit-dim-type-label">Impression Papier Matte Encadr&eacute;</span>
+            <div class="produit-dim-group" id="dimsPapier"></div>
+          </div>
+          <div class="produit-dim-type">
+            <span class="produit-dim-type-label">Impression sur Toile Encadr&eacute;</span>
+            <div class="produit-dim-group" id="dimsToile"></div>
+          </div>
+        </div>
+        <div class="produit-prix-wrap">
+          <span class="produit-prix" id="produitPrix">S&eacute;lectionner une dimension</span>
+          <span class="produit-prix-note" id="produitPrixNote"></span>
+        </div>
+        <div class="produit-actions">
+          <a class="btn-wa" id="produitWaBtn" href="https://wa.me/22901590880081" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Commander sur WhatsApp</a>
+          <button class="btn-vis" onclick="ouvrirVisualiseur()">Visualiser chez moi &#8594;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="social-strip">
+    <div class="social-strip-header">
+      <div><span class="section-label">D&eacute;j&agrave; chez eux</span><h2 class="social-strip-title">Nos tableaux dans vos espaces</h2></div>
+      <span class="section-label">Photos clients r&eacute;elles</span>
+    </div>
+    <div class="social-track-wrap"><div class="social-track"><img src="https://raw.githubusercontent.com/Afrodeco/afrodecoo/6ddb012c2e2d4c8932d057dcad85bc556579a5f2/SocialProof-1.jpg" alt="Afrodeco" loading="lazy"><img src="https://raw.githubusercontent.com/Afrodeco/afrodecoo/6ddb012c2e2d4c8932d057dcad85bc556579a5f2/SocialProof-2.jpg" alt="Afrodeco" loading="lazy"><img src="https://raw.githubusercontent.com/Afrodeco/afrodecoo/6ddb012c2e2d4c8932d057dcad85bc556579a5f2/SocialProof-4.jpg" alt="Afrodeco" loading="lazy"><img src="https://raw.githubusercontent.com/Afrodeco/afrodecoo/6ddb012c2e2d4c8932d057dcad85bc556579a5f2/SocialProof-3jpg.jpg" alt="Afrodeco" loading="lazy"><img src="https://raw.githubusercontent.com/Afrodeco/afrodecoo/6ddb012c2e2d4c8932d057dcad85bc556579a5f2/SocialProof-1.jpg" alt="Afrodeco" loading="lazy"><img src="https://raw.githubusercontent.com/Afrodeco/afrodecoo/6ddb012c2e2d4c8932d057dcad85bc556579a5f2/SocialProof-2.jpg" alt="Afrodeco" loading="lazy"><img src="https://raw.githubusercontent.com/Afrodeco/afrodecoo/6ddb012c2e2d4c8932d057dcad85bc556579a5f2/SocialProof-4.jpg" alt="Afrodeco" loading="lazy"><img src="https://raw.githubusercontent.com/Afrodeco/afrodecoo/6ddb012c2e2d4c8932d057dcad85bc556579a5f2/SocialProof-3jpg.jpg" alt="Afrodeco" loading="lazy"></div></div>
+  </section>
+  <section class="avis-section">
+    <div class="avis-header"><span class="section-label">Ce qu'ils en disent</span><h2 class="section-title">Avis clients</h2></div>
+    <div class="avis-grid"><div class="avis-card"><div class="avis-stars"><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div></div><p class="avis-texte">&ldquo;Épaté par la rapidité, le professionnalisme et la beauté du tableau. Vraiment vous êtes simplement TOP. Je vais encore recommander.&rdquo;</p><div class="avis-auteur"><span class="avis-nom">Chefick A.</span><span class="avis-ville">Cotonou</span></div></div><div class="avis-card"><div class="avis-stars"><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div></div><p class="avis-texte">&ldquo;J'ai reçu les tableaux et j'ai adoré. La qualité est supérieure, pas ce que les gens vendent au dehors là.&rdquo;</p><div class="avis-auteur"><span class="avis-nom">Jennifer</span><span class="avis-ville">Bénin</span></div></div><div class="avis-card"><div class="avis-stars"><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div></div><p class="avis-texte">&ldquo;J'ai vu les tableaux, impeccables… Mon client va certainement aimer. Bravo, j'ai aimé la finition !&rdquo;</p><div class="avis-auteur"><span class="avis-nom">Mathieu S.</span><span class="avis-ville">Cotonou</span></div></div><div class="avis-card"><div class="avis-stars"><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div></div><p class="avis-texte">&ldquo;C'est trop zozo. Une composition parfaite avec la peinture du salon.&rdquo;</p><div class="avis-auteur"><span class="avis-nom">Cedo</span><span class="avis-ville">Bénin</span></div></div><div class="avis-card"><div class="avis-stars"><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div></div><p class="avis-texte">&ldquo;C'est parfait ! C'est toi que je remercie pour le travail !&rdquo;</p><div class="avis-auteur"><span class="avis-nom">Client Lyrias</span><span class="avis-ville">Ouidah</span></div></div><div class="avis-card"><div class="avis-stars"><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div><div class="avis-star"></div></div><p class="avis-texte">&ldquo;C'est trop beau. Je te jure c'est trop magnifique.&rdquo;</p><div class="avis-auteur"><span class="avis-nom">Anonyme</span><span class="avis-ville">Bénin</span></div></div></div>
+  </section>
 </div>
 
 <!-- TABLEAUX -->
@@ -480,12 +598,15 @@ function showPage(name) {
   window.scrollTo(0, 0);
   if (name === 'tableaux') renderTableaux('tout');
   if (name === 'artistes') renderArtistes();
+  if (name === 'produit') { /* géré par openProduit */ }
   if (name === 'visualiseur') renderThumbs();
 }
 
 function createCard(t) {
   const card = document.createElement('div');
   card.className = 'art-card' + (t.rond ? ' round' : '');
+  card.style.cursor='pointer';
+  card.addEventListener('click', () => openProduit(t));
   if (t.serie && t.images && t.images.length > 1) {
     let idx = 0;
     const imgs = t.images;
@@ -1058,6 +1179,75 @@ function renderArtistes() {
 
   window.renderThumbs=function(){ renderStrip(); syncControls(); };
 })();
+
+
+// ── PAGE PRODUIT ────────────────────────────────────────
+const PRIX_PAPIER = [["18\u00d724 cm",10900],["23\u00d730 cm",14200],["30\u00d740 cm",19700],["35\u00d745 cm",23450],["40\u00d740 cm",24600],["40\u00d750 cm",29500],["40\u00d760 cm",33400],["50\u00d750 cm",34000],["50\u00d760 cm",38500],["50\u00d770 cm",43800],["50\u00d780 cm",48500],["60\u00d760 cm",44600],["60\u00d780 cm",55800]];
+const PRIX_TOILE  = [["40\u00d750 cm",44750],["50\u00d770 cm",65050],["60\u00d780 cm",77000],["70\u00d7100 cm",97450],["120\u00d780 cm",121600],["100\u00d7100 cm",121600],["100\u00d7140 cm",153950],["120\u00d7120 cm",155950],["130\u00d7130 cm",174200],["140\u00d7140 cm",172300],["100\u00d7150 cm",162000],["140\u00d7100 cm",158000],["120\u00d7190 cm",217500],["100\u00d7200 cm",203000],["150\u00d7150 cm",203000],["150\u00d7250 cm",305000]];
+let currentTableau = null;
+
+function openProduit(t) {
+  currentTableau = t;
+  showPage('produit');
+  document.getElementById('produitPageTitre').textContent = t.titre;
+  document.getElementById('produitTitre').textContent = t.titre;
+  document.getElementById('produitCategorie').textContent = (t.categorie||'').replace(/-/g,' ').toUpperCase();
+  document.getElementById('produitDescription').textContent = t.description || '';
+  // Photos : galerie principale + mockups si disponibles
+  const photos = [];
+  if (t.images && t.images.length) photos.push(...t.images);
+  else if (t.image) photos.push(t.image);
+  if (t.photosProduit) photos.push(...t.photosProduit);
+  const mainImg = document.getElementById('produitMainImg');
+  const thumbsEl = document.getElementById('produitThumbs');
+  mainImg.src = photos[0] || '';
+  thumbsEl.innerHTML = '';
+  photos.forEach((src, i) => {
+    const img = document.createElement('img');
+    img.src = src; img.className = 'produit-thumb' + (i===0?' active':'');
+    img.loading = 'lazy';
+    img.addEventListener('click', () => {
+      mainImg.src = src;
+      thumbsEl.querySelectorAll('.produit-thumb').forEach((th,j)=>th.classList.toggle('active',j===i));
+    });
+    thumbsEl.appendChild(img);
+  });
+  // Dimensions
+  buildDims('dimsPapier', PRIX_PAPIER, 'papier');
+  buildDims('dimsToile',  PRIX_TOILE,  'toile');
+  document.getElementById('produitPrix').textContent = 'S\u00e9lectionner une dimension';
+  document.getElementById('produitPrixNote').textContent = '';
+  document.getElementById('produitWaBtn').href = 'https://wa.me/22901590880081?text=' + encodeURIComponent('Bonjour Afrodeco, je suis intéressé(e) par le tableau *' + t.titre + '* — Pouvez-vous me donner plus d\'infos ? Merci !');
+  window.scrollTo(0,0);
+}
+
+function buildDims(containerId, list, type) {
+  const el = document.getElementById(containerId);
+  el.innerHTML = '';
+  list.forEach(([dim, prix]) => {
+    const btn = document.createElement('button');
+    btn.className = 'produit-dim-btn';
+    btn.textContent = dim;
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.produit-dim-btn').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('produitPrix').textContent = prix.toLocaleString('fr-FR') + ' F';
+      document.getElementById('produitPrixNote').textContent = 'FCFA';
+      const t = currentTableau;
+      const typeLabel = type==='papier' ? 'Impression Papier Matte Encadr\u00e9' : 'Impression sur Toile Encadr\u00e9';
+      document.getElementById('produitWaBtn').href = 'https://wa.me/22901590880081?text=' + encodeURIComponent('Bonjour Afrodeco, je suis intéressé(e) par le tableau *' + t.titre + '*\nDimension : ' + dim + ' — ' + typeLabel + '\nMerci !');
+    });
+    el.appendChild(btn);
+  });
+}
+
+function ouvrirVisualiseur() {
+  showPage('visualiseur');
+  if (currentTableau) {
+    const idx = TABLEAUX.findIndex(t => t.id === currentTableau.id);
+    setTimeout(() => { if (typeof addSlot === 'function') addSlot(idx >= 0 ? idx : 0); }, 200);
+  }
+}
 
 // Burger menu
 document.getElementById('burgerBtn').addEventListener('click', () => {
