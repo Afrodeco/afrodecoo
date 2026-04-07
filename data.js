@@ -719,6 +719,23 @@ const TABLEAUX = [
       "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/Plaines-3.png",
       "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/Plaines-4.png"
     ]
+  },
+  {
+    id: 68,
+    titre: "Abstrait Nature",
+    artiste: "Afrodeco Studio",
+    description: "Une composition abstraite aux tons naturels et apaisants, évoquant la sérénité des paysages africains.",
+    categorie: "nature",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/Abstraittestplain-1.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/Abstraittestplain-1.png",
+    photosProduit: [
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/Abstraittestplain-1.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/Abstraittestplain-2.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/Abstraittestmockup-1.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/Abstraittestmockup-2.png"
+    ]
   }
 ];
 
