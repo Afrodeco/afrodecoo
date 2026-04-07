@@ -712,6 +712,7 @@ const TABLEAUX = [
     prix: 184,
     dimensions: "120×80 cm",
     image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/Plaines-1.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0dd8f977bea0111d089f7a6896078acc360f0ef/Plaines-3.png",
     photosProduit: [
       "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/Plaines-1.png",
       "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/Plaines-2.png",
