@@ -702,7 +702,23 @@ const TABLEAUX = [
     dimensions: "50×70 cm",
     image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/Quotes-8.png"
   }
-
+,
+  {
+    id: 67,
+    titre: "Plaines",
+    artiste: "Afrodeco Studio",
+    description: "Une œuvre aux teintes douces et apaisantes, inspirée des grandes plaines africaines. Idéale pour créer une ambiance sereine dans votre espace.",
+    categorie: "nature",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/Plaines-1.png",
+    photosProduit: [
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/Plaines-1.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/Plaines-2.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/Plaines-3.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/Plaines-4.png"
+    ]
+  }
 ];
 
 const ARTISTES = [
