@@ -913,13 +913,7 @@ const TABLEAUX = [
 ];
 
 const ARTISTES = [
-  {
-    nom: "Afrodeco Studio",
-    bio: "Le studio créatif d'Afrodeco, collectif d'artistes passionnés par l'art africain contemporain.",
-    photo: "",
-    specialite: "Art Africain Contemporain",
-    localisation: ""
-  },
+
   {
     nom: "Itssenaxia",
     specialite: "Illustration — Art Numérique",
