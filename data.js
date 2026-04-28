@@ -838,7 +838,7 @@ const TABLEAUX = [
     id: 75,
     titre: "Emancipation",
     artiste: "Itssenaxia",
-    description: "Figure composite africaine sur fond beige texturé, évoquant l'histoire et la liberté des peuples. Texte "Powers of Europe" en arrière-plan.",
+    description: "Figure composite africaine sur fond beige texturé, évoquant l'histoire et la liberté des peuples. Texte Powers of Europe en arrière-plan.",
     categorie: "art-africain",
     prix: 184,
     dimensions: "50×70 cm",
