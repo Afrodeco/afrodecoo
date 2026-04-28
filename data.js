@@ -736,7 +736,180 @@ const TABLEAUX = [
       "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/Abstraittestmockup-1.png",
       "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/Abstraittestmockup-2.png"
     ]
+  },
+  {
+    id: 69,
+    titre: "Artsy",
+    artiste: "Afrodeco Studio",
+    description: "Un trio d'affiches au style africain contemporain, alliant graphisme audacieux et esthétique moderne.",
+    categorie: "art-africain",
+    prix: 184,
+    dimensions: "50×70 cm",
+    serie: true,
+    images: [
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/Artsy-1.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/Artsy-2.png"
+    ],
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/Artsyplain-1.png",
+    photosProduit: [
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/Artsyplain-1.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/Artsyplain-2.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/Artsyplain-3.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/Artsy-1.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/Artsy-2.png"
+    ]
+  },
+  {
+    id: 70,
+    titre: "My Absurd World",
+    artiste: "Itssenaxia",
+    description: "Illustration afro-urbaine explosive, entre culture africaine et univers surréaliste. Personnage central portant des blocs colorés sur fond doré.",
+    categorie: "art-africain",
+    prix: 184,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-11.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-11.jpg",
+    photosProduit: [
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-11.jpg",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Mockup-7.jpg"
+    ]
+  },
+  {
+    id: 71,
+    titre: "Africa Rise #1",
+    artiste: "Itssenaxia",
+    description: "Composition pop art puissante sur fond de journal ancien. Une guerrière africaine moderne, entre histoire et modernité.",
+    categorie: "art-africain",
+    prix: 184,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-12.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-12.jpg",
+    photosProduit: [
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-12.jpg",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Mockup-4.jpg"
+    ]
+  },
+  {
+    id: 72,
+    titre: "Sanctuaire",
+    artiste: "Itssenaxia",
+    description: "Œuvre 3D surréaliste — une pagode miniature posée sur une colline verdoyante sous un ciel turquoise éclatant.",
+    categorie: "nature",
+    prix: 184,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-13.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-13.jpg",
+    photosProduit: [
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-13.jpg",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Mockup-6.jpg"
+    ]
+  },
+  {
+    id: 73,
+    titre: "Le Bateau Perdu",
+    artiste: "Itssenaxia",
+    description: "Scène onirique mêlant mur de pierre ancestral, herbe rose sauvage et bateau en papier blanc. Une poésie visuelle apaisante.",
+    categorie: "nature",
+    prix: 184,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-14.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-14.jpg",
+    photosProduit: [
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-14.jpg",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Mockup-9.jpg"
+    ]
+  },
+  {
+    id: 74,
+    titre: "Messages",
+    artiste: "Itssenaxia",
+    description: "Créature colorée sur fond violet intense, portant un message universel sur l'art comme langage. Illustration haute en couleur.",
+    categorie: "art-africain",
+    prix: 184,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-15.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-15.jpg",
+    photosProduit: [
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-15.jpg",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Mockup-8.jpg"
+    ]
+  },
+  {
+    id: 75,
+    titre: "Emancipation",
+    artiste: "Itssenaxia",
+    description: "Figure composite africaine sur fond beige texturé, évoquant l'histoire et la liberté des peuples. Texte "Powers of Europe" en arrière-plan.",
+    categorie: "art-africain",
+    prix: 184,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-16.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-16.jpg",
+    photosProduit: [
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-16.jpg",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Mockup-5.jpg"
+    ]
+  },
+  {
+    id: 76,
+    titre: "Itssenaxia #17",
+    artiste: "Itssenaxia",
+    description: "Œuvre graphique sombre et mystérieuse, signature du style unique d'Itssenaxia.",
+    categorie: "art-africain",
+    prix: 184,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-17.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-17.png",
+    photosProduit: [
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-17.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Mockup-10.jpg"
+    ]
+  },
+  {
+    id: 77,
+    titre: "Nostalgie",
+    artiste: "Itssenaxia",
+    description: "Photographie artistique d'objets rétro — cassettes audio et appareil Polaroid — baignés dans une lumière chaude et intimiste.",
+    categorie: "photographie",
+    prix: 184,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-18.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-18.png",
+    photosProduit: [
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-18.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Mockup-3.jpg"
+    ]
+  },
+  {
+    id: 78,
+    titre: "Calavera",
+    artiste: "Itssenaxia",
+    description: "Crâne orné d'un sombrero et de fleurs colorées sur fond orange vif. Une œuvre festive mêlant cultures africaine et mexicaine.",
+    categorie: "art-africain",
+    prix: 184,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-19.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-19.png",
+    photosProduit: [
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-19.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Mockup-1.png"
+    ]
+  },
+  {
+    id: 79,
+    titre: "The Ride",
+    artiste: "Itssenaxia",
+    description: "Illustration psychédélique — une créature et une voiture violette sur fond turquoise. Énergie urbaine et imaginaire débridé.",
+    categorie: "art-africain",
+    prix: 184,
+    dimensions: "50×70 cm",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-20.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-20.png",
+    photosProduit: [
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-20.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Mockup-2.jpg"
+    ]
   }
+
 ];
 
 const ARTISTES = [
@@ -746,6 +919,13 @@ const ARTISTES = [
     photo: "",
     specialite: "Art Africain Contemporain",
     localisation: ""
+  },
+  {
+    nom: "Itssenaxia",
+    specialite: "Illustration — Art Numérique",
+    localisation: "Bénin",
+    bio: "Itssenaxia est un artiste numérique béninois au style unique, mêlant illustration pop art, références africaines et univers surréalistes. Ses œuvres combinent couleurs vibrantes, personnages expressifs et messages culturels forts.",
+    photo: ""
   },
   {
     nom: "Alex Maurel",
