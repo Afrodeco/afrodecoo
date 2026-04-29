@@ -767,11 +767,11 @@ const TABLEAUX = [
     categorie: "art-africain",
     prix: 184,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-11.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-11.jpg",
+    image: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-11.jpg",
+    imageVis: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-11.jpg",
     photosProduit: [
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-11.jpg",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Mockup-7.jpg"
+      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-11.jpg",
+      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Mockups-7.jpg"
     ]
   },
   {
@@ -782,11 +782,11 @@ const TABLEAUX = [
     categorie: "art-africain",
     prix: 184,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-12.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-12.jpg",
+    image: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-12.jpg",
+    imageVis: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-12.jpg",
     photosProduit: [
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-12.jpg",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Mockup-4.jpg"
+      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-12.jpg",
+      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Mockups-4.jpg"
     ]
   },
   {
@@ -797,11 +797,11 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-13.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-13.jpg",
+    image: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-13.jpg",
+    imageVis: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-13.jpg",
     photosProduit: [
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-13.jpg",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Mockup-6.jpg"
+      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-13.jpg",
+      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Mockups-6.jpg"
     ]
   },
   {
@@ -812,11 +812,11 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-14.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-14.jpg",
+    image: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-14.jpg",
+    imageVis: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-14.jpg",
     photosProduit: [
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-14.jpg",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Mockup-9.jpg"
+      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-14.jpg",
+      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Mockups-9.jpg"
     ]
   },
   {
@@ -827,11 +827,11 @@ const TABLEAUX = [
     categorie: "art-africain",
     prix: 184,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-15.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-15.jpg",
+    image: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-15.jpg",
+    imageVis: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-15.jpg",
     photosProduit: [
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-15.jpg",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Mockup-8.jpg"
+      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-15.jpg",
+      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Mockups-8.jpg"
     ]
   },
   {
@@ -842,11 +842,11 @@ const TABLEAUX = [
     categorie: "art-africain",
     prix: 184,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-16.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-16.jpg",
+    image: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-16.jpg",
+    imageVis: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-16.jpg",
     photosProduit: [
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-16.jpg",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Mockup-5.jpg"
+      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-16.jpg",
+      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Mockups-5.jpg"
     ]
   },
   {
@@ -857,11 +857,11 @@ const TABLEAUX = [
     categorie: "art-africain",
     prix: 184,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-17.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-17.png",
+    image: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-17.png",
+    imageVis: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-17.png",
     photosProduit: [
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-17.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Mockup-10.jpg"
+      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-17.png",
+      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Mockups-10.jpg"
     ]
   },
   {
@@ -872,11 +872,11 @@ const TABLEAUX = [
     categorie: "photographie",
     prix: 184,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-18.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-18.png",
+    image: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-18.png",
+    imageVis: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-18.png",
     photosProduit: [
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-18.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Mockup-3.jpg"
+      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-18.png",
+      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Mockups-3.jpg"
     ]
   },
   {
@@ -887,11 +887,11 @@ const TABLEAUX = [
     categorie: "art-africain",
     prix: 184,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-19.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-19.png",
+    image: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-19.png",
+    imageVis: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-19.png",
     photosProduit: [
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-19.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Mockup-1.png"
+      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-19.png",
+      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Mockups-1.png"
     ]
   },
   {
@@ -902,11 +902,11 @@ const TABLEAUX = [
     categorie: "art-africain",
     prix: 184,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-20.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-20.png",
+    image: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-20.png",
+    imageVis: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-20.png",
     photosProduit: [
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Plain-20.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Itssenaxia%20Mockup-2.jpg"
+      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-20.png",
+      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Mockups-2.jpg"
     ]
   }
 
