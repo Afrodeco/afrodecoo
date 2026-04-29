@@ -266,7 +266,7 @@ footer{background:var(--black);color:var(--white);padding:5rem 5vw 3rem;}
 .produit-dim-btn{padding:0.4rem 0.7rem;font-size:0.62rem;}
 .btn-wa,.btn-vis{padding:0.9rem 1rem;}
 }
-.produit-gallery{top:65px;z-index: 999;background-color: white;}
+.produit-gallery{position:sticky;top:80px;}
 .produit-main-img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;background:var(--grey-light);}
 .produit-thumbs{display:flex;gap:6px;margin-top:6px;flex-wrap:wrap;}
 .produit-thumb{width:70px;height:70px;object-fit:cover;cursor:pointer;border:2px solid transparent;transition:border-color 0.2s;opacity:0.6;}
@@ -833,26 +833,12 @@ function renderArtistes() {
       }
     }
 
-    // Pointillé sélection (écran uniquement)
-    if(i===activeSlot && !clean){
-      if(s.corners){
-        const [tl,tr,br,bl]=s.corners;
-        ctx.strokeStyle='rgba(255,255,255,0.7)';
-        ctx.lineWidth=2; ctx.setLineDash([6,4]);
-        ctx.beginPath();
-        ctx.moveTo(tl[0],tl[1]); ctx.lineTo(tr[0],tr[1]);
-        ctx.lineTo(br[0],br[1]); ctx.lineTo(bl[0],bl[1]);
-        ctx.closePath(); ctx.stroke(); ctx.setLineDash([]);
-        // Points de coin
-        s.corners.forEach(([px,py])=>{
-          ctx.fillStyle='white'; ctx.beginPath();
-          ctx.arc(px,py,6,0,Math.PI*2); ctx.fill();
-        });
-      } else {
-        const artX=cx-artW/2, artY=cy-artH/2;
-        ctx.strokeStyle='rgba(255,255,255,0.6)'; ctx.lineWidth=2; ctx.setLineDash([6,4]);
-        ctx.strokeRect(artX-2,artY-2,artW+4,artH+4); ctx.setLineDash([]);
-      }
+    // Points de coin (mode perspective uniquement, sans pointillé)
+    if(i===activeSlot && !clean && s.corners){
+      s.corners.forEach(([px,py])=>{
+        ctx.fillStyle='white'; ctx.beginPath();
+        ctx.arc(px,py,6,0,Math.PI*2); ctx.fill();
+      });
     }
     ctx.restore();
   }
