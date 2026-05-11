@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Afrodeco — Galerie</title>
+  <meta name="description" content="Afrodeco — Art africain contemporain. Découvrez notre collection de tableaux originaux." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0c0b09;
+      --surface: #141210;
+      --border: #272218;
+      --gold: #c8a84b;
+      --gold-dim: #7a6430;
+      --cream: #efe5cc;
+      --muted: #6a5d42;
+      --text: #e6dbbf;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Mono', monospace;
+      min-height: 100vh;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(12,11,9,.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 clamp(16px, 5vw, 56px);
+      height: 60px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300; font-size: 1.4rem;
+      letter-spacing: .2em; text-transform: uppercase;
+      color: var(--gold);
+    }
+    .logo em { font-style: italic; font-weight: 400; color: var(--cream); }
+    .header-right { font-size: .58rem; letter-spacing: .14em; color: var(--muted); text-transform: uppercase; }
+
+    /* HERO */
+    .hero {
+      padding: clamp(36px,7vw,72px) clamp(16px,5vw,56px) clamp(20px,4vw,40px);
+      border-bottom: 1px solid var(--border);
+    }
+    .eyebrow { font-size: .58rem; letter-spacing: .26em; color: var(--gold-dim); text-transform: uppercase; margin-bottom: 14px; }
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300; font-size: clamp(2.2rem,6vw,4.2rem);
+      line-height: 1.06; color: var(--cream); margin-bottom: 16px;
+    }
+    .hero h1 em { font-style: italic; color: var(--gold); }
+    .hero-meta { font-size: .63rem; color: var(--muted); letter-spacing: .06em; line-height: 1.9; max-width: 460px; margin-bottom: 22px; }
+    .cta-wa {
+      display: inline-flex; align-items: center; gap: 10px;
+      border: 1px solid var(--gold-dim); color: var(--gold);
+      font-family: 'DM Mono', monospace; font-size: .61rem;
+      letter-spacing: .14em; text-transform: uppercase;
+      padding: 12px 22px; text-decoration: none;
+      transition: all .22s;
+    }
+    .cta-wa:hover { background: var(--gold); border-color: var(--gold); color: var(--bg); }
+    .cta-wa svg { width: 15px; height: 15px; fill: currentColor; flex-shrink: 0; }
+
+    /* DIVIDER */
+    .divider {
+      padding: 13px clamp(16px,5vw,56px);
+      border-bottom: 1px solid var(--border);
+      font-size: .57rem; letter-spacing: .2em; color: var(--muted); text-transform: uppercase;
+    }
+
+    /* GALLERY */
+    .gallery {
+      padding: clamp(18px,3vw,36px) clamp(16px,5vw,56px);
+      columns: 2 150px; gap: 9px;
+    }
+    @media(min-width:560px)  { .gallery { columns: 3 170px; } }
+    @media(min-width:860px)  { .gallery { columns: 4 190px; } }
+    @media(min-width:1150px) { .gallery { columns: 5 200px; } }
+
+    /* CARD */
+    .card {
+      break-inside: avoid; margin-bottom: 9px;
+      position: relative; overflow: hidden;
+      border: 1px solid var(--border);
+      cursor: pointer; background: var(--surface);
+    }
+    .card-inner { position: relative; width: 100%; padding-top: 125%; overflow: hidden; }
+    .card img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%; object-fit: cover;
+      opacity: 0; transition: opacity .35s, transform .4s;
+    }
+    .card img.loaded { opacity: 1; }
+    .card:hover img { transform: scale(1.05); }
+    .shimmer {
+      position: absolute; inset: 0;
+      background: linear-gradient(110deg, var(--surface) 30%, #1f1a10 50%, var(--surface) 70%);
+      background-size: 200% 100%;
+      animation: shimmer 1.5s infinite;
+      transition: opacity .3s;
+    }
+    .card.loaded .shimmer { opacity: 0; pointer-events: none; }
+    @keyframes shimmer { to { background-position: -200% 0; } }
+    .card-num {
+      position: absolute; bottom: 8px; right: 9px;
+      font-size: .5rem; letter-spacing: .1em;
+      color: rgba(255,255,255,.35); pointer-events: none;
+      z-index: 2;
+    }
+
+    /* LIGHTBOX */
+    .lightbox {
+      display: none; position: fixed; inset: 0; z-index: 200;
+      background: rgba(0,0,0,.93);
+      justify-content: center; align-items: center; padding: 16px;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox img {
+      max-width: min(92vw,880px); max-height: 87vh;
+      object-fit: contain;
+      border: 1px solid var(--border);
+      box-shadow: 0 24px 72px rgba(0,0,0,.85);
+    }
+    .lb-close {
+      position: fixed; top: 16px; right: 20px;
+      background: none; border: none;
+      color: var(--muted); font-size: 2rem; cursor: pointer; line-height: 1;
+      transition: color .2s;
+    }
+    .lb-close:hover { color: var(--cream); }
+    .lb-nav {
+      position: fixed; top: 50%; transform: translateY(-50%);
+      background: none; border: none;
+      color: var(--muted); font-size: 2.4rem;
+      cursor: pointer; padding: 10px 14px;
+      transition: color .2s; user-select: none;
+    }
+    .lb-nav:hover { color: var(--gold); }
+    .lb-prev { left: 4px; }
+    .lb-next { right: 4px; }
+    .lb-counter {
+      position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%);
+      font-size: .57rem; letter-spacing: .18em; color: var(--muted); text-transform: uppercase;
+    }
+    .lb-wa {
+      position: fixed; bottom: 16px; right: 20px;
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--gold); color: var(--bg);
+      font-family: 'DM Mono', monospace; font-size: .58rem;
+      letter-spacing: .12em; text-transform: uppercase;
+      padding: 9px 16px; text-decoration: none;
+      transition: opacity .2s;
+    }
+    .lb-wa:hover { opacity: .85; }
+    .lb-wa svg { width: 13px; height: 13px; fill: currentColor; }
+
+    /* FOOTER */
+    footer {
+      margin-top: 16px; border-top: 1px solid var(--border);
+      padding: 28px clamp(16px,5vw,56px);
+      display: flex; flex-wrap: wrap;
+      justify-content: space-between; align-items: center; gap: 14px;
+    }
+    .footer-logo { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 1.1rem; letter-spacing: .18em; color: var(--gold-dim); text-transform: uppercase; }
+    .footer-copy { font-size: .54rem; color: var(--muted); letter-spacing: .1em; }
+    .footer-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--gold); color: var(--bg);
+      font-family: 'DM Mono', monospace; font-size: .59rem;
+      letter-spacing: .12em; text-transform: uppercase;
+      padding: 10px 18px; text-decoration: none;
+      transition: opacity .2s;
+    }
+    .footer-cta:hover { opacity: .85; }
+    .footer-cta svg { width: 13px; height: 13px; fill: currentColor; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Afro<em>deco</em></div>
+  <div class="header-right">Art Africain Contemporain &nbsp;·&nbsp; Bénin</div>
+</header>
+
+<section class="hero">
+  <p class="eyebrow">Catalogue — Collection Physique</p>
+  <h1>L'art africain<br><em>dans votre espace</em></h1>
+  <p class="hero-meta">
+    Tableaux originaux réalisés à la main.<br>
+    Impression sur papier mat ou toile tendue.<br>
+    Livraison partout au Bénin et à l'international.
+  </p>
+  <a class="cta-wa" href="https://wa.me/2290159088081?text=Bonjour%20Afrodeco%2C%20j'ai%20vu%20votre%20catalogue%20et%20je%20suis%20int%C3%A9ress%C3%A9(e)." target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Commander sur WhatsApp
+  </a>
+</section>
+
+<div class="divider">63 œuvres &nbsp;·&nbsp; Collection 2024 — 2026</div>
+
+<div class="gallery" id="gallery"></div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lb-close">×</button>
+  <button class="lb-nav lb-prev" id="lb-prev">‹</button>
+  <img id="lb-img" src="" alt="Tableau Afrodeco" />
+  <button class="lb-nav lb-next" id="lb-next">›</button>
+  <div class="lb-counter" id="lb-counter"></div>
+  <a class="lb-wa" id="lb-wa" href="#" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Je veux ce tableau
+  </a>
+</div>
+
+<footer>
+  <div class="footer-logo">Afrodeco</div>
+  <div class="footer-copy">© 2026 Afrodeco &nbsp;·&nbsp; afrodeco.bj</div>
+  <a class="footer-cta" href="https://wa.me/2290159088081?text=Bonjour%20Afrodeco%2C%20je%20voudrais%20en%20savoir%20plus." target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Nous contacter
+  </a>
+</footer>
+
+<script>
+const IDS = [
+  "1aoKr2ixDwV8Gzq-4uqDBTYQDTy8LNmeU","1f0JJr-ZS3ulW93I3-c2SiV0Z6AirTAib",
+  "1b1I5VD46k0ujd0T8Y30D6QqTN1Ldvrji","1AkNHEUHBFQsUaPkzWT5yNDeoBtLeQDec",
+  "1oWDoztfpizxZtrHTzAOzYCoJAEpBTIEO","1otovAFe39SSVnOgl4sgjxaz_4PsMOQlg",
+  "1Bw9CnIDOhRpa_Q8GyNFPlxmw6doPuxtG","1iIcnPVWFvOxIL7_gjhtWBvqeM0zNVgmH",
+  "1GKkhMNMCDJ__Gi31j0zRrBI4uIu5XApx","1dhSz2ndB_uZRhb8YAt4ZYmtj8Sc8giau",
+  "1tH9_Kqxz5qTm0TxivIraJRaPV8w2ckyB","1R8nLfUYgYmoqG7h8dZbFxT7xz2_RqEsF",
+  "1jCFIFuz03bHWrT-DYcHnZABJLcQXCa6R","1CFjLh9PLiDPLJZXLXejfedxXqLk4osQc",
+  "1lnCEY_wHHhn0oeokP8_YZvAXMQdN6ocY","11YXc4MJJOqvJ0Xq2XRNeO_eiNjdngZnk",
+  "1-EP6AsQEErBKScPfobramLA-ezm-nOpA","1PzYJt2rsSMs4fPtkVpI9EScalCgjJc8J",
+  "1EBABKi2sonmZqkG4Kd15JYc2IM0c2KDC","1VraAz8BlDNkEMSurWANj3VKiodpBHkr-",
+  "1voBhPPlx2phsPFudyzZxmrDXzrPuxWRS","1qgjnszBrwmZvo8IsCQZYutLQg4F5Hzy8",
+  "126sT4fBJCpkJPk5d-IuCRTXhbaBP7yw-","1FVuq777S7munRteYL547yNFi26dTdASw",
+  "1Y8y0gTZqRxLMlOh2UGodnmHtpykC2i-K","1pJL8r6qkhKGZxBykJjCULORrM01SB4Su",
+  "1cKZsuuQoWEk9EOIhtHIsvazinHxrXzyc","12Dhsg7KUq1cqT2QoZ3585ko11Scz1Z8x",
+  "17BHC_QqtNRneOoy7rZtvRcavoEcROdIi","1bXDEfCA_QqOqB3iEyZM8TPme2G-e_w8V",
+  "1dN7wazxfyEtg8UdFe32I0ntVSsoYTX9Y","1sUQRJmodIgjwFZhx_0nzUxC4vuGnZxQq",
+  "1NBsWOIfGr7x7qfcH_lse_3Hr8XNsMTDP","1Ls3Hski9rINCwuB-MgqRApFRPI2qB48t",
+  "1ge0Y_DAHLOtnkA0AXknQopysorj1W1of","1OnO4J70B733tCnVu4ESxF8haZ0PNPJjj",
+  "1BvWDcoX7_7Wh1iIddLUsfNNPOkKgmpN8","1OHbC5seL6p_l9lVOp3v0wPi0gsmv2MaI",
+  "1wK_6y_KObWkaQfEsHAo66YcHV_fltXWB","1KdzvYBB01UltYHAM0LuSR9cTfoYKLq1m",
+  "1g8IHW-suttf9unLnXMdTY4M5od7zcaq8","1dHJIn2EYZOSgQ7gGGlYTzdBDyo0_wHOI",
+  "1-JRQtdckswwIe-Pm3JGs2qHfE0Tz3NzL","1WRDYiwMpYw8xVJGPu6iTHJCdxutjC7Qp",
+  "1BUyVom3N91Dj7IdrihYjVUDO0WMoF2F7","1hF3nS_zMY813vw-smztLCN2sQJnuyzSR",
+  "1EKEzGHeQMD7dWkqF9ZjiTMXIPWa2ZTgE","1WS1J02Ob0MqqoqulMu1a3ilSH8VSS5DE",
+  "1YLeE5pm1JxG3hypL3BWJGrxFI2M7flYx","1k1zcVtEm-P1uFfGTyfsGU12OrqJ6mSJ6",
+  "14G7ZzB3idl1CotAHL3xiPZXEH-_HQROK","1pklu7tjzKoGDvAyWElQPd89-JhQul2kh",
+  "1JGYGZqyMqzaYg7KdwTc3lvpFjD3nQsHA","13SOyT5a9jNakv_76DKsVmuVikbx2yWtM",
+  "1Wd3uAsK9HAyhCHEHEaBLaI_qE5WaIGH3","1W4IILQBCzYXpsccwZ0SGJorNJv6kTXuJ",
+  "1tDlwVKRuzATYO1kM3s23pMHs6hGPa7IC","17rolQbk4UoMLfvMZbPImAvNaG4FIPXT0",
+  "1uWBl7xiZEVNsy4YzBldMGmgeOm-D-7Nt","1lBGz2Hi6QQwewh0XgG3Yj4HE76DMYhtk",
+  "1OTwk2jCq2-tY2YUqA10rHI7cqiuShypB","1H_PAaZ2RBs7Y31Cm40NCqNECI9UCVJFS",
+  "1fJ2ODJTq8xbD89sBE1F1WOYVhJ3P50q4"
+];
+
+const thumb = id => `https://drive.google.com/thumbnail?id=${id}&sz=w600`;
+const full  = id => `https://drive.google.com/thumbnail?id=${id}&sz=w1200`;
+const waMsg = n  => `https://wa.me/2290159088081?text=Bonjour%20Afrodeco%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20le%20tableau%20n%C2%B0${n}%20de%20votre%20catalogue.`;
+
+// Build gallery
+const gallery = document.getElementById('gallery');
+IDS.forEach((id, i) => {
+  const card = document.createElement('div');
+  card.className = 'card';
+
+  const inner = document.createElement('div');
+  inner.className = 'card-inner';
+
+  const shimmer = document.createElement('div');
+  shimmer.className = 'shimmer';
+
+  const img = document.createElement('img');
+  img.alt = `Tableau Afrodeco n°${i+1}`;
+  img.loading = 'lazy';
+  img.decoding = 'async';
+  img.src = thumb(id);
+  img.onload = () => { img.classList.add('loaded'); card.classList.add('loaded'); };
+
+  const num = document.createElement('div');
+  num.className = 'card-num';
+  num.textContent = String(i+1).padStart(2,'0');
+
+  inner.append(shimmer, img, num);
+  card.appendChild(inner);
+  card.addEventListener('click', () => openLb(i));
+  gallery.appendChild(card);
+});
+
+// Lightbox
+let cur = 0;
+const lb     = document.getElementById('lightbox');
+const lbImg  = document.getElementById('lb-img');
+const lbCtr  = document.getElementById('lb-counter');
+const lbWa   = document.getElementById('lb-wa');
+
+function openLb(i) {
+  cur = i;
+  lbImg.src = full(IDS[i]);
+  lbCtr.textContent = `${i+1} / ${IDS.length}`;
+  lbWa.href = waMsg(i+1);
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLb() {
+  lb.classList.remove('open');
+  document.body.style.overflow = '';
+  setTimeout(() => { lbImg.src = ''; }, 300);
+}
+function prev() { cur = (cur - 1 + IDS.length) % IDS.length; lbImg.src = full(IDS[cur]); lbCtr.textContent = `${cur+1} / ${IDS.length}`; lbWa.href = waMsg(cur+1); }
+function next() { cur = (cur + 1) % IDS.length;              lbImg.src = full(IDS[cur]); lbCtr.textContent = `${cur+1} / ${IDS.length}`; lbWa.href = waMsg(cur+1); }
+
+document.getElementById('lb-close').onclick = closeLb;
+document.getElementById('lb-prev').onclick  = prev;
+document.getElementById('lb-next').onclick  = next;
+lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+document.addEventListener('keydown', e => {
+  if (!lb.classList.contains('open')) return;
+  if (e.key === 'Escape')      closeLb();
+  if (e.key === 'ArrowLeft')   prev();
+  if (e.key === 'ArrowRight')  next();
+});
+
+// Swipe mobile
+let tx = 0;
+lb.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+lb.addEventListener('touchend',   e => {
+  const dx = e.changedTouches[0].clientX - tx;
+  if (Math.abs(dx) > 48) dx < 0 ? next() : prev();
+});
+</script>
+</body>
+</html>
