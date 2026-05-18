@@ -857,9 +857,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Matisse6.png",
-    imageVis: BASE + "Matisse6.png",
-    photosProduit: [BASE + "Matisse6.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse6.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse6.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse6.png"]
   },
   {
     id: 77,
@@ -869,9 +869,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Matisse7.png",
-    imageVis: BASE + "Matisse7.png",
-    photosProduit: [BASE + "Matisse7.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse7.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse7.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse7.png"]
   },
   {
     id: 78,
@@ -881,9 +881,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Matisse8.png",
-    imageVis: BASE + "Matisse8.png",
-    photosProduit: [BASE + "Matisse8.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse8.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse8.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse8.png"]
   },
   {
     id: 79,
@@ -893,9 +893,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Matisse9.png",
-    imageVis: BASE + "Matisse9.png",
-    photosProduit: [BASE + "Matisse9.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse9.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse9.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse9.png"]
   },
   {
     id: 80,
@@ -905,9 +905,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Matisse10.png",
-    imageVis: BASE + "Matisse10.png",
-    photosProduit: [BASE + "Matisse10.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse10.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse10.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse10.png"]
   },
   {
     id: 81,
@@ -917,9 +917,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Matisse11.png",
-    imageVis: BASE + "Matisse11.png",
-    photosProduit: [BASE + "Matisse11.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse11.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse11.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse11.png"]
   },
   {
     id: 82,
@@ -929,9 +929,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Matisse12.png",
-    imageVis: BASE + "Matisse12.png",
-    photosProduit: [BASE + "Matisse12.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse12.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse12.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse12.png"]
   },
   {
     id: 83,
@@ -941,9 +941,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Matisse13.png",
-    imageVis: BASE + "Matisse13.png",
-    photosProduit: [BASE + "Matisse13.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse13.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse13.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse13.png"]
   },
   {
     id: 84,
@@ -953,9 +953,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Matisse14.png",
-    imageVis: BASE + "Matisse14.png",
-    photosProduit: [BASE + "Matisse14.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse14.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse14.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse14.png"]
   },
   {
     id: 85,
@@ -965,9 +965,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Matisse15.png",
-    imageVis: BASE + "Matisse15.png",
-    photosProduit: [BASE + "Matisse15.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse15.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse15.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse15.png"]
   },
   {
     id: 86,
@@ -977,9 +977,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Matisse16.png",
-    imageVis: BASE + "Matisse16.png",
-    photosProduit: [BASE + "Matisse16.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse16.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse16.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse16.png"]
   },
   {
     id: 87,
@@ -989,9 +989,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Matisse17.png",
-    imageVis: BASE + "Matisse17.png",
-    photosProduit: [BASE + "Matisse17.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse17.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse17.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse17.png"]
   },
   {
     id: 88,
@@ -1001,9 +1001,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Matisse18.png",
-    imageVis: BASE + "Matisse18.png",
-    photosProduit: [BASE + "Matisse18.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse18.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse18.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse18.png"]
   },
   {
     id: 89,
@@ -1013,9 +1013,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Matisse19.png",
-    imageVis: BASE + "Matisse19.png",
-    photosProduit: [BASE + "Matisse19.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse19.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse19.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse19.png"]
   }
 
 ];
