@@ -620,8 +620,7 @@ const TABLEAUX = [
     prix: 145,
     dimensions: "50×70 cm",
     image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-17.png"
-  }
-,
+  },
   {
     id: 59,
     titre: "Quotes 1",
@@ -701,8 +700,7 @@ const TABLEAUX = [
     prix: 145,
     dimensions: "50×70 cm",
     image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/Quotes-8.png"
-  }
-,
+  },
   {
     id: 67,
     titre: "Plaines",
@@ -849,65 +847,175 @@ const TABLEAUX = [
       "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Mockups-5.jpg"
     ]
   },
+
+  // ── MATISSE 06 → 19 ─────────────────────────────────────
   {
     id: 76,
-    titre: "Itssenaxia #17",
-    artiste: "Itssenaxia",
-    description: "Œuvre graphique sombre et mystérieuse, signature du style unique d'Itssenaxia.",
-    categorie: "art-africain",
+    titre: "Matisse 06",
+    artiste: "Afrodeco Studio",
+    description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
+    categorie: "matisse",
     prix: 184,
-    dimensions: "50×70 cm",
-    image: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-17.png",
-    imageVis: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-17.png",
-    photosProduit: [
-      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-17.png",
-      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Mockups-10.jpg"
-    ]
+    dimensions: "120×80 cm",
+    image: BASE + "Matisse6.png",
+    imageVis: BASE + "Matisse6.png",
+    photosProduit: [BASE + "Matisse6.png"]
   },
   {
     id: 77,
-    titre: "Nostalgie",
-    artiste: "Itssenaxia",
-    description: "Photographie artistique d'objets rétro — cassettes audio et appareil Polaroid — baignés dans une lumière chaude et intimiste.",
-    categorie: "photographie",
+    titre: "Matisse 07",
+    artiste: "Afrodeco Studio",
+    description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
+    categorie: "matisse",
     prix: 184,
-    dimensions: "50×70 cm",
-    image: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-18.png",
-    imageVis: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-18.png",
-    photosProduit: [
-      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-18.png",
-      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Mockups-3.jpg"
-    ]
+    dimensions: "120×80 cm",
+    image: BASE + "Matisse7.png",
+    imageVis: BASE + "Matisse7.png",
+    photosProduit: [BASE + "Matisse7.png"]
   },
   {
     id: 78,
-    titre: "Calavera",
-    artiste: "Itssenaxia",
-    description: "Crâne orné d'un sombrero et de fleurs colorées sur fond orange vif. Une œuvre festive mêlant cultures africaine et mexicaine.",
-    categorie: "art-africain",
+    titre: "Matisse 08",
+    artiste: "Afrodeco Studio",
+    description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
+    categorie: "matisse",
     prix: 184,
-    dimensions: "50×70 cm",
-    image: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-19.png",
-    imageVis: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-19.png",
-    photosProduit: [
-      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-19.png",
-      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Mockups-1.png"
-    ]
+    dimensions: "120×80 cm",
+    image: BASE + "Matisse8.png",
+    imageVis: BASE + "Matisse8.png",
+    photosProduit: [BASE + "Matisse8.png"]
   },
   {
     id: 79,
-    titre: "The Ride",
-    artiste: "Itssenaxia",
-    description: "Illustration psychédélique — une créature et une voiture violette sur fond turquoise. Énergie urbaine et imaginaire débridé.",
-    categorie: "art-africain",
+    titre: "Matisse 09",
+    artiste: "Afrodeco Studio",
+    description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
+    categorie: "matisse",
     prix: 184,
-    dimensions: "50×70 cm",
-    image: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-20.png",
-    imageVis: "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-20.png",
-    photosProduit: [
-      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Plain-20.png",
-      "https://res.cloudinary.com/dycxgexgu/image/upload/Itssenaxia_Mockups-2.jpg"
-    ]
+    dimensions: "120×80 cm",
+    image: BASE + "Matisse9.png",
+    imageVis: BASE + "Matisse9.png",
+    photosProduit: [BASE + "Matisse9.png"]
+  },
+  {
+    id: 80,
+    titre: "Matisse 10",
+    artiste: "Afrodeco Studio",
+    description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
+    categorie: "matisse",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: BASE + "Matisse10.png",
+    imageVis: BASE + "Matisse10.png",
+    photosProduit: [BASE + "Matisse10.png"]
+  },
+  {
+    id: 81,
+    titre: "Matisse 11",
+    artiste: "Afrodeco Studio",
+    description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
+    categorie: "matisse",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: BASE + "Matisse11.png",
+    imageVis: BASE + "Matisse11.png",
+    photosProduit: [BASE + "Matisse11.png"]
+  },
+  {
+    id: 82,
+    titre: "Matisse 12",
+    artiste: "Afrodeco Studio",
+    description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
+    categorie: "matisse",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: BASE + "Matisse12.png",
+    imageVis: BASE + "Matisse12.png",
+    photosProduit: [BASE + "Matisse12.png"]
+  },
+  {
+    id: 83,
+    titre: "Matisse 13",
+    artiste: "Afrodeco Studio",
+    description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
+    categorie: "matisse",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: BASE + "Matisse13.png",
+    imageVis: BASE + "Matisse13.png",
+    photosProduit: [BASE + "Matisse13.png"]
+  },
+  {
+    id: 84,
+    titre: "Matisse 14",
+    artiste: "Afrodeco Studio",
+    description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
+    categorie: "matisse",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: BASE + "Matisse14.png",
+    imageVis: BASE + "Matisse14.png",
+    photosProduit: [BASE + "Matisse14.png"]
+  },
+  {
+    id: 85,
+    titre: "Matisse 15",
+    artiste: "Afrodeco Studio",
+    description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
+    categorie: "matisse",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: BASE + "Matisse15.png",
+    imageVis: BASE + "Matisse15.png",
+    photosProduit: [BASE + "Matisse15.png"]
+  },
+  {
+    id: 86,
+    titre: "Matisse 16",
+    artiste: "Afrodeco Studio",
+    description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
+    categorie: "matisse",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: BASE + "Matisse16.png",
+    imageVis: BASE + "Matisse16.png",
+    photosProduit: [BASE + "Matisse16.png"]
+  },
+  {
+    id: 87,
+    titre: "Matisse 17",
+    artiste: "Afrodeco Studio",
+    description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
+    categorie: "matisse",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: BASE + "Matisse17.png",
+    imageVis: BASE + "Matisse17.png",
+    photosProduit: [BASE + "Matisse17.png"]
+  },
+  {
+    id: 88,
+    titre: "Matisse 18",
+    artiste: "Afrodeco Studio",
+    description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
+    categorie: "matisse",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: BASE + "Matisse18.png",
+    imageVis: BASE + "Matisse18.png",
+    photosProduit: [BASE + "Matisse18.png"]
+  },
+  {
+    id: 89,
+    titre: "Matisse 19",
+    artiste: "Afrodeco Studio",
+    description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
+    categorie: "matisse",
+    prix: 184,
+    dimensions: "120×80 cm",
+    image: BASE + "Matisse19.png",
+    imageVis: BASE + "Matisse19.png",
+    photosProduit: [BASE + "Matisse19.png"]
   }
 
 ];
