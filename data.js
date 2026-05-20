@@ -317,16 +317,6 @@ const TABLEAUX = [
     image: BASE + "Photos-6.jpg"
   },
   {
-    id: 29,
-    titre: "Photo 7",
-    artiste: "Afrodeco Studio",
-    description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
-    categorie: "photographie",
-    prix: 150,
-    dimensions: "60×40 cm",
-    image: BASE + "Photos-7.jpg"
-  },
-  {
     id: 30,
     titre: "Photo 8",
     artiste: "Afrodeco Studio",
