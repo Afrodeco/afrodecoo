@@ -214,6 +214,9 @@ input[type=range].vis2-slider::-webkit-slider-thumb{-webkit-appearance:none;widt
 .about-page{padding:3rem 5vw;max-width:860px;}
 .about-page h2{font-family:'Nomad',sans-serif;font-size:2rem;font-weight:400;margin:2.5rem 0 1rem;letter-spacing:0.02em;}
 .about-page p{font-size:0.86rem;line-height:2;color:var(--grey-text);margin-bottom:1.5rem;font-weight:350;}
+.about-list{list-style:none;padding:0;margin:0.5rem 0 1.5rem 1rem;}
+.about-list li{font-size:0.86rem;line-height:2;color:var(--grey-text);font-weight:350;padding-left:1rem;position:relative;}
+.about-list li::before{content:'—';position:absolute;left:0;opacity:0.4;}
 .contact-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1.5rem;margin-top:3rem;}
 .contact-card{border:1px solid var(--grey);padding:2rem;}
 .contact-card h4{font-size:0.62rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--grey-text);margin-bottom:0.8rem;font-weight:600;opacity:0.6;}
@@ -429,14 +432,14 @@ footer{background:var(--black);color:var(--white);padding:5rem 5vw 3rem;}
         <li><a href="#" onclick="showPage('apropos');return false;">Contact</a></li>
       </ul></div>
       <div class="footer-col"><h4>Contact</h4><ul>
-        <li><a href="mailto:hello@afrodeco.bj">hello@afrodeco.bj</a></li>
+        <li><a href="mailto:contact.afrodeco@gmail.com">contact.afrodeco@gmail.com</a></li>
         <li><a href="#">Instagram</a></li>
       </ul></div>
     </div>
     <div class="footer-cta-row">
-      <a href="mailto:hello@afrodeco.bj?subject=Devis personnalisé" class="btn-footer btn-footer-primary">Demander un devis personnalisé</a>
-      <a href="mailto:hello@afrodeco.bj?subject=Prise de RDV" class="btn-footer btn-footer-outline">Prendre RDV — appel ou visite</a>
-      <a href="mailto:hello@afrodeco.bj?subject=Visite de chantier" class="btn-footer btn-footer-outline">Visite de chantier</a>
+      <a href="mailto:contact.afrodeco@gmail.com?subject=Devis personnalisé" class="btn-footer btn-footer-primary">Demander un devis personnalisé</a>
+      <a href="mailto:contact.afrodeco@gmail.com?subject=Prise de RDV" class="btn-footer btn-footer-outline">Prendre RDV — appel ou visite</a>
+      <a href="mailto:contact.afrodeco@gmail.com?subject=Visite de chantier" class="btn-footer btn-footer-outline">Visite de chantier</a>
     </div>
     <div class="footer-bottom">
       <p>© 2025 Afrodeco. Tous droits réservés.</p>
@@ -599,18 +602,52 @@ footer{background:var(--black);color:var(--white);padding:5rem 5vw 3rem;}
 <div id="page-apropos" class="page">
   <div class="page-header"><span class="section-label">Notre histoire</span><h1>Afrodeco</h1></div>
   <div class="about-page">
+
     <h2>Qui sommes-nous ?</h2>
-    <p>Afrodeco est une plateforme sur laquelle des créatifs de patterns, d'objets d'art déco et photographes peuvent proposer leurs œuvres à une audience qui se trouve dans le besoin : architectes d'intérieur, décorateurs, et passionnés d'art.</p>
-    <p>Chaque œuvre que nous proposons est le fruit d'un travail minutieux. Notre mission est d'aider les créatifs tout en rendant l'art africain accessible, en préservant son authenticité et sa profondeur.</p>
+    <p>Afrodeco est une marque dédiée à l'art décoratif contemporain et à la création d'intérieurs inspirants.</p>
+    <p>Nous imaginons et sélectionnons des œuvres pensées pour apporter du caractère, de l'émotion et une véritable atmosphère aux espaces de vie.</p>
+    <p>À travers une esthétique moderne, tendance et intemporelle, Afrodeco propose des tableaux qui s'intègrent naturellement dans des intérieurs contemporains — minimalistes, chaleureux, artistiques ou audacieux.</p>
+    <p>Notre univers est inspiré par le design, les textures, les émotions visuelles et les espaces qui donnent envie de se sentir bien chez soi.</p>
+
     <h2>Notre approche</h2>
-    <p>Nous travaillons directement avec des artistes africains et de la diaspora. Chaque tableau est accompagné de son histoire, de ses inspirations, et de son artiste — parce qu'une œuvre d'art n'est jamais juste une image.</p>
+    <p>Nous croyons qu'un tableau ne sert pas uniquement à décorer un mur.</p>
+    <p>Une œuvre peut transformer l'énergie d'une pièce, créer une ambiance, attirer le regard et donner une identité à un espace.</p>
+    <p>C'est pourquoi nous accordons une attention particulière :</p>
+    <ul class="about-list">
+      <li>aux compositions,</li>
+      <li>aux palettes de couleurs,</li>
+      <li>aux tendances décoration,</li>
+      <li>et à l'harmonie entre les œuvres et les intérieurs modernes.</li>
+    </ul>
+    <p>Chaque création est pensée pour être à la fois esthétique, expressive et facile à intégrer dans différents univers.</p>
+
+    <h2>Notre vision</h2>
+    <p>Afrodeco évolue avec une volonté de construire un univers artistique fort, accessible et inspirant.</p>
+    <p>À long terme, la marque souhaite mettre davantage en lumière des créations originales, des collaborations créatives et des œuvres influencées par différentes sensibilités culturelles et artistiques.</p>
+    <p>Notre objectif reste le même : <strong>Créer des pièces qui donnent vie aux espaces.</strong></p>
+
     <h2>Nous contacter</h2>
     <div class="contact-grid">
-      <div class="contact-card"><h4>Email</h4><p><a href="mailto:hello@afrodeco.bj">hello@afrodeco.bj</a></p></div>
-      <div class="contact-card"><h4>Devis personnalisé</h4><p>Pour toute commande sur mesure.</p><br><a href="mailto:hello@afrodeco.bj?subject=Devis" class="btn-primary">Écrire</a></div>
-      <div class="contact-card"><h4>Prise de RDV</h4><p>Appel ou visite de chantier.</p><br><a href="mailto:hello@afrodeco.bj?subject=RDV" class="btn-primary">Prendre RDV</a></div>
-      <div class="contact-card"><h4>Réseaux sociaux</h4><p>Suivez-nous sur Instagram.</p></div>
+      <div class="contact-card">
+        <h4>Email</h4>
+        <p><a href="mailto:contact.afrodeco@gmail.com">contact.afrodeco@gmail.com</a></p>
+      </div>
+      <div class="contact-card">
+        <h4>WhatsApp</h4>
+        <p>Commandes, devis, questions.</p><br>
+        <a href="https://wa.me/2290159088081?text=Bonjour%20Afrodeco%2C%20je%20souhaite%20en%20savoir%20plus." class="btn-primary" target="_blank">Écrire sur WhatsApp</a>
+      </div>
+      <div class="contact-card">
+        <h4>Devis personnalisé</h4>
+        <p>Pour toute commande sur mesure.</p><br>
+        <a href="mailto:contact.afrodeco@gmail.com?subject=Devis personnalisé Afrodeco" class="btn-primary">Envoyer un email</a>
+      </div>
+      <div class="contact-card">
+        <h4>Réseaux sociaux</h4>
+        <p>Suivez-nous sur Instagram pour découvrir nos dernières créations.</p>
+      </div>
     </div>
+
   </div>
 </div>
 
