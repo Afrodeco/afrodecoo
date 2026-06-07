@@ -41,16 +41,7 @@ const TABLEAUX = [
     dimensions: "120×80 cm",
     image: BASE + "Abstrait-2.png"
   },
-  {
-    id: 4,
-    titre: "Abstrait 3",
-    artiste: "Afrodeco Studio",
-    description: "Œuvre abstraite aux tonalités riches et à la texture généreuse.",
-    categorie: "abstrait",
-    prix: 184,
-    dimensions: "120×80 cm",
-    image: BASE + "Abstrait-3.jpg"
-  },
+
   {
     id: 5,
     titre: "Terre & Pierres",
@@ -315,6 +306,16 @@ const TABLEAUX = [
     prix: 150,
     dimensions: "60×40 cm",
     image: BASE + "Photos-6.jpg"
+  },
+  {
+    id: 29,
+    titre: "Photo 7",
+    artiste: "Afrodeco Studio",
+    description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
+    categorie: "photographie",
+    prix: 150,
+    dimensions: "60×40 cm",
+    image: BASE + "Photos-7.jpg"
   },
   {
     id: 30,
