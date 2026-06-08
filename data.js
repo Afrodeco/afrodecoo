@@ -23,7 +23,7 @@ const TABLEAUX = [
   },
   {
     id: 2,
-    titre: "Abstrait 1",
+    titre: "Saffron",
     artiste: "Afrodeco Studio",
     description: "Une œuvre abstraite qui apporte de la chaleur à votre déco.",
     categorie: "abstrait",
@@ -33,7 +33,7 @@ const TABLEAUX = [
   },
   {
     id: 3,
-    titre: "Abstrait 2",
+    titre: "Naya",
     artiste: "Afrodeco Studio",
     description: "Composition abstraite aux formes organiques et aux tons naturels.",
     categorie: "abstrait",
@@ -54,7 +54,7 @@ const TABLEAUX = [
   },
   {
     id: 6,
-    titre: "Abstrait 5",
+    titre: "Oryx",
     artiste: "Afrodeco Studio",
     description: "Œuvre abstraite aux tonalités profondes et à la composition équilibrée.",
     categorie: "abstrait",
@@ -64,7 +64,7 @@ const TABLEAUX = [
   },
   {
     id: 7,
-    titre: "Abstrait 6",
+    titre: "Zambezi",
     artiste: "Afrodeco Studio",
     description: "Jeu de formes et de matières inspiré des traditions artistiques africaines.",
     categorie: "abstrait",
@@ -74,7 +74,7 @@ const TABLEAUX = [
   },
   {
     id: 8,
-    titre: "Abstrait 7",
+    titre: "Fiorella",
     artiste: "Afrodeco Studio",
     description: "Composition abstraite entre ombre et lumière, texture et profondeur.",
     categorie: "abstrait",
@@ -84,7 +84,7 @@ const TABLEAUX = [
   },
   {
     id: 9,
-    titre: "Abstrait 8",
+    titre: "Apollo",
     artiste: "Afrodeco Studio",
     description: "Œuvre abstraite aux contrastes saisissants, entre douceur et intensité.",
     categorie: "abstrait",
@@ -94,7 +94,7 @@ const TABLEAUX = [
   },
   {
     id: 10,
-    titre: "Abstrait 9",
+    titre: "Sienna",
     artiste: "Afrodeco Studio",
     description: "Palette terreuse et formes libres pour une présence apaisante sur vos murs.",
     categorie: "abstrait",
@@ -104,7 +104,7 @@ const TABLEAUX = [
   },
   {
     id: 11,
-    titre: "Abstrait 10",
+    titre: "Jasmine",
     artiste: "Afrodeco Studio",
     description: "Une abstraction contemporaine aux influences africaines marquées.",
     categorie: "abstrait",
@@ -114,7 +114,7 @@ const TABLEAUX = [
   },
   {
     id: 12,
-    titre: "Abstrait 11",
+    titre: "Gazelle",
     artiste: "Afrodeco Studio",
     description: "Lignes organiques et matières texturées pour une œuvre pleine de caractère.",
     categorie: "abstrait",
@@ -124,7 +124,7 @@ const TABLEAUX = [
   },
   {
     id: 13,
-    titre: "Abstrait 12",
+    titre: "Sahel",
     artiste: "Afrodeco Studio",
     description: "Composition abstraite aux tons chauds, idéale pour sublimer un salon.",
     categorie: "abstrait",
@@ -134,7 +134,7 @@ const TABLEAUX = [
   },
   {
     id: 14,
-    titre: "Abstrait 13",
+    titre: "Terracotta",
     artiste: "Afrodeco Studio",
     description: "Équilibre subtil entre géométrie et spontanéité, signature Afrodeco.",
     categorie: "abstrait",
@@ -144,7 +144,7 @@ const TABLEAUX = [
   },
   {
     id: 15,
-    titre: "Abstrait 14",
+    titre: "Helios",
     artiste: "Afrodeco Studio",
     description: "Une œuvre puissante aux couleurs profondes, entre terre et ciel africain.",
     categorie: "abstrait",
@@ -199,7 +199,7 @@ const TABLEAUX = [
   },
   {
     id: 19,
-    titre: "Matisse 4",
+    titre: "Violet",
     artiste: "Afrodeco Studio",
     description: "Composition abstraite dans l'esprit Matisse, élégante et intemporelle.",
     categorie: "matisse",
@@ -214,7 +214,7 @@ const TABLEAUX = [
   },
   {
     id: 20,
-    titre: "Matisse 5",
+    titre: "Kudu",
     artiste: "Afrodeco Studio",
     description: "Formes découpées aux couleurs vives, énergie et modernité.",
     categorie: "matisse",
@@ -229,7 +229,7 @@ const TABLEAUX = [
   },
   {
     id: 21,
-    titre: "Géométrie 1",
+    titre: "Peony",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
@@ -239,7 +239,7 @@ const TABLEAUX = [
   },
   {
     id: 22,
-    titre: "Géométrie 2",
+    titre: "Jaguar",
     artiste: "Afrodeco Studio",
     description: "Jeu de formes géométriques et de contrastes pour une présence forte.",
     categorie: "geometrique",
@@ -249,7 +249,7 @@ const TABLEAUX = [
   },
   {
     id: 23,
-    titre: "Photo 1",
+    titre: "Lemur",
     artiste: "Afrodeco Studio",
     description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
     categorie: "photographie",
@@ -259,7 +259,7 @@ const TABLEAUX = [
   },
   {
     id: 24,
-    titre: "Photo 2",
+    titre: "Oya",
     artiste: "Afrodeco Studio",
     description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
     categorie: "photographie",
@@ -269,7 +269,7 @@ const TABLEAUX = [
   },
   {
     id: 25,
-    titre: "Photo 3",
+    titre: "Rosso",
     artiste: "Afrodeco Studio",
     description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
     categorie: "photographie",
@@ -279,7 +279,7 @@ const TABLEAUX = [
   },
   {
     id: 26,
-    titre: "Photo 4",
+    titre: "Bastet",
     artiste: "Afrodeco Studio",
     description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
     categorie: "photographie",
@@ -289,7 +289,7 @@ const TABLEAUX = [
   },
   {
     id: 27,
-    titre: "Photo 5",
+    titre: "Nour",
     artiste: "Afrodeco Studio",
     description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
     categorie: "photographie",
@@ -299,7 +299,7 @@ const TABLEAUX = [
   },
   {
     id: 28,
-    titre: "Photo 6",
+    titre: "Citron",
     artiste: "Afrodeco Studio",
     description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
     categorie: "photographie",
@@ -309,7 +309,7 @@ const TABLEAUX = [
   },
   {
     id: 29,
-    titre: "Photo 7",
+    titre: "Tulip",
     artiste: "Afrodeco Studio",
     description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
     categorie: "photographie",
@@ -319,7 +319,7 @@ const TABLEAUX = [
   },
   {
     id: 30,
-    titre: "Photo 8",
+    titre: "Fennec",
     artiste: "Afrodeco Studio",
     description: "Photographie d'art tirée sur papier fine-art, numérotée et signée.",
     categorie: "photographie",
@@ -344,353 +344,353 @@ const TABLEAUX = [
   },
   {
     id: 32,
-    titre: "Nature 1",
+    titre: "Jamal",
     artiste: "Afrodeco Studio",
     description: "Œuvre inspirée de la nature africaine, entre végétation luxuriante et sérénité.",
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/jamal.png"
+    image: BASE + "jamal.png"
   },
   {
     id: 33,
-    titre: "Nature 2",
+    titre: "Zinnia",
     artiste: "Afrodeco Studio",
     description: "Œuvre inspirée de la nature africaine, entre végétation luxuriante et sérénité.",
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/zinnia.png"
+    image: BASE + "zinnia.png"
   },
   {
     id: 34,
-    titre: "Nature 3",
+    titre: "Okapi",
     artiste: "Afrodeco Studio",
     description: "Œuvre inspirée de la nature africaine, entre végétation luxuriante et sérénité.",
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/okapi.png"
+    image: BASE + "okapi.png"
   },
   {
     id: 35,
-    titre: "Nature 4",
+    titre: "Ife",
     artiste: "Afrodeco Studio",
     description: "Œuvre inspirée de la nature africaine, entre végétation luxuriante et sérénité.",
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/ife.png"
+    image: BASE + "ife.png"
   },
   {
     id: 36,
-    titre: "Nature 5",
+    titre: "Perla",
     artiste: "Afrodeco Studio",
     description: "Œuvre inspirée de la nature africaine, entre végétation luxuriante et sérénité.",
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/perla.png"
+    image: BASE + "perla.png"
   },
   {
     id: 37,
-    titre: "Nature 6",
+    titre: "Anubis",
     artiste: "Afrodeco Studio",
     description: "Œuvre inspirée de la nature africaine, entre végétation luxuriante et sérénité.",
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/anubis.png"
+    image: BASE + "anubis.png"
   },
   {
     id: 38,
-    titre: "Nature 7",
+    titre: "Zaid",
     artiste: "Afrodeco Studio",
     description: "Œuvre inspirée de la nature africaine, entre végétation luxuriante et sérénité.",
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/zaid.png"
+    image: BASE + "zaid.png"
   },
   {
     id: 39,
-    titre: "Nature 8",
+    titre: "Melon",
     artiste: "Afrodeco Studio",
     description: "Œuvre inspirée de la nature africaine, entre végétation luxuriante et sérénité.",
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/melon.png"
+    image: BASE + "melon.png"
   },
   {
     id: 40,
-    titre: "Nature 9",
+    titre: "Aster",
     artiste: "Afrodeco Studio",
     description: "Œuvre inspirée de la nature africaine, entre végétation luxuriante et sérénité.",
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/aster.png"
+    image: BASE + "aster.png"
   },
   {
     id: 41,
-    titre: "Nature 10",
+    titre: "Cherry",
     artiste: "Afrodeco Studio",
     description: "Œuvre inspirée de la nature africaine, entre végétation luxuriante et sérénité.",
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/cherry.png"
+    image: BASE + "cherry.png"
   },
   {
     id: 42,
-    titre: "Kid 1",
+    titre: "Cinnamon",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/cinnamon.png"
+    image: BASE + "cinnamon.png"
   },
   {
     id: 43,
-    titre: "Kid 2",
+    titre: "Kestrel",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/kestrel.png"
+    image: BASE + "kestrel.png"
   },
   {
     id: 44,
-    titre: "Kid 3",
+    titre: "Kofi",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/kofi.png"
+    image: BASE + "kofi.png"
   },
   {
     id: 45,
-    titre: "Kid 4",
+    titre: "Toscana",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/toscana.png"
+    image: BASE + "toscana.png"
   },
   {
     id: 46,
-    titre: "Kid 5",
+    titre: "Persephone",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/persephone.png"
+    image: BASE + "persephone.png"
   },
   {
     id: 47,
-    titre: "Kid 6",
+    titre: "Salma",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/salma.png"
+    image: BASE + "salma.png"
   },
   {
     id: 48,
-    titre: "Kid 7",
+    titre: "Clove",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/clove.png"
+    image: BASE + "clove.png"
   },
   {
     id: 49,
-    titre: "Kid 8",
+    titre: "Oleander",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/oleander.png"
+    image: BASE + "oleander.png"
   },
   {
     id: 50,
-    titre: "Kid 9",
+    titre: "Osprey",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/osprey.png"
+    image: BASE + "osprey.png"
   },
   {
     id: 51,
-    titre: "Kid 10",
+    titre: "Azalea",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/azalea.png"
+    image: BASE + "azalea.png"
   },
   {
     id: 52,
-    titre: "Kid 11",
+    titre: "Raven",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/raven.png"
+    image: BASE + "raven.png"
   },
   {
     id: 53,
-    titre: "Kid 12",
+    titre: "Ayo",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/ayo.png"
+    image: BASE + "ayo.png"
   },
   {
     id: 54,
-    titre: "Kid 13",
+    titre: "Portofino",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/portofino.png"
+    image: BASE + "portofino.png"
   },
   {
     id: 55,
-    titre: "Kid 14",
+    titre: "Pandora",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/pandora.png"
+    image: BASE + "pandora.png"
   },
   {
     id: 56,
-    titre: "Kid 15",
+    titre: "Rania",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/rania.png"
+    image: BASE + "rania.png"
   },
   {
     id: 57,
-    titre: "Kid 16",
+    titre: "Ginger",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/ginger.png"
+    image: BASE + "ginger.png"
   },
   {
     id: 58,
-    titre: "Kid 17",
+    titre: "Mimosa",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/mimosa.png"
+    image: BASE + "mimosa.png"
   },
   {
     id: 59,
-    titre: "Quotes 1",
+    titre: "Tamarind",
     artiste: "Afrodeco Studio",
     description: "Citation inspirante pour dynamiser votre espace de travail.",
     categorie: "office",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/tamarind.png"
+    image: BASE + "tamarind.png"
   },
   {
     id: 60,
-    titre: "Quotes 2",
+    titre: "Serval",
     artiste: "Afrodeco Studio",
     description: "Citation inspirante pour dynamiser votre espace de travail.",
     categorie: "office",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/serval.png"
+    image: BASE + "serval.png"
   },
   {
     id: 61,
-    titre: "Quotes 3",
+    titre: "Anansi",
     artiste: "Afrodeco Studio",
     description: "Citation inspirante pour dynamiser votre espace de travail.",
     categorie: "office",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/anansi.png"
+    image: BASE + "anansi.png"
   },
   {
     id: 62,
-    titre: "Quotes 4",
+    titre: "Viola",
     artiste: "Afrodeco Studio",
     description: "Citation inspirante pour dynamiser votre espace de travail.",
     categorie: "office",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/viola.png"
+    image: BASE + "viola.png"
   },
   {
     id: 63,
-    titre: "Quotes 5",
+    titre: "Thoth",
     artiste: "Afrodeco Studio",
     description: "Citation inspirante pour dynamiser votre espace de travail.",
     categorie: "office",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/thoth.png"
+    image: BASE + "thoth.png"
   },
   {
     id: 64,
-    titre: "Quotes 6",
+    titre: "Rim",
     artiste: "Afrodeco Studio",
     description: "Citation inspirante pour dynamiser votre espace de travail.",
     categorie: "office",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/rim.png"
+    image: BASE + "rim.png"
   },
   {
     id: 65,
-    titre: "Quotes 7",
+    titre: "Sesame",
     artiste: "Afrodeco Studio",
     description: "Citation inspirante pour dynamiser votre espace de travail.",
     categorie: "office",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/sesame.png"
+    image: BASE + "sesame.png"
   },
   {
     id: 66,
-    titre: "Quotes 8",
+    titre: "Caracal",
     artiste: "Afrodeco Studio",
     description: "Citation inspirante pour dynamiser votre espace de travail.",
     categorie: "office",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/caracal.png"
+    image: BASE + "caracal.png"
   },
   {
     id: 67,
@@ -700,13 +700,13 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/yemoja.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0dd8f977bea0111d089f7a6896078acc360f0ef/sekhmet.png",
+    image: BASE + "yemoja.png",
+    imageVis: BASE + "sekhmet.png",
     photosProduit: [
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/yemoja.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/azzurro.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/sekhmet.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/dina.png"
+      BASE + "yemoja.png",
+      BASE + "azzurro.png",
+      BASE + "sekhmet.png",
+      BASE + "dina.png"
     ]
   },
   {
@@ -717,13 +717,13 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/eos.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/eos.png",
+    image: BASE + "eos.png",
+    imageVis: BASE + "eos.png",
     photosProduit: [
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/eos.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/dalia.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/timbuktu.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/sole.png"
+      BASE + "eos.png",
+      BASE + "dalia.png",
+      BASE + "timbuktu.png",
+      BASE + "sole.png"
     ]
   },
   {
@@ -736,16 +736,16 @@ const TABLEAUX = [
     dimensions: "50×70 cm",
     serie: true,
     images: [
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/cheetah.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/zanzibar.png"
+      BASE + "cheetah.png",
+      BASE + "zanzibar.png"
     ],
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/aria.png",
+    imageVis: BASE + "aria.png",
     photosProduit: [
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/aria.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/nyx.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/soraya.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/cheetah.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/zanzibar.png"
+      BASE + "aria.png",
+      BASE + "nyx.png",
+      BASE + "soraya.png",
+      BASE + "cheetah.png",
+      BASE + "zanzibar.png"
     ]
   },
   {
@@ -842,964 +842,964 @@ const TABLEAUX = [
   // ── MATISSE 06 → 19 ─────────────────────────────────────
   {
     id: 76,
-    titre: "Matisse 06",
+    titre: "Amira",
     artiste: "Afrodeco Studio",
     description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/amira.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/amira.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/amira.png"]
+    image: BASE + "amira.png",
+    imageVis: BASE + "amira.png",
+    photosProduit: [BASE + "amira.png"]
   },
   {
     id: 77,
-    titre: "Matisse 07",
+    titre: "Peach",
     artiste: "Afrodeco Studio",
     description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/peach.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/peach.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/peach.png"]
+    image: BASE + "peach.png",
+    imageVis: BASE + "peach.png",
+    photosProduit: [BASE + "peach.png"]
   },
   {
     id: 78,
-    titre: "Matisse 08",
+    titre: "Gardenia",
     artiste: "Afrodeco Studio",
     description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/gardenia.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/gardenia.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/gardenia.png"]
+    image: BASE + "gardenia.png",
+    imageVis: BASE + "gardenia.png",
+    photosProduit: [BASE + "gardenia.png"]
   },
   {
     id: 79,
-    titre: "Matisse 09",
+    titre: "Zebra",
     artiste: "Afrodeco Studio",
     description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/zebra.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/zebra.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/zebra.png"]
+    image: BASE + "zebra.png",
+    imageVis: BASE + "zebra.png",
+    photosProduit: [BASE + "zebra.png"]
   },
   {
     id: 80,
-    titre: "Matisse 10",
+    titre: "Zola",
     artiste: "Afrodeco Studio",
     description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/zola.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/zola.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/zola.png"]
+    image: BASE + "zola.png",
+    imageVis: BASE + "zola.png",
+    photosProduit: [BASE + "zola.png"]
   },
   {
     id: 81,
-    titre: "Matisse 11",
+    titre: "Luce",
     artiste: "Afrodeco Studio",
     description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/luce.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/luce.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/luce.png"]
+    image: BASE + "luce.png",
+    imageVis: BASE + "luce.png",
+    photosProduit: [BASE + "luce.png"]
   },
   {
     id: 82,
-    titre: "Matisse 12",
+    titre: "Bragi",
     artiste: "Afrodeco Studio",
     description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/bragi.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/bragi.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/bragi.png"]
+    image: BASE + "bragi.png",
+    imageVis: BASE + "bragi.png",
+    photosProduit: [BASE + "bragi.png"]
   },
   {
     id: 83,
-    titre: "Matisse 13",
+    titre: "Yasmin",
     artiste: "Afrodeco Studio",
     description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/yasmin.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/yasmin.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/yasmin.png"]
+    image: BASE + "yasmin.png",
+    imageVis: BASE + "yasmin.png",
+    photosProduit: [BASE + "yasmin.png"]
   },
   {
     id: 84,
-    titre: "Matisse 14",
+    titre: "Mint",
     artiste: "Afrodeco Studio",
     description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/mint.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/mint.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/mint.png"]
+    image: BASE + "mint.png",
+    imageVis: BASE + "mint.png",
+    photosProduit: [BASE + "mint.png"]
   },
   {
     id: 85,
-    titre: "Matisse 15",
+    titre: "Primrose",
     artiste: "Afrodeco Studio",
     description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/primrose.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/primrose.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/primrose.png"]
+    image: BASE + "primrose.png",
+    imageVis: BASE + "primrose.png",
+    photosProduit: [BASE + "primrose.png"]
   },
   {
     id: 86,
-    titre: "Matisse 16",
+    titre: "Impala",
     artiste: "Afrodeco Studio",
     description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/impala.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/impala.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/impala.png"]
+    image: BASE + "impala.png",
+    imageVis: BASE + "impala.png",
+    photosProduit: [BASE + "impala.png"]
   },
   {
     id: 87,
-    titre: "Matisse 17",
+    titre: "Thandi",
     artiste: "Afrodeco Studio",
     description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/thandi.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/thandi.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/thandi.png"]
+    image: BASE + "thandi.png",
+    imageVis: BASE + "thandi.png",
+    photosProduit: [BASE + "thandi.png"]
   },
   {
     id: 88,
-    titre: "Matisse 18",
+    titre: "Sera",
     artiste: "Afrodeco Studio",
     description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/sera.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/sera.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/sera.png"]
+    image: BASE + "sera.png",
+    imageVis: BASE + "sera.png",
+    photosProduit: [BASE + "sera.png"]
   },
   {
     id: 89,
-    titre: "Matisse 19",
+    titre: "Isis",
     artiste: "Afrodeco Studio",
     description: "Composition dans l'esprit Matisse, aux formes épurées et aux couleurs apaisantes.",
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/isis.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/isis.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/isis.png"]
+    image: BASE + "isis.png",
+    imageVis: BASE + "isis.png",
+    photosProduit: [BASE + "isis.png"]
   },
 
   {
     id: 90,
-    titre: "Abstrait 15",
+    titre: "Paprika",
     artiste: "Afrodeco Studio",
     description: "Composition abstraite aux tons chauds et aux formes organiques, signature Afrodeco.",
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/paprika.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/paprika.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/paprika.jpg"]
+    image: BASE + "paprika.jpg",
+    imageVis: BASE + "paprika.jpg",
+    photosProduit: [BASE + "paprika.jpg"]
   },
   {
     id: 91,
-    titre: "Abstrait 16",
+    titre: "Hibiscus",
     artiste: "Afrodeco Studio",
     description: "Composition abstraite aux tons chauds et aux formes organiques, signature Afrodeco.",
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/hibiscus.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/hibiscus.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/hibiscus.jpg"]
+    image: BASE + "hibiscus.jpg",
+    imageVis: BASE + "hibiscus.jpg",
+    photosProduit: [BASE + "hibiscus.jpg"]
   },
   {
     id: 92,
-    titre: "Abstrait 17",
+    titre: "Ibis",
     artiste: "Afrodeco Studio",
     description: "Composition abstraite aux tons chauds et aux formes organiques, signature Afrodeco.",
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/ibis.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/ibis.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/ibis.jpg"]
+    image: BASE + "ibis.jpg",
+    imageVis: BASE + "ibis.jpg",
+    photosProduit: [BASE + "ibis.jpg"]
   },
   {
     id: 93,
-    titre: "Abstrait 18",
+    titre: "Kalahari",
     artiste: "Afrodeco Studio",
     description: "Composition abstraite aux tons chauds et aux formes organiques, signature Afrodeco.",
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/kalahari.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/kalahari.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/kalahari.jpg"]
+    image: BASE + "kalahari.jpg",
+    imageVis: BASE + "kalahari.jpg",
+    photosProduit: [BASE + "kalahari.jpg"]
   },
   {
     id: 94,
-    titre: "Abstrait 19",
+    titre: "Bellini",
     artiste: "Afrodeco Studio",
     description: "Composition abstraite aux tons chauds et aux formes organiques, signature Afrodeco.",
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/bellini.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/bellini.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/bellini.jpg"]
+    image: BASE + "bellini.jpg",
+    imageVis: BASE + "bellini.jpg",
+    photosProduit: [BASE + "bellini.jpg"]
   },
   {
     id: 95,
-    titre: "Abstrait 20",
+    titre: "Athena",
     artiste: "Afrodeco Studio",
     description: "Composition abstraite aux tons chauds et aux formes organiques, signature Afrodeco.",
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/athena.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/athena.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/athena.jpg"]
+    image: BASE + "athena.jpg",
+    imageVis: BASE + "athena.jpg",
+    photosProduit: [BASE + "athena.jpg"]
   },
   {
     id: 96,
-    titre: "Abstrait 21",
+    titre: "Leila",
     artiste: "Afrodeco Studio",
     description: "Composition abstraite aux tons chauds et aux formes organiques, signature Afrodeco.",
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/leila.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/leila.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/leila.jpg"]
+    image: BASE + "leila.jpg",
+    imageVis: BASE + "leila.jpg",
+    photosProduit: [BASE + "leila.jpg"]
   },
   {
     id: 97,
-    titre: "Abstrait 22",
+    titre: "Cardamom",
     artiste: "Afrodeco Studio",
     description: "Composition abstraite aux tons chauds et aux formes organiques, signature Afrodeco.",
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/cardamom.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/cardamom.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/cardamom.jpg"]
+    image: BASE + "cardamom.jpg",
+    imageVis: BASE + "cardamom.jpg",
+    photosProduit: [BASE + "cardamom.jpg"]
   },
   {
     id: 98,
-    titre: "Abstrait 23",
+    titre: "Magnolia",
     artiste: "Afrodeco Studio",
     description: "Composition abstraite aux tons chauds et aux formes organiques, signature Afrodeco.",
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/magnolia.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/magnolia.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/magnolia.jpg"]
+    image: BASE + "magnolia.jpg",
+    imageVis: BASE + "magnolia.jpg",
+    photosProduit: [BASE + "magnolia.jpg"]
   },
   {
     id: 99,
-    titre: "Abstrait 24",
+    titre: "Falcon",
     artiste: "Afrodeco Studio",
     description: "Composition abstraite aux tons chauds et aux formes organiques, signature Afrodeco.",
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/falcon.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/falcon.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/falcon.jpg"]
+    image: BASE + "falcon.jpg",
+    imageVis: BASE + "falcon.jpg",
+    photosProduit: [BASE + "falcon.jpg"]
   },
   {
     id: 100,
-    titre: "Abstrait 25",
+    titre: "Serengeti",
     artiste: "Afrodeco Studio",
     description: "Composition abstraite aux tons chauds et aux formes organiques, signature Afrodeco.",
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/serengeti.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/serengeti.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/serengeti.jpg"]
+    image: BASE + "serengeti.jpg",
+    imageVis: BASE + "serengeti.jpg",
+    photosProduit: [BASE + "serengeti.jpg"]
   },
   {
     id: 101,
-    titre: "Abstrait 26",
+    titre: "Dolce",
     artiste: "Afrodeco Studio",
     description: "Composition abstraite aux tons chauds et aux formes organiques, signature Afrodeco.",
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/dolce.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/dolce.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/dolce.jpg"]
+    image: BASE + "dolce.jpg",
+    imageVis: BASE + "dolce.jpg",
+    photosProduit: [BASE + "dolce.jpg"]
   },
   {
     id: 102,
-    titre: "Abstrait 27",
+    titre: "Artemis",
     artiste: "Afrodeco Studio",
     description: "Composition abstraite aux tons chauds et aux formes organiques, signature Afrodeco.",
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/artemis.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/artemis.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/artemis.jpg"]
+    image: BASE + "artemis.jpg",
+    imageVis: BASE + "artemis.jpg",
+    photosProduit: [BASE + "artemis.jpg"]
   },
   {
     id: 103,
-    titre: "Abstrait 28",
+    titre: "Noor",
     artiste: "Afrodeco Studio",
     description: "Composition abstraite aux tons chauds et aux formes organiques, signature Afrodeco.",
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/noor.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/noor.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/noor.jpg"]
+    image: BASE + "noor.jpg",
+    imageVis: BASE + "noor.jpg",
+    photosProduit: [BASE + "noor.jpg"]
   },
   {
     id: 104,
-    titre: "Abstrait 29",
+    titre: "Vanilla",
     artiste: "Afrodeco Studio",
     description: "Composition abstraite aux tons chauds et aux formes organiques, signature Afrodeco.",
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/vanilla.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/vanilla.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/vanilla.jpg"]
+    image: BASE + "vanilla.jpg",
+    imageVis: BASE + "vanilla.jpg",
+    photosProduit: [BASE + "vanilla.jpg"]
   },
   {
     id: 105,
-    titre: "Abstrait 30",
+    titre: "Camelia",
     artiste: "Afrodeco Studio",
     description: "Composition abstraite aux tons chauds et aux formes organiques, signature Afrodeco.",
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/camelia.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/camelia.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/camelia.jpg"]
+    image: BASE + "camelia.jpg",
+    imageVis: BASE + "camelia.jpg",
+    photosProduit: [BASE + "camelia.jpg"]
   },
   {
     id: 106,
-    titre: "Abstrait 31",
+    titre: "Leopard",
     artiste: "Afrodeco Studio",
     description: "Composition abstraite aux tons chauds et aux formes organiques, signature Afrodeco.",
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/leopard.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/leopard.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/leopard.jpg"]
+    image: BASE + "leopard.jpg",
+    imageVis: BASE + "leopard.jpg",
+    photosProduit: [BASE + "leopard.jpg"]
   },
   {
     id: 107,
-    titre: "Géométrie 10",
+    titre: "Kilimanjaro",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/kilimanjaro.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/kilimanjaro.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/kilimanjaro.png"]
+    image: BASE + "kilimanjaro.png",
+    imageVis: BASE + "kilimanjaro.png",
+    photosProduit: [BASE + "kilimanjaro.png"]
   },
   {
     id: 108,
-    titre: "Géométrie 11",
+    titre: "Vesuvio",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/vesuvio.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/vesuvio.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/vesuvio.png"]
+    image: BASE + "vesuvio.png",
+    imageVis: BASE + "vesuvio.png",
+    photosProduit: [BASE + "vesuvio.png"]
   },
   {
     id: 109,
-    titre: "Géométrie 12",
+    titre: "Gaia",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/gaia.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/gaia.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/gaia.png"]
+    image: BASE + "gaia.png",
+    imageVis: BASE + "gaia.png",
+    photosProduit: [BASE + "gaia.png"]
   },
   {
     id: 110,
-    titre: "Géométrie 13",
+    titre: "Yara",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/yara.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/yara.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/yara.png"]
+    image: BASE + "yara.png",
+    imageVis: BASE + "yara.png",
+    photosProduit: [BASE + "yara.png"]
   },
   {
     id: 111,
-    titre: "Géométrie 14",
+    titre: "Mango",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/mango.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/mango.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/mango.png"]
+    image: BASE + "mango.png",
+    imageVis: BASE + "mango.png",
+    photosProduit: [BASE + "mango.png"]
   },
   {
     id: 112,
-    titre: "Géométrie 15",
+    titre: "Lily",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/lily.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/lily.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/lily.png"]
+    image: BASE + "lily.png",
+    imageVis: BASE + "lily.png",
+    photosProduit: [BASE + "lily.png"]
   },
   {
     id: 113,
-    titre: "Géométrie 16",
+    titre: "Panther",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/panther.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/panther.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/panther.png"]
+    image: BASE + "panther.png",
+    imageVis: BASE + "panther.png",
+    photosProduit: [BASE + "panther.png"]
   },
   {
     id: 114,
-    titre: "Géométrie 17",
+    titre: "Sankofa",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/sankofa.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/sankofa.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/sankofa.png"]
+    image: BASE + "sankofa.png",
+    imageVis: BASE + "sankofa.png",
+    photosProduit: [BASE + "sankofa.png"]
   },
   {
     id: 115,
-    titre: "Géométrie 18",
+    titre: "Capri",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/capri.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/capri.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/capri.png"]
+    image: BASE + "capri.png",
+    imageVis: BASE + "capri.png",
+    photosProduit: [BASE + "capri.png"]
   },
   {
     id: 116,
-    titre: "Géométrie 19",
+    titre: "Rhea",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/rhea.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/rhea.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/rhea.png"]
+    image: BASE + "rhea.png",
+    imageVis: BASE + "rhea.png",
+    photosProduit: [BASE + "rhea.png"]
   },
   {
     id: 117,
-    titre: "Géométrie 20",
+    titre: "Mira",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/mira.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/mira.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/mira.png"]
+    image: BASE + "mira.png",
+    imageVis: BASE + "mira.png",
+    photosProduit: [BASE + "mira.png"]
   },
   {
     id: 118,
-    titre: "Géométrie 21",
+    titre: "Papaya",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/papaya.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/papaya.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/papaya.png"]
+    image: BASE + "papaya.png",
+    imageVis: BASE + "papaya.png",
+    photosProduit: [BASE + "papaya.png"]
   },
   {
     id: 119,
-    titre: "Géométrie 22",
+    titre: "Jacaranda",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/jacaranda.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/jacaranda.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/jacaranda.png"]
+    image: BASE + "jacaranda.png",
+    imageVis: BASE + "jacaranda.png",
+    photosProduit: [BASE + "jacaranda.png"]
   },
   {
     id: 120,
-    titre: "Géométrie 23",
+    titre: "Lynx",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/lynx.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/lynx.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/lynx.png"]
+    image: BASE + "lynx.png",
+    imageVis: BASE + "lynx.png",
+    photosProduit: [BASE + "lynx.png"]
   },
   {
     id: 121,
-    titre: "Géométrie 24",
+    titre: "Ubuntu",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/ubuntu.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/ubuntu.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/ubuntu.png"]
+    image: BASE + "ubuntu.png",
+    imageVis: BASE + "ubuntu.png",
+    photosProduit: [BASE + "ubuntu.png"]
   },
   {
     id: 122,
-    titre: "Géométrie 25",
+    titre: "Siena",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/siena.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/siena.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/siena.png"]
+    image: BASE + "siena.png",
+    imageVis: BASE + "siena.png",
+    photosProduit: [BASE + "siena.png"]
   },
   {
     id: 123,
-    titre: "Géométrie 26",
+    titre: "Calypso",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/calypso.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/calypso.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/calypso.png"]
+    image: BASE + "calypso.png",
+    imageVis: BASE + "calypso.png",
+    photosProduit: [BASE + "calypso.png"]
   },
   {
     id: 124,
-    titre: "Géométrie 27",
+    titre: "Aziz",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/aziz.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/aziz.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/aziz.png"]
+    image: BASE + "aziz.png",
+    imageVis: BASE + "aziz.png",
+    photosProduit: [BASE + "aziz.png"]
   },
   {
     id: 125,
-    titre: "Géométrie 28",
+    titre: "Guava",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/guava.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/guava.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/guava.png"]
+    image: BASE + "guava.png",
+    imageVis: BASE + "guava.png",
+    photosProduit: [BASE + "guava.png"]
   },
   {
     id: 126,
-    titre: "Géométrie 29",
+    titre: "Frangipani",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/frangipani.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/frangipani.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/frangipani.png"]
+    image: BASE + "frangipani.png",
+    imageVis: BASE + "frangipani.png",
+    photosProduit: [BASE + "frangipani.png"]
   },
   {
     id: 127,
-    titre: "Géométrie 3",
+    titre: "Heron",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/heron.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/heron.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/heron.jpg"]
+    image: BASE + "heron.jpg",
+    imageVis: BASE + "heron.jpg",
+    photosProduit: [BASE + "heron.jpg"]
   },
   {
     id: 128,
-    titre: "Géométrie 30",
+    titre: "Amani",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/amani.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/amani.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/amani.png"]
+    image: BASE + "amani.png",
+    imageVis: BASE + "amani.png",
+    photosProduit: [BASE + "amani.png"]
   },
   {
     id: 129,
-    titre: "Géométrie 31",
+    titre: "Verona",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/verona.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/verona.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/verona.png"]
+    image: BASE + "verona.png",
+    imageVis: BASE + "verona.png",
+    photosProduit: [BASE + "verona.png"]
   },
   {
     id: 130,
-    titre: "Géométrie 32",
+    titre: "Iris",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/iris.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/iris.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/iris.png"]
+    image: BASE + "iris.png",
+    imageVis: BASE + "iris.png",
+    photosProduit: [BASE + "iris.png"]
   },
   {
     id: 131,
-    titre: "Géométrie 33",
+    titre: "Rami",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/rami.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/rami.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/rami.png"]
+    image: BASE + "rami.png",
+    imageVis: BASE + "rami.png",
+    photosProduit: [BASE + "rami.png"]
   },
   {
     id: 132,
-    titre: "Géométrie 34",
+    titre: "Date",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/date.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/date.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/date.png"]
+    image: BASE + "date.png",
+    imageVis: BASE + "date.png",
+    photosProduit: [BASE + "date.png"]
   },
   {
     id: 133,
-    titre: "Géométrie 35",
+    titre: "Orchid",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/orchid.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/orchid.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/orchid.png"]
+    image: BASE + "orchid.png",
+    imageVis: BASE + "orchid.png",
+    photosProduit: [BASE + "orchid.png"]
   },
   {
     id: 134,
-    titre: "Géométrie 4",
+    titre: "Crane",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/crane.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/crane.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/crane.jpg"]
+    image: BASE + "crane.jpg",
+    imageVis: BASE + "crane.jpg",
+    photosProduit: [BASE + "crane.jpg"]
   },
   {
     id: 135,
-    titre: "Géométrie 5",
+    titre: "Zuri",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/zuri.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/zuri.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/zuri.jpg"]
+    image: BASE + "zuri.jpg",
+    imageVis: BASE + "zuri.jpg",
+    photosProduit: [BASE + "zuri.jpg"]
   },
   {
     id: 136,
-    titre: "Géométrie 6",
+    titre: "Murano",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/murano.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/murano.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/murano.jpg"]
+    image: BASE + "murano.jpg",
+    imageVis: BASE + "murano.jpg",
+    photosProduit: [BASE + "murano.jpg"]
   },
   {
     id: 137,
-    titre: "Géométrie 7",
+    titre: "Orion",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/orion.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/orion.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/orion.png"]
+    image: BASE + "orion.png",
+    imageVis: BASE + "orion.png",
+    photosProduit: [BASE + "orion.png"]
   },
   {
     id: 138,
-    titre: "Géométrie 8",
+    titre: "Omar",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/omar.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/omar.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/omar.png"]
+    image: BASE + "omar.png",
+    imageVis: BASE + "omar.png",
+    photosProduit: [BASE + "omar.png"]
   },
   {
     id: 139,
-    titre: "Géométrie 9",
+    titre: "Almond",
     artiste: "Afrodeco Studio",
     description: "Composition géométrique aux formes précises et aux lignes épurées.",
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/almond.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/almond.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/almond.png"]
+    image: BASE + "almond.png",
+    imageVis: BASE + "almond.png",
+    photosProduit: [BASE + "almond.png"]
   },
   {
     id: 140,
-    titre: "Kid 18",
+    titre: "Nala",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/nala.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/nala.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/nala.jpg"]
+    image: BASE + "nala.jpg",
+    imageVis: BASE + "nala.jpg",
+    photosProduit: [BASE + "nala.jpg"]
   },
   {
     id: 141,
-    titre: "Kid 19",
+    titre: "Fresco",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/fresco.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/fresco.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/fresco.jpg"]
+    image: BASE + "fresco.jpg",
+    imageVis: BASE + "fresco.jpg",
+    photosProduit: [BASE + "fresco.jpg"]
   },
   {
     id: 142,
-    titre: "Kid 20",
+    titre: "Aurora",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/aurora.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/aurora.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/aurora.jpg"]
+    image: BASE + "aurora.jpg",
+    imageVis: BASE + "aurora.jpg",
+    photosProduit: [BASE + "aurora.jpg"]
   },
   {
     id: 143,
-    titre: "Kid 21",
+    titre: "Farah",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/farah.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/farah.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/farah.png"]
+    image: BASE + "farah.png",
+    imageVis: BASE + "farah.png",
+    photosProduit: [BASE + "farah.png"]
   },
   {
     id: 144,
-    titre: "Kid 22",
+    titre: "Nutmeg",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/nutmeg.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/nutmeg.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/nutmeg.png"]
+    image: BASE + "nutmeg.png",
+    imageVis: BASE + "nutmeg.png",
+    photosProduit: [BASE + "nutmeg.png"]
   },
   {
     id: 145,
-    titre: "Kid 23",
+    titre: "Protea",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/protea.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/protea.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/protea.png"]
+    image: BASE + "protea.png",
+    imageVis: BASE + "protea.png",
+    photosProduit: [BASE + "protea.png"]
   },
   {
     id: 146,
-    titre: "Kid 24",
+    titre: "Antelope",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/antelope.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/antelope.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/antelope.jpg"]
+    image: BASE + "antelope.jpg",
+    imageVis: BASE + "antelope.jpg",
+    photosProduit: [BASE + "antelope.jpg"]
   },
   {
     id: 147,
-    titre: "Kid 25",
+    titre: "Simba",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/simba.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/simba.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/simba.jpg"]
+    image: BASE + "simba.jpg",
+    imageVis: BASE + "simba.jpg",
+    photosProduit: [BASE + "simba.jpg"]
   },
   {
     id: 148,
-    titre: "Kid 26",
+    titre: "Bella",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/bella.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/bella.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/bella.jpg"]
+    image: BASE + "bella.jpg",
+    imageVis: BASE + "bella.jpg",
+    photosProduit: [BASE + "bella.jpg"]
   },
   {
     id: 149,
-    titre: "Kid 27",
+    titre: "Freya",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/freya.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/freya.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/freya.jpg"]
+    image: BASE + "freya.jpg",
+    imageVis: BASE + "freya.jpg",
+    photosProduit: [BASE + "freya.jpg"]
   },
   {
     id: 150,
-    titre: "Kid 28",
+    titre: "Nadia",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/nadia.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/nadia.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/nadia.png"]
+    image: BASE + "nadia.png",
+    imageVis: BASE + "nadia.png",
+    photosProduit: [BASE + "nadia.png"]
   },
   {
     id: 151,
-    titre: "Kid 29",
+    titre: "Anise",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/anise.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/anise.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/anise.png"]
+    image: BASE + "anise.png",
+    imageVis: BASE + "anise.png",
+    photosProduit: [BASE + "anise.png"]
   },
   {
     id: 152,
-    titre: "Kid 30",
+    titre: "Poppy",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/poppy.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/poppy.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/poppy.jpg"]
+    image: BASE + "poppy.jpg",
+    imageVis: BASE + "poppy.jpg",
+    photosProduit: [BASE + "poppy.jpg"]
   },
   {
     id: 153,
-    titre: "Kid 31",
+    titre: "Springbok",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/springbok.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/springbok.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/springbok.png"]
+    image: BASE + "springbok.png",
+    imageVis: BASE + "springbok.png",
+    photosProduit: [BASE + "springbok.png"]
   },
   {
     id: 154,
-    titre: "Kid 32",
+    titre: "Asha",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/asha.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/asha.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/asha.png"]
+    image: BASE + "asha.png",
+    imageVis: BASE + "asha.png",
+    photosProduit: [BASE + "asha.png"]
   },
   {
     id: 155,
-    titre: "Kid 33",
+    titre: "Stella",
     artiste: "Afrodeco Studio",
     description: "Illustration colorée et joyeuse pour décorer la chambre de votre enfant.",
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/stella.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/stella.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/stella.jpg"]
+    image: BASE + "stella.jpg",
+    imageVis: BASE + "stella.jpg",
+    photosProduit: [BASE + "stella.jpg"]
   },
 ];
 
@@ -1815,7 +1815,7 @@ const ARTISTES = [
   {
     nom: "Alex Maurel",
     bio: "Designer graphique talentueux et amoureux de la ville de Ouidah, Alex Maurel s'est inspiré de ses racines pour créer Ouidah Mibiton. Une œuvre empreinte d'authenticité et de passion, qui capture l'essence de la Porte du Non-Retour. Son art raconte des récits profonds à travers une illustration moderne, mêlant couleurs éclatantes et lignes épurées pour transmettre une émotion unique.",
-    photo: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/dahlia.JPG",
+    photo: BASE + "dahlia.JPG",
     specialite: "Design Graphique — Illustration",
     localisation: "Ouidah, Bénin"
   }
