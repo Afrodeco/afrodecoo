@@ -15,11 +15,11 @@ const TABLEAUX = [
     dimensions: "40×50 cm — Série de 3",
     serie: true,
     images: [
-      BASE + "Boho-1.png",
-      BASE + "Boho-2.png",
-      BASE + "Boho-3.png"
+      BASE + "honey-1.png",
+      BASE + "honey-2.png",
+      BASE + "honey-3.png"
     ],
-    imageVis: BASE + "Boho-3.png"
+    imageVis: BASE + "honey-3.png"
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Abstrait-1.png"
+    image: BASE + "saffron.png"
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Abstrait-2.png"
+    image: BASE + "naya.png"
   },
 
   {
@@ -50,7 +50,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Abstrait-4.png"
+    image: BASE + "lotus.png"
   },
   {
     id: 6,
@@ -60,7 +60,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Abstrait-5.png"
+    image: BASE + "oryx.png"
   },
   {
     id: 7,
@@ -70,7 +70,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Abstrait-6.png"
+    image: BASE + "zambezi.png"
   },
   {
     id: 8,
@@ -80,7 +80,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Abstrait-7.png"
+    image: BASE + "fiorella.png"
   },
   {
     id: 9,
@@ -90,7 +90,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Abstrait-8.jpg"
+    image: BASE + "apollo.jpg"
   },
   {
     id: 10,
@@ -100,7 +100,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Abstrait-9.jpg"
+    image: BASE + "sienna.jpg"
   },
   {
     id: 11,
@@ -110,7 +110,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Abstrait-10.jpg"
+    image: BASE + "jasmine.jpg"
   },
   {
     id: 12,
@@ -120,7 +120,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Abstrait-11.jpg"
+    image: BASE + "gazelle.jpg"
   },
   {
     id: 13,
@@ -130,7 +130,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Abstrait-12.png"
+    image: BASE + "sahel.png"
   },
   {
     id: 14,
@@ -140,7 +140,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Abstrait-13.jpg"
+    image: BASE + "terracotta.jpg"
   },
   {
     id: 15,
@@ -150,7 +150,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "Abstrait-14.jpg"
+    image: BASE + "helios.jpg"
   },
   {
     id: 16,
@@ -162,10 +162,10 @@ const TABLEAUX = [
     dimensions: "120×80 cm",
     serie: true,
     images: [
-      BASE + "Matisse 1 mockup.png",
-      BASE + "Matisse 1 design.png"
+      BASE + "idun-2.png",
+      BASE + "idun-1.png"
     ],
-    imageVis: BASE + "Matisse 1 design.png"
+    imageVis: BASE + "idun-1.png"
   },
   {
     id: 17,
@@ -177,10 +177,10 @@ const TABLEAUX = [
     dimensions: "120×80 cm",
     serie: true,
     images: [
-      BASE + "Matisse 2 mockup.png",
-      BASE + "Matisse 2 design.png"
+      BASE + "samira-2.png",
+      BASE + "samira-1.png"
     ],
-    imageVis: BASE + "Matisse 2 design.png"
+    imageVis: BASE + "samira-1.png"
   },
   {
     id: 18,
@@ -192,10 +192,10 @@ const TABLEAUX = [
     dimensions: "120×80 cm",
     serie: true,
     images: [
-      BASE + "Matisse 3 mockup.png",
-      BASE + "Matisse 3 design.png"
+      BASE + "sage-2.png",
+      BASE + "sage-1.png"
     ],
-    imageVis: BASE + "Matisse 3 design.png"
+    imageVis: BASE + "sage-1.png"
   },
   {
     id: 19,
@@ -207,10 +207,10 @@ const TABLEAUX = [
     dimensions: "120×80 cm",
     serie: true,
     images: [
-      BASE + "Matisse 4 mockup.png",
-      BASE + "Matisse 4 design.png"
+      BASE + "violet-2.png",
+      BASE + "violet-1.png"
     ],
-    imageVis: BASE + "Matisse 4 design.png"
+    imageVis: BASE + "violet-1.png"
   },
   {
     id: 20,
@@ -222,10 +222,10 @@ const TABLEAUX = [
     dimensions: "120×80 cm",
     serie: true,
     images: [
-      BASE + "Matisse 5 mockup.png",
-      BASE + "Matisse 5 design.png"
+      BASE + "kudu-2.png",
+      BASE + "kudu-1.png"
     ],
-    imageVis: BASE + "Matisse 5 design.png"
+    imageVis: BASE + "kudu-1.png"
   },
   {
     id: 21,
@@ -235,7 +235,7 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: BASE + "Geometrie-1.jpg"
+    image: BASE + "peony.jpg"
   },
   {
     id: 22,
@@ -245,7 +245,7 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: BASE + "Geometrie-2.jpg"
+    image: BASE + "jaguar.jpg"
   },
   {
     id: 23,
@@ -255,7 +255,7 @@ const TABLEAUX = [
     categorie: "photographie",
     prix: 150,
     dimensions: "60×40 cm",
-    image: BASE + "Photos-1.jpg"
+    image: BASE + "lemur.jpg"
   },
   {
     id: 24,
@@ -265,7 +265,7 @@ const TABLEAUX = [
     categorie: "photographie",
     prix: 150,
     dimensions: "60×40 cm",
-    image: BASE + "Photos-2.jpg"
+    image: BASE + "oya.jpg"
   },
   {
     id: 25,
@@ -275,7 +275,7 @@ const TABLEAUX = [
     categorie: "photographie",
     prix: 150,
     dimensions: "60×40 cm",
-    image: BASE + "Photos-3.jpg"
+    image: BASE + "rosso.jpg"
   },
   {
     id: 26,
@@ -285,7 +285,7 @@ const TABLEAUX = [
     categorie: "photographie",
     prix: 150,
     dimensions: "60×40 cm",
-    image: BASE + "Photos-4.jpg"
+    image: BASE + "bastet.jpg"
   },
   {
     id: 27,
@@ -295,7 +295,7 @@ const TABLEAUX = [
     categorie: "photographie",
     prix: 150,
     dimensions: "60×40 cm",
-    image: BASE + "Photos-5.jpg"
+    image: BASE + "nour.jpg"
   },
   {
     id: 28,
@@ -305,7 +305,7 @@ const TABLEAUX = [
     categorie: "photographie",
     prix: 150,
     dimensions: "60×40 cm",
-    image: BASE + "Photos-6.jpg"
+    image: BASE + "citron.jpg"
   },
   {
     id: 29,
@@ -315,7 +315,7 @@ const TABLEAUX = [
     categorie: "photographie",
     prix: 150,
     dimensions: "60×40 cm",
-    image: BASE + "Photos-7.jpg"
+    image: BASE + "tulip.jpg"
   },
   {
     id: 30,
@@ -325,7 +325,7 @@ const TABLEAUX = [
     categorie: "photographie",
     prix: 150,
     dimensions: "60×40 cm",
-    image: BASE + "Photos-8.jpg"
+    image: BASE + "fennec.jpg"
   },
   {
     id: 31,
@@ -337,10 +337,10 @@ const TABLEAUX = [
     dimensions: "30×40 cm / 50×70 cm — Impression sur papier encadré bois et verre",
     serie: true,
     images: [
-      BASE + "Alex Maurel-1.jpg",
-      BASE + "Alex Maurel-2.jpg"
+      BASE + "cocoa-2.jpg",
+      BASE + "cocoa-3.jpg"
     ],
-    imageVis: BASE + "Alex Maurel Oeuvre sans mockup.jpg"
+    imageVis: BASE + "cocoa-1.jpg"
   },
   {
     id: 32,
@@ -350,7 +350,7 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/Nature-1.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/jamal.png"
   },
   {
     id: 33,
@@ -360,7 +360,7 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/Nature-2.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/zinnia.png"
   },
   {
     id: 34,
@@ -370,7 +370,7 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/Nature-3.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/okapi.png"
   },
   {
     id: 35,
@@ -380,7 +380,7 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/Nature-4.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/ife.png"
   },
   {
     id: 36,
@@ -390,7 +390,7 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/Nature-5.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/058b2f4c6fcc12ec1a661bd50eb9fd6aa2bdfac5/perla.png"
   },
   {
     id: 37,
@@ -400,7 +400,7 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/Nature-6.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/anubis.png"
   },
   {
     id: 38,
@@ -410,7 +410,7 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/Nature-7.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/zaid.png"
   },
   {
     id: 39,
@@ -420,7 +420,7 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/Nature-8.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/melon.png"
   },
   {
     id: 40,
@@ -430,7 +430,7 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/Nature-9.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/aster.png"
   },
   {
     id: 41,
@@ -440,7 +440,7 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/Nature-10.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/f3727293feb4001d2f89da551df7f305e587625f/cherry.png"
   },
   {
     id: 42,
@@ -450,7 +450,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-1.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/cinnamon.png"
   },
   {
     id: 43,
@@ -460,7 +460,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-2.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/kestrel.png"
   },
   {
     id: 44,
@@ -470,7 +470,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-3.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/kofi.png"
   },
   {
     id: 45,
@@ -480,7 +480,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-4.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/toscana.png"
   },
   {
     id: 46,
@@ -490,7 +490,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-5.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/persephone.png"
   },
   {
     id: 47,
@@ -500,7 +500,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-6.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/salma.png"
   },
   {
     id: 48,
@@ -510,7 +510,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-7.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/clove.png"
   },
   {
     id: 49,
@@ -520,7 +520,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-8.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/oleander.png"
   },
   {
     id: 50,
@@ -530,7 +530,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-9.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/osprey.png"
   },
   {
     id: 51,
@@ -540,7 +540,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-10.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/azalea.png"
   },
   {
     id: 52,
@@ -550,7 +550,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-11.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/raven.png"
   },
   {
     id: 53,
@@ -560,7 +560,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-12.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/ayo.png"
   },
   {
     id: 54,
@@ -570,7 +570,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-13.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/portofino.png"
   },
   {
     id: 55,
@@ -580,7 +580,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-14.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/pandora.png"
   },
   {
     id: 56,
@@ -590,7 +590,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-15.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/rania.png"
   },
   {
     id: 57,
@@ -600,7 +600,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-16.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/ginger.png"
   },
   {
     id: 58,
@@ -610,7 +610,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/Kid-17.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0029b4c62ecdfe8b2c1a19d0c107e6e81a1fd7c/mimosa.png"
   },
   {
     id: 59,
@@ -620,7 +620,7 @@ const TABLEAUX = [
     categorie: "office",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/Quotes-1.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/tamarind.png"
   },
   {
     id: 60,
@@ -630,7 +630,7 @@ const TABLEAUX = [
     categorie: "office",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/Quotes-2.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/serval.png"
   },
   {
     id: 61,
@@ -640,7 +640,7 @@ const TABLEAUX = [
     categorie: "office",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/Quotes-3.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/anansi.png"
   },
   {
     id: 62,
@@ -650,7 +650,7 @@ const TABLEAUX = [
     categorie: "office",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/Quotes-4.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/viola.png"
   },
   {
     id: 63,
@@ -660,7 +660,7 @@ const TABLEAUX = [
     categorie: "office",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/Quotes-5.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/thoth.png"
   },
   {
     id: 64,
@@ -670,7 +670,7 @@ const TABLEAUX = [
     categorie: "office",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/Quotes-6.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/rim.png"
   },
   {
     id: 65,
@@ -680,7 +680,7 @@ const TABLEAUX = [
     categorie: "office",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/Quotes-7.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/sesame.png"
   },
   {
     id: 66,
@@ -690,7 +690,7 @@ const TABLEAUX = [
     categorie: "office",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/Quotes-8.png"
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/6cf3673cefbcd785821c6b46de37975cf0e5722d/caracal.png"
   },
   {
     id: 67,
@@ -700,13 +700,13 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/Plaines-1.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0dd8f977bea0111d089f7a6896078acc360f0ef/Plaines-3.png",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/yemoja.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d0dd8f977bea0111d089f7a6896078acc360f0ef/sekhmet.png",
     photosProduit: [
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/Plaines-1.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/Plaines-2.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/Plaines-3.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/Plaines-4.png"
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/yemoja.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/azzurro.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/sekhmet.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/38ae359daa97cb9fedd2226c80a0af1be79521cd/dina.png"
     ]
   },
   {
@@ -717,13 +717,13 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/Abstraittestplain-1.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/Abstraittestplain-1.png",
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/eos.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/eos.png",
     photosProduit: [
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/Abstraittestplain-1.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/Abstraittestplain-2.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/Abstraittestmockup-1.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/Abstraittestmockup-2.png"
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/eos.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/dalia.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/timbuktu.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/d2e46b27ee16c5b620f81ac1458e9d8749912ebf/sole.png"
     ]
   },
   {
@@ -736,16 +736,16 @@ const TABLEAUX = [
     dimensions: "50×70 cm",
     serie: true,
     images: [
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/Artsy-1.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/Artsy-2.png"
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/cheetah.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/zanzibar.png"
     ],
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/Artsyplain-1.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/aria.png",
     photosProduit: [
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/Artsyplain-1.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/Artsyplain-2.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/Artsyplain-3.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/Artsy-1.png",
-      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/Artsy-2.png"
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/aria.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/nyx.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/soraya.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/cheetah.png",
+      "https://raw.githubusercontent.com/Afrodeco/afrodecoo/efed2fdce192fd7657df465da541948b0d15e69c/zanzibar.png"
     ]
   },
   {
@@ -848,9 +848,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse6.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse6.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse6.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/amira.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/amira.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/amira.png"]
   },
   {
     id: 77,
@@ -860,9 +860,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse7.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse7.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse7.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/peach.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/peach.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/peach.png"]
   },
   {
     id: 78,
@@ -872,9 +872,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse8.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse8.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse8.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/gardenia.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/gardenia.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/gardenia.png"]
   },
   {
     id: 79,
@@ -884,9 +884,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse9.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse9.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse9.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/zebra.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/zebra.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/zebra.png"]
   },
   {
     id: 80,
@@ -896,9 +896,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse10.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse10.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse10.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/zola.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/zola.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/zola.png"]
   },
   {
     id: 81,
@@ -908,9 +908,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse11.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse11.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse11.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/luce.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/luce.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/luce.png"]
   },
   {
     id: 82,
@@ -920,9 +920,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse12.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse12.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse12.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/bragi.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/bragi.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/bragi.png"]
   },
   {
     id: 83,
@@ -932,9 +932,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse13.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse13.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse13.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/yasmin.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/yasmin.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/yasmin.png"]
   },
   {
     id: 84,
@@ -944,9 +944,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse14.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse14.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse14.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/mint.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/mint.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/mint.png"]
   },
   {
     id: 85,
@@ -956,9 +956,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse15.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse15.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse15.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/primrose.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/primrose.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/primrose.png"]
   },
   {
     id: 86,
@@ -968,9 +968,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse16.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse16.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse16.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/impala.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/impala.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/impala.png"]
   },
   {
     id: 87,
@@ -980,9 +980,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse17.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse17.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse17.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/thandi.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/thandi.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/thandi.png"]
   },
   {
     id: 88,
@@ -992,9 +992,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse18.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse18.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse18.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/sera.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/sera.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/sera.png"]
   },
   {
     id: 89,
@@ -1004,9 +1004,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse19.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse19.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/Matisse19.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/isis.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/isis.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/73c808f3738bb28f65e64eaa5c74ecebca39ebc1/isis.png"]
   },
 
   {
@@ -1017,9 +1017,9 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait15.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait15.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait15.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/paprika.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/paprika.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/paprika.jpg"]
   },
   {
     id: 91,
@@ -1029,9 +1029,9 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait16.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait16.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait16.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/hibiscus.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/hibiscus.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/hibiscus.jpg"]
   },
   {
     id: 92,
@@ -1041,9 +1041,9 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait17.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait17.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait17.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/ibis.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/ibis.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/ibis.jpg"]
   },
   {
     id: 93,
@@ -1053,9 +1053,9 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait18.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait18.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait18.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/kalahari.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/kalahari.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/kalahari.jpg"]
   },
   {
     id: 94,
@@ -1065,9 +1065,9 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait19.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait19.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait19.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/bellini.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/bellini.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/bellini.jpg"]
   },
   {
     id: 95,
@@ -1077,9 +1077,9 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait20.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait20.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait20.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/athena.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/athena.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/athena.jpg"]
   },
   {
     id: 96,
@@ -1089,9 +1089,9 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait21.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait21.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait21.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/leila.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/leila.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/leila.jpg"]
   },
   {
     id: 97,
@@ -1101,9 +1101,9 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait22.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait22.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait22.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/cardamom.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/cardamom.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/cardamom.jpg"]
   },
   {
     id: 98,
@@ -1113,9 +1113,9 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait23.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait23.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait23.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/magnolia.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/magnolia.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/magnolia.jpg"]
   },
   {
     id: 99,
@@ -1125,9 +1125,9 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait24.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait24.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait24.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/falcon.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/falcon.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/falcon.jpg"]
   },
   {
     id: 100,
@@ -1137,9 +1137,9 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait25.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait25.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait25.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/serengeti.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/serengeti.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/serengeti.jpg"]
   },
   {
     id: 101,
@@ -1149,9 +1149,9 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait26.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait26.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait26.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/dolce.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/dolce.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/dolce.jpg"]
   },
   {
     id: 102,
@@ -1161,9 +1161,9 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait27.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait27.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait27.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/artemis.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/artemis.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/artemis.jpg"]
   },
   {
     id: 103,
@@ -1173,9 +1173,9 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait28.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait28.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait28.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/noor.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/noor.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/noor.jpg"]
   },
   {
     id: 104,
@@ -1185,9 +1185,9 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait29.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait29.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait29.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/vanilla.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/vanilla.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/vanilla.jpg"]
   },
   {
     id: 105,
@@ -1197,9 +1197,9 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait30.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait30.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait30.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/camelia.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/camelia.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/camelia.jpg"]
   },
   {
     id: 106,
@@ -1209,9 +1209,9 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait31.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait31.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/Abstrait31.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/leopard.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/leopard.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/c1b065a2e60c626c092076f3a37809c0db37e76c/leopard.jpg"]
   },
   {
     id: 107,
@@ -1221,9 +1221,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie10.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie10.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie10.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/kilimanjaro.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/kilimanjaro.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/kilimanjaro.png"]
   },
   {
     id: 108,
@@ -1233,9 +1233,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie11.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie11.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie11.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/vesuvio.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/vesuvio.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/vesuvio.png"]
   },
   {
     id: 109,
@@ -1245,9 +1245,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie12.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie12.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie12.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/gaia.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/gaia.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/gaia.png"]
   },
   {
     id: 110,
@@ -1257,9 +1257,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie13.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie13.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie13.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/yara.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/yara.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/yara.png"]
   },
   {
     id: 111,
@@ -1269,9 +1269,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie14.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie14.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie14.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/mango.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/mango.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/mango.png"]
   },
   {
     id: 112,
@@ -1281,9 +1281,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie15.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie15.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie15.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/lily.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/lily.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/lily.png"]
   },
   {
     id: 113,
@@ -1293,9 +1293,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie16.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie16.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie16.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/panther.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/panther.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/panther.png"]
   },
   {
     id: 114,
@@ -1305,9 +1305,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie17.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie17.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie17.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/sankofa.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/sankofa.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/sankofa.png"]
   },
   {
     id: 115,
@@ -1317,9 +1317,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie18.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie18.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie18.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/capri.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/capri.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/capri.png"]
   },
   {
     id: 116,
@@ -1329,9 +1329,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie19.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie19.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie19.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/rhea.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/rhea.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/rhea.png"]
   },
   {
     id: 117,
@@ -1341,9 +1341,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie20.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie20.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie20.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/mira.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/mira.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/mira.png"]
   },
   {
     id: 118,
@@ -1353,9 +1353,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie21.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie21.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie21.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/papaya.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/papaya.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/papaya.png"]
   },
   {
     id: 119,
@@ -1365,9 +1365,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie22.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie22.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie22.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/jacaranda.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/jacaranda.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/jacaranda.png"]
   },
   {
     id: 120,
@@ -1377,9 +1377,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie23.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie23.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie23.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/lynx.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/lynx.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/lynx.png"]
   },
   {
     id: 121,
@@ -1389,9 +1389,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie24.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie24.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie24.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/ubuntu.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/ubuntu.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/ubuntu.png"]
   },
   {
     id: 122,
@@ -1401,9 +1401,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie25.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie25.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie25.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/siena.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/siena.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/siena.png"]
   },
   {
     id: 123,
@@ -1413,9 +1413,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie26.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie26.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie26.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/calypso.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/calypso.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/calypso.png"]
   },
   {
     id: 124,
@@ -1425,9 +1425,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie27.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie27.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie27.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/aziz.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/aziz.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/aziz.png"]
   },
   {
     id: 125,
@@ -1437,9 +1437,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie28.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie28.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie28.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/guava.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/guava.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/guava.png"]
   },
   {
     id: 126,
@@ -1449,9 +1449,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie29.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie29.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie29.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/frangipani.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/frangipani.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/frangipani.png"]
   },
   {
     id: 127,
@@ -1461,9 +1461,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie3.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie3.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie3.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/heron.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/heron.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/heron.jpg"]
   },
   {
     id: 128,
@@ -1473,9 +1473,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie30.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie30.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie30.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/amani.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/amani.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/amani.png"]
   },
   {
     id: 129,
@@ -1485,9 +1485,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie31.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie31.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie31.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/verona.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/verona.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/verona.png"]
   },
   {
     id: 130,
@@ -1497,9 +1497,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie32.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie32.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie32.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/iris.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/iris.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/iris.png"]
   },
   {
     id: 131,
@@ -1509,9 +1509,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie33.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie33.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie33.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/rami.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/rami.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/rami.png"]
   },
   {
     id: 132,
@@ -1521,9 +1521,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie34.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie34.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie34.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/date.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/date.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/date.png"]
   },
   {
     id: 133,
@@ -1533,9 +1533,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie35.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie35.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie35.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/orchid.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/orchid.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/orchid.png"]
   },
   {
     id: 134,
@@ -1545,9 +1545,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie4.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie4.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie4.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/crane.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/crane.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/crane.jpg"]
   },
   {
     id: 135,
@@ -1557,9 +1557,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie5.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie5.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie5.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/zuri.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/zuri.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/zuri.jpg"]
   },
   {
     id: 136,
@@ -1569,9 +1569,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie6.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie6.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie6.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/murano.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/murano.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/murano.jpg"]
   },
   {
     id: 137,
@@ -1581,9 +1581,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie7.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie7.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie7.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/orion.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/orion.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/orion.png"]
   },
   {
     id: 138,
@@ -1593,9 +1593,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie8.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie8.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie8.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/omar.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/omar.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/omar.png"]
   },
   {
     id: 139,
@@ -1605,9 +1605,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie9.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie9.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/Geometrie9.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/almond.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/almond.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/30a52602184d2391386cf862ab0b7e4d983c9ff2/almond.png"]
   },
   {
     id: 140,
@@ -1617,9 +1617,9 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-18.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-18.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-18.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/nala.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/nala.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/nala.jpg"]
   },
   {
     id: 141,
@@ -1629,9 +1629,9 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-19.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-19.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-19.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/fresco.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/fresco.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/fresco.jpg"]
   },
   {
     id: 142,
@@ -1641,9 +1641,9 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-20.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-20.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-20.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/aurora.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/aurora.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/aurora.jpg"]
   },
   {
     id: 143,
@@ -1653,9 +1653,9 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-21.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-21.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-21.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/farah.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/farah.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/farah.png"]
   },
   {
     id: 144,
@@ -1665,9 +1665,9 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-22.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-22.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-22.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/nutmeg.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/nutmeg.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/nutmeg.png"]
   },
   {
     id: 145,
@@ -1677,9 +1677,9 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-23.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-23.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-23.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/protea.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/protea.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/protea.png"]
   },
   {
     id: 146,
@@ -1689,9 +1689,9 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-24.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-24.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-24.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/antelope.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/antelope.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/antelope.jpg"]
   },
   {
     id: 147,
@@ -1701,9 +1701,9 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-25.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-25.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-25.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/simba.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/simba.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/simba.jpg"]
   },
   {
     id: 148,
@@ -1713,9 +1713,9 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-26.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-26.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-26.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/bella.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/bella.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/bella.jpg"]
   },
   {
     id: 149,
@@ -1725,9 +1725,9 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-27.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-27.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-27.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/freya.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/freya.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/freya.jpg"]
   },
   {
     id: 150,
@@ -1737,9 +1737,9 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-28.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-28.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-28.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/nadia.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/nadia.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/nadia.png"]
   },
   {
     id: 151,
@@ -1749,9 +1749,9 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-29.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-29.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-29.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/anise.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/anise.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/anise.png"]
   },
   {
     id: 152,
@@ -1761,9 +1761,9 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-30.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-30.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-30.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/poppy.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/poppy.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/poppy.jpg"]
   },
   {
     id: 153,
@@ -1773,9 +1773,9 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-31.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-31.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-31.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/springbok.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/springbok.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/springbok.png"]
   },
   {
     id: 154,
@@ -1785,9 +1785,9 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-32.png",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-32.png",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-32.png"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/asha.png",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/asha.png",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/asha.png"]
   },
   {
     id: 155,
@@ -1797,9 +1797,9 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-33.jpg",
-    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-33.jpg",
-    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/Kids-33.jpg"]
+    image: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/stella.jpg",
+    imageVis: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/stella.jpg",
+    photosProduit: ["https://raw.githubusercontent.com/Afrodeco/afrodecoo/7b62b756cc44d7c426caed96f8a50e4d752c0343/stella.jpg"]
   },
 ];
 
@@ -1815,7 +1815,7 @@ const ARTISTES = [
   {
     nom: "Alex Maurel",
     bio: "Designer graphique talentueux et amoureux de la ville de Ouidah, Alex Maurel s'est inspiré de ses racines pour créer Ouidah Mibiton. Une œuvre empreinte d'authenticité et de passion, qui capture l'essence de la Porte du Non-Retour. Son art raconte des récits profonds à travers une illustration moderne, mêlant couleurs éclatantes et lignes épurées pour transmettre une émotion unique.",
-    photo: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/Alex Maurel.JPG",
+    photo: "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/dahlia.JPG",
     specialite: "Design Graphique — Illustration",
     localisation: "Ouidah, Bénin"
   }
