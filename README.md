@@ -1,2 +1,2 @@
 # afrodecoo
-Site afrodeco
+Site afrodeco.
