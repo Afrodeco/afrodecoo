@@ -1810,12 +1810,12 @@ const ARTISTES = [
     specialite: "Illustration — Art Numérique",
     localisation: "Bénin",
     bio: "Itssenaxia est un artiste numérique béninois au style unique, mêlant illustration pop art, références africaines et univers surréalistes. Ses œuvres combinent couleurs vibrantes, personnages expressifs et messages culturels forts.",
-    photo: ""
+    photo: `${BASE}/artists/a1_itssenaxia.jpg`
   },
   {
     nom: "Alex Maurel",
     bio: "Designer graphique talentueux et amoureux de la ville de Ouidah, Alex Maurel s'est inspiré de ses racines pour créer Ouidah Mibiton. Une œuvre empreinte d'authenticité et de passion, qui capture l'essence de la Porte du Non-Retour. Son art raconte des récits profonds à travers une illustration moderne, mêlant couleurs éclatantes et lignes épurées pour transmettre une émotion unique.",
-    photo: BASE + "dahlia.jpg",
+    photo: `${BASE}/artists/a2_max_aurel.jpg`,
     specialite: "Design Graphique — Illustration",
     localisation: "Ouidah, Bénin"
   }
