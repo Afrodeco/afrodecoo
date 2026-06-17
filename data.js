@@ -1804,7 +1804,6 @@ const TABLEAUX = [
 ];
 
 const ARTISTES = [
-
   {
     nom: "Itssenaxia",
     specialite: "Illustration — Art Numérique",
