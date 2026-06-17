@@ -43,7 +43,7 @@ def process_images():
                     elif img.mode != 'RGB':
                         img = img.convert('RGB')
                         
-                    img.save(temp_jpg_path, 'JPEG', quality=50, optimize=True)
+                    img.save(temp_jpg_path, 'JPEG', quality=30, optimize=True)
                 
                 orig_size = os.path.getsize(src_path)
                 new_size = os.path.getsize(temp_jpg_path)

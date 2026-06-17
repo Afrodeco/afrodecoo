@@ -460,7 +460,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "kestrel.png"
+    image: BASE + "kestrel.jpg"
   },
   {
     id: 44,
@@ -470,7 +470,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "kofi.png"
+    image: BASE + "kofi.jpg"
   },
   {
     id: 45,
@@ -480,7 +480,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "toscana.png"
+    image: BASE + "toscana.jpg"
   },
   {
     id: 46,
@@ -500,7 +500,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "salma.png"
+    image: BASE + "salma.jpg"
   },
   {
     id: 48,
@@ -650,7 +650,7 @@ const TABLEAUX = [
     categorie: "office",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "viola.png"
+    image: BASE + "viola.jpg"
   },
   {
     id: 63,
@@ -884,9 +884,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "zebra.png",
-    imageVis: BASE + "zebra.png",
-    photosProduit: [BASE + "zebra.png"]
+    image: BASE + "zebra.jpg",
+    imageVis: BASE + "zebra.jpg",
+    photosProduit: [BASE + "zebra.jpg"]
   },
   {
     id: 80,
@@ -920,9 +920,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "bragi.png",
-    imageVis: BASE + "bragi.png",
-    photosProduit: [BASE + "bragi.png"]
+    image: BASE + "bragi.jpg",
+    imageVis: BASE + "bragi.jpg",
+    photosProduit: [BASE + "bragi.jpg"]
   },
   {
     id: 83,
@@ -992,9 +992,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "sera.png",
-    imageVis: BASE + "sera.png",
-    photosProduit: [BASE + "sera.png"]
+    image: BASE + "sera.jpg",
+    imageVis: BASE + "sera.jpg",
+    photosProduit: [BASE + "sera.jpg"]
   },
   {
     id: 89,
@@ -1004,9 +1004,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "isis.png",
-    imageVis: BASE + "isis.png",
-    photosProduit: [BASE + "isis.png"]
+    image: BASE + "isis.jpg",
+    imageVis: BASE + "isis.jpg",
+    photosProduit: [BASE + "isis.jpg"]
   },
 
   {
@@ -1449,9 +1449,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: BASE + "frangipani.png",
-    imageVis: BASE + "frangipani.png",
-    photosProduit: [BASE + "frangipani.png"]
+    image: BASE + "frangipani.jpg",
+    imageVis: BASE + "frangipani.jpg",
+    photosProduit: [BASE + "frangipani.jpg"]
   },
   {
     id: 127,
@@ -1473,9 +1473,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: BASE + "amani.png",
-    imageVis: BASE + "amani.png",
-    photosProduit: [BASE + "amani.png"]
+    image: BASE + "amani.jpg",
+    imageVis: BASE + "amani.jpg",
+    photosProduit: [BASE + "amani.jpg"]
   },
   {
     id: 129,
@@ -1485,9 +1485,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: BASE + "verona.png",
-    imageVis: BASE + "verona.png",
-    photosProduit: [BASE + "verona.png"]
+    image: BASE + "verona.jpg",
+    imageVis: BASE + "verona.jpg",
+    photosProduit: [BASE + "verona.jpg"]
   },
   {
     id: 130,
@@ -1605,9 +1605,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: BASE + "almond.png",
-    imageVis: BASE + "almond.png",
-    photosProduit: [BASE + "almond.png"]
+    image: BASE + "almond.jpg",
+    imageVis: BASE + "almond.jpg",
+    photosProduit: [BASE + "almond.jpg"]
   },
   {
     id: 140,
