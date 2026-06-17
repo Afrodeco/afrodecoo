@@ -48,7 +48,72 @@ The project is built with a **pure Vanilla HTML, CSS, and JavaScript** stack. It
 - `images/`: Directory containing the compressed `.jpg` artwork assets.
 - `images/backup/`: Directory containing the original, unprocessed images.
 
+```
+.
+├── Agent.md
+├── CNAME
+├── data.js
+├── fonts
+│   ├── Aspekta-150.woff2
+│   ├── ...
+│   ├── Nomad-Regular.woff2
+│   └── README.md
+├── image-names.tsv
+├── image-rename-manifest.tsv
+├── images
+│   ├── alba.jpg
+│   ├── ...
+│   └── zuri.jpg
+├── index.html
+├── portfolio.html
+├── process_images.py
+├── README.md
+└──rename_images.py
+```
+
 ### Interactive Visualizer Details (`#vis2Canvas`)
 - Built using HTML5 `<canvas>` and the 2D rendering context.
 - Implements a custom 4-point perspective warping algorithm (`drawWarp`) to project artworks onto uploaded room photos realistically.
 - Manages state for the uploaded room image, selected artwork slots, and frame styling (adding borders/colors via the Canvas API).
+
+
+#### data.js content schema
+
+```json
+const BASE = "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/images/";
+
+const TABLEAUX = [
+  {
+    id: 1,
+    titre: "Série Boho",
+    artiste: "Afrodeco Studio",
+    description: "Trio géométrique minimaliste aux lignes épurées. Vendu en série de 3.",
+    categorie: "geometrique",
+    prix: 185,
+    dimensions: "40×50 cm — Série de 3",
+    serie: true,
+    images: [
+      BASE + "honey-1.jpg",
+      BASE + "honey-2.jpg",
+      BASE + "honey-3.jpg"
+    ],
+    imageVis: BASE + "honey-3.jpg"
+  }
+];
+
+const ARTISTES = [
+  {
+    nom: "Itssenaxia",
+    specialite: "Illustration — Art Numérique",
+    localisation: "Bénin",
+    bio: "Itssenaxia est un artiste numérique béninois au style unique, mêlant illustration pop art, références africaines et univers surréalistes. Ses œuvres combinent couleurs vibrantes, personnages expressifs et messages culturels forts.",
+    photo: `${BASE}/artists/a1_itssenaxia.jpg`
+  },
+  ...
+];
+
+const CATEGORIES_TABLEAUX = [
+  { id: "tout", label: "Tout" },
+  ...
+];
+```
