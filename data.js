@@ -2,7 +2,7 @@
 //  AFRODECO — FICHIER DE DONNÉES
 // ============================================================
 
-const BASE = "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/";
+const BASE = "https://raw.githubusercontent.com/Afrodeco/afrodecoo/main/images/";
 
 const TABLEAUX = [
   {
@@ -15,11 +15,11 @@ const TABLEAUX = [
     dimensions: "40×50 cm — Série de 3",
     serie: true,
     images: [
-      BASE + "honey-1.png",
-      BASE + "honey-2.png",
-      BASE + "honey-3.png"
+      BASE + "honey-1.jpg",
+      BASE + "honey-2.jpg",
+      BASE + "honey-3.jpg"
     ],
-    imageVis: BASE + "honey-3.png"
+    imageVis: BASE + "honey-3.jpg"
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "saffron.png"
+    image: BASE + "saffron.jpg"
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "naya.png"
+    image: BASE + "naya.jpg"
   },
 
   {
@@ -50,7 +50,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "lotus.png"
+    image: BASE + "lotus.jpg"
   },
   {
     id: 6,
@@ -60,7 +60,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "oryx.png"
+    image: BASE + "oryx.jpg"
   },
   {
     id: 7,
@@ -70,7 +70,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "zambezi.png"
+    image: BASE + "zambezi.jpg"
   },
   {
     id: 8,
@@ -80,7 +80,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "fiorella.png"
+    image: BASE + "fiorella.jpg"
   },
   {
     id: 9,
@@ -130,7 +130,7 @@ const TABLEAUX = [
     categorie: "abstrait",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "sahel.png"
+    image: BASE + "sahel.jpg"
   },
   {
     id: 14,
@@ -162,10 +162,10 @@ const TABLEAUX = [
     dimensions: "120×80 cm",
     serie: true,
     images: [
-      BASE + "idun-2.png",
-      BASE + "idun-1.png"
+      BASE + "idun-2.jpg",
+      BASE + "idun-1.jpg"
     ],
-    imageVis: BASE + "idun-1.png"
+    imageVis: BASE + "idun-1.jpg"
   },
   {
     id: 17,
@@ -177,10 +177,10 @@ const TABLEAUX = [
     dimensions: "120×80 cm",
     serie: true,
     images: [
-      BASE + "samira-2.png",
-      BASE + "samira-1.png"
+      BASE + "samira-2.jpg",
+      BASE + "samira-1.jpg"
     ],
-    imageVis: BASE + "samira-1.png"
+    imageVis: BASE + "samira-1.jpg"
   },
   {
     id: 18,
@@ -192,10 +192,10 @@ const TABLEAUX = [
     dimensions: "120×80 cm",
     serie: true,
     images: [
-      BASE + "sage-2.png",
-      BASE + "sage-1.png"
+      BASE + "sage-2.jpg",
+      BASE + "sage-1.jpg"
     ],
-    imageVis: BASE + "sage-1.png"
+    imageVis: BASE + "sage-1.jpg"
   },
   {
     id: 19,
@@ -207,10 +207,10 @@ const TABLEAUX = [
     dimensions: "120×80 cm",
     serie: true,
     images: [
-      BASE + "violet-2.png",
-      BASE + "violet-1.png"
+      BASE + "violet-2.jpg",
+      BASE + "violet-1.jpg"
     ],
-    imageVis: BASE + "violet-1.png"
+    imageVis: BASE + "violet-1.jpg"
   },
   {
     id: 20,
@@ -222,10 +222,10 @@ const TABLEAUX = [
     dimensions: "120×80 cm",
     serie: true,
     images: [
-      BASE + "kudu-2.png",
-      BASE + "kudu-1.png"
+      BASE + "kudu-2.jpg",
+      BASE + "kudu-1.jpg"
     ],
-    imageVis: BASE + "kudu-1.png"
+    imageVis: BASE + "kudu-1.jpg"
   },
   {
     id: 21,
@@ -350,7 +350,7 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "jamal.png"
+    image: BASE + "jamal.jpg"
   },
   {
     id: 33,
@@ -360,7 +360,7 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "zinnia.png"
+    image: BASE + "zinnia.jpg"
   },
   {
     id: 34,
@@ -370,7 +370,7 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "okapi.png"
+    image: BASE + "okapi.jpg"
   },
   {
     id: 35,
@@ -380,7 +380,7 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "ife.png"
+    image: BASE + "ife.jpg"
   },
   {
     id: 36,
@@ -390,7 +390,7 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "perla.png"
+    image: BASE + "perla.jpg"
   },
   {
     id: 37,
@@ -400,7 +400,7 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "anubis.png"
+    image: BASE + "anubis.jpg"
   },
   {
     id: 38,
@@ -410,7 +410,7 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "zaid.png"
+    image: BASE + "zaid.jpg"
   },
   {
     id: 39,
@@ -420,7 +420,7 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "melon.png"
+    image: BASE + "melon.jpg"
   },
   {
     id: 40,
@@ -430,7 +430,7 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "aster.png"
+    image: BASE + "aster.jpg"
   },
   {
     id: 41,
@@ -440,7 +440,7 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "cherry.png"
+    image: BASE + "cherry.jpg"
   },
   {
     id: 42,
@@ -450,7 +450,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "cinnamon.png"
+    image: BASE + "cinnamon.jpg"
   },
   {
     id: 43,
@@ -490,7 +490,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "persephone.png"
+    image: BASE + "persephone.jpg"
   },
   {
     id: 47,
@@ -510,7 +510,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "clove.png"
+    image: BASE + "clove.jpg"
   },
   {
     id: 49,
@@ -520,7 +520,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "oleander.png"
+    image: BASE + "oleander.jpg"
   },
   {
     id: 50,
@@ -530,7 +530,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "osprey.png"
+    image: BASE + "osprey.jpg"
   },
   {
     id: 51,
@@ -540,7 +540,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "azalea.png"
+    image: BASE + "azalea.jpg"
   },
   {
     id: 52,
@@ -550,7 +550,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "raven.png"
+    image: BASE + "raven.jpg"
   },
   {
     id: 53,
@@ -560,7 +560,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "ayo.png"
+    image: BASE + "ayo.jpg"
   },
   {
     id: 54,
@@ -570,7 +570,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "portofino.png"
+    image: BASE + "portofino.jpg"
   },
   {
     id: 55,
@@ -580,7 +580,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "pandora.png"
+    image: BASE + "pandora.jpg"
   },
   {
     id: 56,
@@ -590,7 +590,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "rania.png"
+    image: BASE + "rania.jpg"
   },
   {
     id: 57,
@@ -600,7 +600,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "ginger.png"
+    image: BASE + "ginger.jpg"
   },
   {
     id: 58,
@@ -610,7 +610,7 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "mimosa.png"
+    image: BASE + "mimosa.jpg"
   },
   {
     id: 59,
@@ -620,7 +620,7 @@ const TABLEAUX = [
     categorie: "office",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "tamarind.png"
+    image: BASE + "tamarind.jpg"
   },
   {
     id: 60,
@@ -630,7 +630,7 @@ const TABLEAUX = [
     categorie: "office",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "serval.png"
+    image: BASE + "serval.jpg"
   },
   {
     id: 61,
@@ -640,7 +640,7 @@ const TABLEAUX = [
     categorie: "office",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "anansi.png"
+    image: BASE + "anansi.jpg"
   },
   {
     id: 62,
@@ -660,7 +660,7 @@ const TABLEAUX = [
     categorie: "office",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "thoth.png"
+    image: BASE + "thoth.jpg"
   },
   {
     id: 64,
@@ -680,7 +680,7 @@ const TABLEAUX = [
     categorie: "office",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "sesame.png"
+    image: BASE + "sesame.jpg"
   },
   {
     id: 66,
@@ -690,7 +690,7 @@ const TABLEAUX = [
     categorie: "office",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "caracal.png"
+    image: BASE + "caracal.jpg"
   },
   {
     id: 67,
@@ -700,13 +700,13 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "yemoja.png",
-    imageVis: BASE + "sekhmet.png",
+    image: BASE + "yemoja.jpg",
+    imageVis: BASE + "sekhmet.jpg",
     photosProduit: [
-      BASE + "yemoja.png",
-      BASE + "azzurro.png",
-      BASE + "sekhmet.png",
-      BASE + "dina.png"
+      BASE + "yemoja.jpg",
+      BASE + "azzurro.jpg",
+      BASE + "sekhmet.jpg",
+      BASE + "dina.jpg"
     ]
   },
   {
@@ -717,13 +717,13 @@ const TABLEAUX = [
     categorie: "nature",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "eos.png",
-    imageVis: BASE + "eos.png",
+    image: BASE + "eos.jpg",
+    imageVis: BASE + "eos.jpg",
     photosProduit: [
-      BASE + "eos.png",
-      BASE + "dalia.png",
-      BASE + "timbuktu.png",
-      BASE + "sole.png"
+      BASE + "eos.jpg",
+      BASE + "dalia.jpg",
+      BASE + "timbuktu.jpg",
+      BASE + "sole.jpg"
     ]
   },
   {
@@ -736,16 +736,16 @@ const TABLEAUX = [
     dimensions: "50×70 cm",
     serie: true,
     images: [
-      BASE + "cheetah.png",
-      BASE + "zanzibar.png"
+      BASE + "cheetah.jpg",
+      BASE + "zanzibar.jpg"
     ],
-    imageVis: BASE + "aria.png",
+    imageVis: BASE + "aria.jpg",
     photosProduit: [
-      BASE + "aria.png",
-      BASE + "nyx.png",
-      BASE + "soraya.png",
-      BASE + "cheetah.png",
-      BASE + "zanzibar.png"
+      BASE + "aria.jpg",
+      BASE + "nyx.jpg",
+      BASE + "soraya.jpg",
+      BASE + "cheetah.jpg",
+      BASE + "zanzibar.jpg"
     ]
   },
   {
@@ -848,9 +848,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "amira.png",
-    imageVis: BASE + "amira.png",
-    photosProduit: [BASE + "amira.png"]
+    image: BASE + "amira.jpg",
+    imageVis: BASE + "amira.jpg",
+    photosProduit: [BASE + "amira.jpg"]
   },
   {
     id: 77,
@@ -860,9 +860,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "peach.png",
-    imageVis: BASE + "peach.png",
-    photosProduit: [BASE + "peach.png"]
+    image: BASE + "peach.jpg",
+    imageVis: BASE + "peach.jpg",
+    photosProduit: [BASE + "peach.jpg"]
   },
   {
     id: 78,
@@ -872,9 +872,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "gardenia.png",
-    imageVis: BASE + "gardenia.png",
-    photosProduit: [BASE + "gardenia.png"]
+    image: BASE + "gardenia.jpg",
+    imageVis: BASE + "gardenia.jpg",
+    photosProduit: [BASE + "gardenia.jpg"]
   },
   {
     id: 79,
@@ -896,9 +896,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "zola.png",
-    imageVis: BASE + "zola.png",
-    photosProduit: [BASE + "zola.png"]
+    image: BASE + "zola.jpg",
+    imageVis: BASE + "zola.jpg",
+    photosProduit: [BASE + "zola.jpg"]
   },
   {
     id: 81,
@@ -908,9 +908,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "luce.png",
-    imageVis: BASE + "luce.png",
-    photosProduit: [BASE + "luce.png"]
+    image: BASE + "luce.jpg",
+    imageVis: BASE + "luce.jpg",
+    photosProduit: [BASE + "luce.jpg"]
   },
   {
     id: 82,
@@ -932,9 +932,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "yasmin.png",
-    imageVis: BASE + "yasmin.png",
-    photosProduit: [BASE + "yasmin.png"]
+    image: BASE + "yasmin.jpg",
+    imageVis: BASE + "yasmin.jpg",
+    photosProduit: [BASE + "yasmin.jpg"]
   },
   {
     id: 84,
@@ -944,9 +944,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "mint.png",
-    imageVis: BASE + "mint.png",
-    photosProduit: [BASE + "mint.png"]
+    image: BASE + "mint.jpg",
+    imageVis: BASE + "mint.jpg",
+    photosProduit: [BASE + "mint.jpg"]
   },
   {
     id: 85,
@@ -956,9 +956,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "primrose.png",
-    imageVis: BASE + "primrose.png",
-    photosProduit: [BASE + "primrose.png"]
+    image: BASE + "primrose.jpg",
+    imageVis: BASE + "primrose.jpg",
+    photosProduit: [BASE + "primrose.jpg"]
   },
   {
     id: 86,
@@ -968,9 +968,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "impala.png",
-    imageVis: BASE + "impala.png",
-    photosProduit: [BASE + "impala.png"]
+    image: BASE + "impala.jpg",
+    imageVis: BASE + "impala.jpg",
+    photosProduit: [BASE + "impala.jpg"]
   },
   {
     id: 87,
@@ -980,9 +980,9 @@ const TABLEAUX = [
     categorie: "matisse",
     prix: 184,
     dimensions: "120×80 cm",
-    image: BASE + "thandi.png",
-    imageVis: BASE + "thandi.png",
-    photosProduit: [BASE + "thandi.png"]
+    image: BASE + "thandi.jpg",
+    imageVis: BASE + "thandi.jpg",
+    photosProduit: [BASE + "thandi.jpg"]
   },
   {
     id: 88,
@@ -1353,9 +1353,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: BASE + "papaya.png",
-    imageVis: BASE + "papaya.png",
-    photosProduit: [BASE + "papaya.png"]
+    image: BASE + "papaya.jpg",
+    imageVis: BASE + "papaya.jpg",
+    photosProduit: [BASE + "papaya.jpg"]
   },
   {
     id: 119,
@@ -1365,9 +1365,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: BASE + "jacaranda.png",
-    imageVis: BASE + "jacaranda.png",
-    photosProduit: [BASE + "jacaranda.png"]
+    image: BASE + "jacaranda.jpg",
+    imageVis: BASE + "jacaranda.jpg",
+    photosProduit: [BASE + "jacaranda.jpg"]
   },
   {
     id: 120,
@@ -1377,9 +1377,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: BASE + "lynx.png",
-    imageVis: BASE + "lynx.png",
-    photosProduit: [BASE + "lynx.png"]
+    image: BASE + "lynx.jpg",
+    imageVis: BASE + "lynx.jpg",
+    photosProduit: [BASE + "lynx.jpg"]
   },
   {
     id: 121,
@@ -1413,9 +1413,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: BASE + "calypso.png",
-    imageVis: BASE + "calypso.png",
-    photosProduit: [BASE + "calypso.png"]
+    image: BASE + "calypso.jpg",
+    imageVis: BASE + "calypso.jpg",
+    photosProduit: [BASE + "calypso.jpg"]
   },
   {
     id: 124,
@@ -1425,9 +1425,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: BASE + "aziz.png",
-    imageVis: BASE + "aziz.png",
-    photosProduit: [BASE + "aziz.png"]
+    image: BASE + "aziz.jpg",
+    imageVis: BASE + "aziz.jpg",
+    photosProduit: [BASE + "aziz.jpg"]
   },
   {
     id: 125,
@@ -1497,9 +1497,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: BASE + "iris.png",
-    imageVis: BASE + "iris.png",
-    photosProduit: [BASE + "iris.png"]
+    image: BASE + "iris.jpg",
+    imageVis: BASE + "iris.jpg",
+    photosProduit: [BASE + "iris.jpg"]
   },
   {
     id: 131,
@@ -1509,9 +1509,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: BASE + "rami.png",
-    imageVis: BASE + "rami.png",
-    photosProduit: [BASE + "rami.png"]
+    image: BASE + "rami.jpg",
+    imageVis: BASE + "rami.jpg",
+    photosProduit: [BASE + "rami.jpg"]
   },
   {
     id: 132,
@@ -1521,9 +1521,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: BASE + "date.png",
-    imageVis: BASE + "date.png",
-    photosProduit: [BASE + "date.png"]
+    image: BASE + "date.jpg",
+    imageVis: BASE + "date.jpg",
+    photosProduit: [BASE + "date.jpg"]
   },
   {
     id: 133,
@@ -1533,9 +1533,9 @@ const TABLEAUX = [
     categorie: "geometrique",
     prix: 145,
     dimensions: "130×130 cm",
-    image: BASE + "orchid.png",
-    imageVis: BASE + "orchid.png",
-    photosProduit: [BASE + "orchid.png"]
+    image: BASE + "orchid.jpg",
+    imageVis: BASE + "orchid.jpg",
+    photosProduit: [BASE + "orchid.jpg"]
   },
   {
     id: 134,
@@ -1653,9 +1653,9 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "farah.png",
-    imageVis: BASE + "farah.png",
-    photosProduit: [BASE + "farah.png"]
+    image: BASE + "farah.jpg",
+    imageVis: BASE + "farah.jpg",
+    photosProduit: [BASE + "farah.jpg"]
   },
   {
     id: 144,
@@ -1665,9 +1665,9 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "nutmeg.png",
-    imageVis: BASE + "nutmeg.png",
-    photosProduit: [BASE + "nutmeg.png"]
+    image: BASE + "nutmeg.jpg",
+    imageVis: BASE + "nutmeg.jpg",
+    photosProduit: [BASE + "nutmeg.jpg"]
   },
   {
     id: 145,
@@ -1677,9 +1677,9 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "protea.png",
-    imageVis: BASE + "protea.png",
-    photosProduit: [BASE + "protea.png"]
+    image: BASE + "protea.jpg",
+    imageVis: BASE + "protea.jpg",
+    photosProduit: [BASE + "protea.jpg"]
   },
   {
     id: 146,
@@ -1737,9 +1737,9 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "nadia.png",
-    imageVis: BASE + "nadia.png",
-    photosProduit: [BASE + "nadia.png"]
+    image: BASE + "nadia.jpg",
+    imageVis: BASE + "nadia.jpg",
+    photosProduit: [BASE + "nadia.jpg"]
   },
   {
     id: 151,
@@ -1749,9 +1749,9 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "anise.png",
-    imageVis: BASE + "anise.png",
-    photosProduit: [BASE + "anise.png"]
+    image: BASE + "anise.jpg",
+    imageVis: BASE + "anise.jpg",
+    photosProduit: [BASE + "anise.jpg"]
   },
   {
     id: 152,
@@ -1773,9 +1773,9 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "springbok.png",
-    imageVis: BASE + "springbok.png",
-    photosProduit: [BASE + "springbok.png"]
+    image: BASE + "springbok.jpg",
+    imageVis: BASE + "springbok.jpg",
+    photosProduit: [BASE + "springbok.jpg"]
   },
   {
     id: 154,
@@ -1785,9 +1785,9 @@ const TABLEAUX = [
     categorie: "enfants",
     prix: 145,
     dimensions: "50×70 cm",
-    image: BASE + "asha.png",
-    imageVis: BASE + "asha.png",
-    photosProduit: [BASE + "asha.png"]
+    image: BASE + "asha.jpg",
+    imageVis: BASE + "asha.jpg",
+    photosProduit: [BASE + "asha.jpg"]
   },
   {
     id: 155,
@@ -1815,7 +1815,7 @@ const ARTISTES = [
   {
     nom: "Alex Maurel",
     bio: "Designer graphique talentueux et amoureux de la ville de Ouidah, Alex Maurel s'est inspiré de ses racines pour créer Ouidah Mibiton. Une œuvre empreinte d'authenticité et de passion, qui capture l'essence de la Porte du Non-Retour. Son art raconte des récits profonds à travers une illustration moderne, mêlant couleurs éclatantes et lignes épurées pour transmettre une émotion unique.",
-    photo: BASE + "dahlia.JPG",
+    photo: BASE + "dahlia.jpg",
     specialite: "Design Graphique — Illustration",
     localisation: "Ouidah, Bénin"
   }
